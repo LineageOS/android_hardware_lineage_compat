@@ -281,6 +281,9 @@ cc_library {
 cc_library_shared {
     name: "libui_shim",
     shared_libs: ["libui"],
-    srcs: ["libui/GraphicBuffer.cpp"],
+    srcs: [
+        "libui/Fence.cpp",
+        "libui/GraphicBuffer.cpp",
+    ],
     compile_multilib: "64",
 }
