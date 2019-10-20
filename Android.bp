@@ -227,6 +227,13 @@ cc_defaults {
 }
 
 cc_library {
+    name: "libbase_shim",
+    shared_libs: ["libbase"],
+    srcs: ["libbase/logging.cpp"],
+    vendor: true
+}
+
+cc_library {
     name: "libcutils_shim",
     shared_libs: [
         "libcutils",
