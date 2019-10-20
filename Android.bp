@@ -220,6 +220,13 @@ cc_library_shared {
     vendor: true,
 }
 
+cc_library {
+    name: "libbase_shim",
+    shared_libs: ["libbase"],
+    srcs: ["libbase/logging.cpp"],
+    vendor: true
+}
+
 cc_defaults {
     name: "libgui_shim_defaults",
     shared_libs: ["libutils"],
