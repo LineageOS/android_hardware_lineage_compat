@@ -221,6 +221,15 @@ cc_library_shared {
 }
 
 cc_library {
+    name: "libcutils_shim",
+    shared_libs: [
+        "libcutils",
+    ],
+    srcs: ["libcutils/strdup16to8.cpp"],
+    vendor: true,
+}
+
+cc_library {
     name: "libgui_shim",
     shared_libs: [
         "libgui",
