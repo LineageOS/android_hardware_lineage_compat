@@ -239,3 +239,22 @@ cc_library {
     system_ext_specific: true,
     vendor_available: true,
 }
+
+cc_library {
+    name: "libmemset_shim",
+    target: {
+        android_arm: {
+            srcs: ["libmemset/memset32.S"],
+            sanitize: {
+                misc_undefined: ["integer"],
+            },
+        },
+        android_arm64: {
+            srcs: ["libmemset/android_memset.S"],
+            sanitize: {
+                misc_undefined: ["integer"],
+            },
+        },
+    },
+    vendor: true,
+}
