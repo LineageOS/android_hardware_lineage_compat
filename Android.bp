@@ -359,3 +359,10 @@ cc_library_shared {
     system_ext_specific: true,
     vendor_available: true,
 }
+
+cc_library_shared {
+    name: "libcomparetf2_shim",
+    srcs: ["libcomparetf2/comparetf2.c"],
+    compile_multilib: "64",
+    vendor: true,
+}
