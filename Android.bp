@@ -798,3 +798,23 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
     check_elf_files: false,
 }
+
+cc_library_shared {
+    name: "libw",
+    multilib: {
+        lib32: {
+            srcs: ["libw/intrinsics_shim.s"],
+        },
+        lib64: {
+            srcs: ["libw/intrinsics_shim.cpp"],
+        },
+    },
+    shared_libs: ["libcutils"],
+    vendor: true,
+    recovery_available: true,
+    arch: {
+        arm: {
+            version_script: "libw/intrinsics_shim.arm.map",
+        },
+    },
+}
