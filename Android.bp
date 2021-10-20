@@ -219,3 +219,14 @@ cc_library_shared {
     shared_libs: ["libavservices_minijail"],
     vendor: true,
 }
+
+cc_library {
+    name: "libgui_shim",
+    shared_libs: [
+        "libgui",
+        "libutils",
+    ],
+    srcs: ["libgui/gui_shim.cpp"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
