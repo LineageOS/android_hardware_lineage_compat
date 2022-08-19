@@ -5,6 +5,48 @@
 //
 
 cc_library_shared {
+    name: "android.frameworks.stats-V1-ndk_platform",
+    shared_libs: ["android.frameworks.stats-V1-ndk"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
+    name: "android.hardware.identity-V3-ndk_platform",
+    shared_libs: ["android.hardware.identity-V3-ndk"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
+    name: "android.hardware.keymaster-V3-ndk_platform",
+    shared_libs: ["android.hardware.keymaster-V3-ndk"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
+    name: "android.hardware.power-V1-ndk_platform",
+    shared_libs: ["android.hardware.power-V1-ndk"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
+    name: "android.hardware.power.stats-V1-ndk_platform",
+    shared_libs: ["android.hardware.power.stats-V1-ndk"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
+    name: "android.hardware.rebootescrow-V1-ndk_platform",
+    shared_libs: ["android.hardware.rebootescrow-V1-ndk"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
     name: "libavservices_minijail_vendor",
     shared_libs: ["libavservices_minijail"],
     vendor: true,
