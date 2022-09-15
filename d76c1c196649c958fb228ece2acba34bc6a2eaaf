@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d18db887_5620b388",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-15T14:30:55Z",
+      "side": 1,
+      "message": "This works for pixel 3/3a, if you need any others feel free to add them.",
+      "revId": "d76c1c196649c958fb228ece2acba34bc6a2eaaf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
