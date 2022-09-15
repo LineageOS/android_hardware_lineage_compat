@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a7081a9_97763d5e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-15T17:52:26Z",
+      "side": 1,
+      "message": "I just added all the libs from build/make/target/product/gsi/30-32.txt, this should cover (almost?) everything",
+      "revId": "65e78e15967acec2c863f7a54ff61b53e0c6d8cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
