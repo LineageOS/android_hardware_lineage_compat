@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "272ac001_dfc0c0fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-09-20T23:04:55Z",
+      "side": 1,
+      "message": "Discovered that some device DPM stack (like 5) depend on 8to16 as well as 16to8, so squashed it in",
+      "revId": "1c5b0751b4c75dcf76433c7594fc4557ade6bec2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
