@@ -261,3 +261,16 @@ cc_library {
     },
     vendor: true,
 }
+
+cc_library_shared {
+    name: libqsapshim",
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libqsap_sdk",
+        "libutils",
+    ],
+    srcs: ["libqsap/libqsap_shim.c"],
+    include_dirs: ["system/qcom/softap/sdk"],
+    vendor: true,
+}
