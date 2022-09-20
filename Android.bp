@@ -274,3 +274,10 @@ cc_library_shared {
     include_dirs: ["system/qcom/softap/sdk"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libui_shim",
+    shared_libs: ["libui"],
+    srcs: ["GraphicBuffer.cpp"],
+    compile_multilib: "64",
+}
