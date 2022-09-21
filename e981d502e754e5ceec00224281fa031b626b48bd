@@ -46,6 +46,30 @@
       },
       "revId": "e981d502e754e5ceec00224281fa031b626b48bd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eac3265a_2705d512",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-09-21T00:56:45Z",
+      "side": 1,
+      "message": "Turns out:\n`error: device/motorola/nash/libshims/Android.bp:23:1: module \"libgui_shim\" variant \"android_vendor.32_arm64_armv8-a_static\": non-VNDK module should not link to \"libgui\" which has private: true` - there was good reason for the `_vendor` suffix nonsense.",
+      "parentUuid": "0f0663e4_039ae988",
+      "range": {
+        "startLine": 233,
+        "startChar": 0,
+        "endLine": 241,
+        "endChar": 1
+      },
+      "revId": "e981d502e754e5ceec00224281fa031b626b48bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
