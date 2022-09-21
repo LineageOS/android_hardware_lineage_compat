@@ -16,6 +16,29 @@
       "message": "do we really need to move these sort of shims?. memset, libqsap_shim and libcutils changes looks okay to move.",
       "revId": "b11193adcb2dada99ac796e8b6c7a2d783c52889",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5acaeba9_37fb8182",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 223,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-09-21T08:32:39Z",
+      "side": 1,
+      "message": "Move srcs and libutils to a cc_defaults",
+      "range": {
+        "startLine": 223,
+        "startChar": 0,
+        "endLine": 223,
+        "endChar": 11
+      },
+      "revId": "b11193adcb2dada99ac796e8b6c7a2d783c52889",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
