@@ -232,7 +232,7 @@ cc_library {
         "libcutils",
     ],
     srcs: [
-        "libcutils/strdup16to8.cpp"
+        "libcutils/strdup16to8.cpp",
         "libcutils/strdup8to16.cpp"
     ],
     vendor: true,
