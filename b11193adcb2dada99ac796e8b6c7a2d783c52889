@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de337638_c663b898",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-09-21T04:51:08Z",
+      "side": 1,
+      "message": "do we really need to move these sort of shims?. memset, libqsap_shim and libcutils changes looks okay to move.",
+      "revId": "b11193adcb2dada99ac796e8b6c7a2d783c52889",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
