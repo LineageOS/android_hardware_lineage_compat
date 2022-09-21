@@ -3,6 +3,52 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "fb3f8825_692fa2e6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-21T15:59:12Z",
+      "side": 1,
+      "message": "I would eventually give this a new change-Id. This one is not so proper, just click on it and you\u0027ll see.",
+      "range": {
+        "startLine": 14,
+        "startChar": 11,
+        "endLine": 14,
+        "endChar": 52
+      },
+      "revId": "8ee2cf215a59151a5386d7a3d5f24bc907a80a79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9f620446_c53784af",
+        "filename": "Android.bp",
+        "patchSetId": 5
+      },
+      "lineNbr": 275,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-21T15:59:12Z",
+      "side": 1,
+      "message": "I have renamed it to go along with all the other shim naming (all end with _shim suffix).",
+      "range": {
+        "startLine": 275,
+        "startChar": 11,
+        "endLine": 275,
+        "endChar": 23
+      },
+      "revId": "8ee2cf215a59151a5386d7a3d5f24bc907a80a79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "95f08d12_51f8ee5b",
         "filename": "Android.bp",
         "patchSetId": 5
