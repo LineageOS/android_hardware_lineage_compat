@@ -24,6 +24,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f947c5f_db9f2548",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-21T16:00:35Z",
+      "side": 1,
+      "message": "Maybe this one should be moved to hardware/motorola?",
+      "revId": "8ee2cf215a59151a5386d7a3d5f24bc907a80a79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9f620446_c53784af",
