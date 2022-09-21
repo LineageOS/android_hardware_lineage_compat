@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8d98d2e_2b479bd2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-21T15:23:12Z",
+      "side": 1,
+      "message": "Just add everyone related to Co-authored-by and remove squash from commit message",
+      "revId": "a3a6a0c90b57355d12f10b1654591f6d25e9415a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
