@@ -223,7 +223,10 @@ cc_library_shared {
 cc_defaults {
     name: "libgui_shim_defaults",
     shared_libs: ["libutils"],
-    srcs: ["libgui/gui_shim.cpp"],
+    srcs: [
+        "libgui/GraphicBufferProducer.cpp",
+        "libgui/SurfaceComposerClient.cpp",
+    ],
 }
 
 cc_library {
