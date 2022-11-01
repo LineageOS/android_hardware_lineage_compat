@@ -293,4 +293,5 @@ cc_library_shared {
         "libui/GraphicBuffer.cpp",
     ],
     compile_multilib: "64",
+    vendor_available: true,
 }
