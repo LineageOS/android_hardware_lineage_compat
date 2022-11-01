@@ -292,6 +292,5 @@ cc_library_shared {
         "libui/Fence.cpp",
         "libui/GraphicBuffer.cpp",
     ],
-    compile_multilib: "64",
     vendor_available: true,
 }
