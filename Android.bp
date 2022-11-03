@@ -245,7 +245,7 @@ cc_library {
         "libcutils/strdup16to8.cpp",
         "libcutils/strdup8to16.cpp",
     ],
-    vendor: true,
+    vendor_available: true,
 }
 
 cc_library {
