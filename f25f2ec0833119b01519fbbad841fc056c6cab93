@@ -16,6 +16,24 @@
       "message": "Out of curiosity, where does the non-vendor module end up, if {system_ext,product}_specific is no specified?",
       "revId": "f25f2ec0833119b01519fbbad841fc056c6cab93",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73129a32_dfab9aaa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-11-03T15:33:08Z",
+      "side": 1,
+      "message": "system, but most devices that need this don\u0027t have isolated product/system_ext namespaces.",
+      "parentUuid": "ef49a212_cd874f52",
+      "revId": "f25f2ec0833119b01519fbbad841fc056c6cab93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
