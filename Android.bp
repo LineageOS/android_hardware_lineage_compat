@@ -297,3 +297,11 @@ cc_library_shared {
     ],
     vendor_available: true,
 }
+
+cc_library {
+    name: "libip_checksum_shim",
+    whole_static_libs: [
+        "libip_checksum",
+    ],
+    vendor_available: true,
+}
