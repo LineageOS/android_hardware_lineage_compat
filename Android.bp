@@ -215,6 +215,12 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "dlopen",
+    srcs: ["dlopen/dlopen.cpp"],
+    vendor: true,
+}
+
+cc_library_shared {
     name: "libavservices_minijail_vendor",
     shared_libs: ["libavservices_minijail"],
     vendor: true,
