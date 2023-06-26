@@ -1,12 +1,18 @@
 /*
- * Copyright (C) 2022 The LineageOS Project
+ * Copyright (C) 2022-2023 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 
-extern "C" void _ZN7android21SurfaceComposerClient11Transaction5applyEbb(bool synchronous,
-                                                                         bool oneWay);
+#include <utils/Errors.h>
 
-extern "C" void _ZN7android21SurfaceComposerClient11Transaction5applyEb(bool synchronous) {
-    _ZN7android21SurfaceComposerClient11Transaction5applyEbb(synchronous, false);
+using android::status_t;
+
+extern "C" status_t _ZN7android21SurfaceComposerClient11Transaction5applyEbb(void* thisptr,
+                                                                             bool synchronous,
+                                                                             bool oneWay);
+
+extern "C" status_t _ZN7android21SurfaceComposerClient11Transaction5applyEb(void* thisptr,
+                                                                            bool synchronous) {
+    return _ZN7android21SurfaceComposerClient11Transaction5applyEbb(thisptr, synchronous, false);
 }
