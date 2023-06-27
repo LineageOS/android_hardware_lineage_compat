@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+ifeq ($(NEED_AIDL_NDK_PLATFORM_BACKEND),)
+
 include $(CLEAR_VARS)
 LOCAL_SHARED_LIBRARIES := android.frameworks.stats-V1-ndk
 LOCAL_MODULE := android.frameworks.stats-V1-ndk_platform
@@ -479,3 +481,5 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
+
+endif
