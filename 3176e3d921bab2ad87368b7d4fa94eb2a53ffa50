@@ -16,6 +16,24 @@
       "message": "This unbreaks build in any device sets NEED_AIDL_NDK_PLATFORM_BACKEND. Still works the same way as before, tested on lemonadep that needs android.hardware.graphics.common-V1-ndk_platform installed into vendor.",
       "revId": "3176e3d921bab2ad87368b7d4fa94eb2a53ffa50",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d630018_0d8a3943",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-06-27T12:03:19Z",
+      "side": 1,
+      "message": "This was done this way from the beginning to avoid using NEED_AIDL_NDK_PLATFORM_BACKEND and just build what\u0027s needed.",
+      "parentUuid": "837d25d2_7a5606ee",
+      "revId": "3176e3d921bab2ad87368b7d4fa94eb2a53ffa50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
