@@ -1,0 +1,29 @@
+// Copyright 2006 The Android Open Source Project
+cc_library_shared {
+    name: "libhardware_legacy_vendor",
+    defaults: ["libpower_defaults"],
+    vendor: true,
+
+    shared_libs: [
+        "android.system.suspend@1.0",
+        "libdl",
+    ],
+
+    header_libs: [
+        "libhardware_legacy_headers",
+    ],
+    export_header_lib_headers: ["libhardware_legacy_headers"],
+
+    export_include_dirs: ["include"],
+
+    cflags: [
+        "-DQEMU_HARDWARE",
+        "-Wall",
+        "-Werror",
+    ],
+
+    srcs: [
+        "power.cpp",
+        "uevent.c",
+    ],
+}
