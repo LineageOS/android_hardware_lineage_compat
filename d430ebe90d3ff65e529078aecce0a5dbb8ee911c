@@ -16,6 +16,24 @@
       "message": "eh, I skipped cutils because it\u0027s a copy paste from aosp",
       "revId": "d430ebe90d3ff65e529078aecce0a5dbb8ee911c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e45023a_3fcc2546",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-17T15:34:55Z",
+      "side": 1,
+      "message": "Yea, I had the same feeling that we didn\u0027t touch this on purpose.",
+      "parentUuid": "819c6e80_4908c858",
+      "revId": "d430ebe90d3ff65e529078aecce0a5dbb8ee911c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
