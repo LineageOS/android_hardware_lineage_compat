@@ -312,3 +312,10 @@ cc_library {
     ],
     vendor_available: true,
 }
+
+cc_library_shared {
+    name: "libicuuc_vendor",
+    stem: "libicuuc",
+    shared_libs: ["libandroidicu"],
+    vendor: true,
+}
