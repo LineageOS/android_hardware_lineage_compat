@@ -16,6 +16,24 @@
       "message": "Move next to the NDK shims.",
       "revId": "b1a45724d496a62e096c7f5dfb6ac04607c559ce",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2c8bb96_d267b1af",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 320,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-07-17T19:54:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "50c1bdbe_dab17807",
+      "revId": "b1a45724d496a62e096c7f5dfb6ac04607c559ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
