@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2022 The LineageOS Project
+// Copyright (C) 2022-2023 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -297,7 +297,10 @@ cc_library_shared {
 
 cc_library_shared {
     name: "libui_shim",
-    shared_libs: ["libui"],
+    shared_libs: [
+        "libui",
+        "libutils",
+    ],
     srcs: [
         "libui/Fence.cpp",
         "libui/GraphicBuffer.cpp",
