@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "819c6e80_4908c858",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-07-17T15:34:23Z",
+      "side": 1,
+      "message": "eh, I skipped cutils because it\u0027s a copy paste from aosp",
+      "revId": "d430ebe90d3ff65e529078aecce0a5dbb8ee911c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
