@@ -5,12 +5,16 @@
  */
 
 #include <stdint.h>
+#include <utils/Errors.h>
 
-extern "C" void* _ZN7android13GraphicBuffer4lockEjPPvPiS3_(void* thisptr, uint32_t inUsage,
-                                                           void** vaddr, int32_t* outBytesPerPixel,
-                                                           int32_t* outBytesPerStride);
+using android::status_t;
 
-extern "C" void* _ZN7android13GraphicBuffer4lockEjPPv(void* thisptr, uint32_t inUsage,
-                                                      void** vaddr) {
+extern "C" status_t _ZN7android13GraphicBuffer4lockEjPPvPiS3_(void* thisptr, uint32_t inUsage,
+                                                              void** vaddr,
+                                                              int32_t* outBytesPerPixel,
+                                                              int32_t* outBytesPerStride);
+
+extern "C" status_t _ZN7android13GraphicBuffer4lockEjPPv(void* thisptr, uint32_t inUsage,
+                                                         void** vaddr) {
     return _ZN7android13GraphicBuffer4lockEjPPvPiS3_(thisptr, inUsage, vaddr, nullptr, nullptr);
 }
