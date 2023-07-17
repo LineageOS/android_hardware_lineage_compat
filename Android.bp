@@ -201,6 +201,22 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "android.hardware.graphics.common@1.0_types",
+    srcs: ["interfaces/graphics/common/1.0/types.cpp"],
+    shared_libs: ["android.hardware.graphics.common@1.0"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
+    name: "android.hardware.radio@1.0_types",
+    srcs: ["interfaces/radio/1.0/types.cpp"],
+    shared_libs: ["android.hardware.radio@1.0"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
     name: "android.hidl.base@1.0",
     shared_libs: ["libhidlbase"],
     system_ext_specific: true,
