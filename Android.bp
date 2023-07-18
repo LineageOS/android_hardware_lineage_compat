@@ -332,3 +332,11 @@ cc_library {
     ],
     vendor_available: true,
 }
+
+cc_library_shared {
+    name: "libtinyxml2_shim",
+    srcs: ["libtinyxml2/XMLDocument.cpp"],
+    shared_libs: ["libtinyxml2"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
