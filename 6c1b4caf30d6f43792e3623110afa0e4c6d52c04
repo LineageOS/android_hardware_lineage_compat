@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ee89ffc_9203f7ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32620
+      },
+      "writtenOn": "2023-07-18T17:44:02Z",
+      "side": 1,
+      "message": "I needed this on a Huawei Mate 8 since the camera daemon was complaining about the missing symbol(s):\n- CANNOT LINK EXECUTABLE \"/vendor/bin/CameraDaemon\": cannot locate symbol \"_ZN7android15PermissionCache15checkPermissionERKNS_8String16Eij\" referenced by \"/vendor/bin/CameraDaemon\"...\n- CANNOT LINK EXECUTABLE \"/vendor/bin/CameraDaemon\": cannot locate symbol \"_ZN7android22checkCallingPermissionERKNS_8String16E\" referenced by \"/vendor/bin/CameraDaemon\"...\n- CANNOT LINK EXECUTABLE \"/vendor/bin/CameraDaemon\": cannot locate symbol \"_ZN7android15PermissionCache22checkCallingPermissionERKNS_8String16E\" referenced by \"/vendor/bin/CameraDaemon\"...",
+      "revId": "6c1b4caf30d6f43792e3623110afa0e4c6d52c04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
