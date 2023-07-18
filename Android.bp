@@ -253,6 +253,16 @@ cc_library {
 }
 
 cc_library {
+    name: "libbinder_shim",
+    shared_libs: ["libbinder", "libutils"],
+    srcs: [
+        "libbinder/IServiceManager.cpp",
+        "libbinder/PermissionCache.cpp",
+    ],
+    vendor: true
+}
+
+cc_library {
     name: "libcamera_metadata_shim",
     shared_libs: ["libcamera_metadata"],
     srcs: ["libcamera_metadata/camera_metadata.cpp"],
