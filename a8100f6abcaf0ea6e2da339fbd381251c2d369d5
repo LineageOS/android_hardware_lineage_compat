@@ -22,6 +22,30 @@
       },
       "revId": "a8100f6abcaf0ea6e2da339fbd381251c2d369d5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94f381a8_b0e5a753",
+        "filename": "libtinyxml2/XMLDocument.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-07-18T10:11:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6f590e15_224a78e2",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 1
+      },
+      "revId": "a8100f6abcaf0ea6e2da339fbd381251c2d369d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
