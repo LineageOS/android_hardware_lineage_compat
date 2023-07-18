@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f590e15_224a78e2",
+        "filename": "libtinyxml2/XMLDocument.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-07-18T09:51:44Z",
+      "side": 1,
+      "message": "Move under one single extern \"C\" block, like you did before?",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 1
+      },
+      "revId": "a8100f6abcaf0ea6e2da339fbd381251c2d369d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
