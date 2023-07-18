@@ -353,6 +353,20 @@ cc_library {
 }
 
 cc_library_shared {
+    name: "libsensor_vendor",
+    srcs: [
+        "libsensor/Sensor.cpp",
+        "libsensor/SensorEventQueue.cpp",
+        "libsensor/SensorManager.cpp",
+    ],
+    shared_libs: [
+        "libsensorndkbridge",
+        "libutils",
+    ],
+    vendor: true,
+}
+
+cc_library_shared {
     name: "libtinyxml2_shim",
     srcs: ["libtinyxml2/XMLDocument.cpp"],
     shared_libs: ["libtinyxml2"],
