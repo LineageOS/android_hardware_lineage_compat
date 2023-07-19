@@ -335,6 +335,14 @@ cc_library_shared {
     vendor_available: true,
 }
 
+cc_library_shared {
+    name: "libutils_shim",
+    shared_libs: ["libutils"],
+    srcs: ["libutils/String16.cpp"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
 cc_library {
     name: "libip_checksum_shim",
     whole_static_libs: [
