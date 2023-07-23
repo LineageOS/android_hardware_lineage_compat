@@ -16,6 +16,24 @@
       "message": "I hope you copied that code from the original AOSP as that\u0027s not a valid unicode strcpy routine as a single null byte isn\u0027t strictly ( per definition ) the end of string.\nA valid string may contain null bytes.\nThe null byte is a c-ism denote the end of the cstr.",
       "revId": "118bd4294f227de85646191c8a9beb07375fb729",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd50f0c1_9283a3d0",
+        "filename": "libutils/String16.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-07-23T08:37:27Z",
+      "side": 1,
+      "message": "It is indeed an AOSP fuckup, so it\u0027s fine if the old process used it.",
+      "parentUuid": "829c490c_f372df9d",
+      "revId": "118bd4294f227de85646191c8a9beb07375fb729",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
