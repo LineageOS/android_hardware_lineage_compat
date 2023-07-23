@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "192ed3c6_05b32692",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-07-23T08:19:24Z",
+      "side": 1,
+      "message": "let me get this straight\naosp removed to not inline methods, and now all toString are natively not inline\ncan\u0027t you do the usual dance of namespaces instead of asm?",
+      "revId": "844cbbb2d35d0e62cf85cf1f6a104630410d4857",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
