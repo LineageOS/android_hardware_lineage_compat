@@ -16,6 +16,23 @@
       "message": "Fixes camera on my Huawei Mate 8.",
       "revId": "cc0b71100f646e88dd8e4eccba3ab47c71ba6c03",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5284c082_ecf8559f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-07-26T23:13:21Z",
+      "side": 1,
+      "message": "looks fine, I\u0027ll be checking a bit more how the package handling should be done, but otherwise it\u0027ll be merged sooner than later",
+      "revId": "cc0b71100f646e88dd8e4eccba3ab47c71ba6c03",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
