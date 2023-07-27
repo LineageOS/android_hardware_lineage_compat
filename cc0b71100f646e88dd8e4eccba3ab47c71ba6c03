@@ -33,6 +33,52 @@
       "message": "looks fine, I\u0027ll be checking a bit more how the package handling should be done, but otherwise it\u0027ll be merged sooner than later",
       "revId": "cc0b71100f646e88dd8e4eccba3ab47c71ba6c03",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f511990f_d2c9adc3",
+        "filename": "libsensor/SensorEventQueue.cpp",
+        "patchSetId": 9
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-07-27T15:05:38Z",
+      "side": 1,
+      "message": "this should actually poll on an event...",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 14
+      },
+      "revId": "cc0b71100f646e88dd8e4eccba3ab47c71ba6c03",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81754b32_52292cfc",
+        "filename": "libsensor/SensorManager.cpp",
+        "patchSetId": 9
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-07-27T15:05:38Z",
+      "side": 1,
+      "message": "while the NDK API doesn\u0027t use the packageNames, the original API uses that to ensure permissions were granted.\nWe should care, but it may be too much work...",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 1
+      },
+      "revId": "cc0b71100f646e88dd8e4eccba3ab47c71ba6c03",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
