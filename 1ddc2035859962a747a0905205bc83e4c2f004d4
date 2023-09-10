@@ -34,6 +34,24 @@
       "parentUuid": "205d208c_5fa88aa4",
       "revId": "1ddc2035859962a747a0905205bc83e4c2f004d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4448a777_5356a628",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-09-10T11:53:55Z",
+      "side": 1,
+      "message": "Ah pardon, checked only Android.mk",
+      "parentUuid": "226de134_0663e6c1",
+      "revId": "1ddc2035859962a747a0905205bc83e4c2f004d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
