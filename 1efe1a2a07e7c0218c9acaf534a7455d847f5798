@@ -70,6 +70,30 @@
       },
       "revId": "1efe1a2a07e7c0218c9acaf534a7455d847f5798",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a64fc4ef_4fc8f107",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-09-10T20:54:45Z",
+      "side": 1,
+      "message": "so, do I have to leave the unused files there?",
+      "parentUuid": "2f369002_ae7339d9",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 32
+      },
+      "revId": "1efe1a2a07e7c0218c9acaf534a7455d847f5798",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
