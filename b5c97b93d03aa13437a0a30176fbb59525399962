@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "abb381f7_d9352314",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-10T20:36:01Z",
+      "side": 1,
+      "message": "If you look closely, our naming convention is libname_shim (_shim always as suffix). Stick to that, please.",
+      "revId": "b5c97b93d03aa13437a0a30176fbb59525399962",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
