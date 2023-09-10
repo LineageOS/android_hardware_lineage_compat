@@ -129,6 +129,24 @@
       "parentUuid": "5bf5a43b_706435b3",
       "revId": "1efe1a2a07e7c0218c9acaf534a7455d847f5798",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92381d62_9bc193d4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-10T21:02:34Z",
+      "side": 1,
+      "message": "For the record, I support keeping all history, but doing it in this \"trimmed\" way becomes pointless.",
+      "parentUuid": "20fc6155_7b719426",
+      "revId": "1efe1a2a07e7c0218c9acaf534a7455d847f5798",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
