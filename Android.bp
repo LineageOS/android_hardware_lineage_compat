@@ -265,7 +265,7 @@ cc_library {
 cc_library {
     name: "libc_shim_mutexdestroy",
     shared_libs: ["libc"],
-    srcs: ["libc/bionic/pthread_mutex_destroy.cpp"],
+    srcs: ["libc/pthread_mutex_destroy.cpp"],
     sanitize: { never: true },
     stl: "none",
     vendor: true
@@ -274,7 +274,7 @@ cc_library {
 cc_library {
     name: "libc_shim_pthreadts",
     shared_libs: ["libc"],
-    srcs: ["libc/bionic/pthread_cond_timedwait.cpp"],
+    srcs: ["libc/pthread_cond_timedwait.cpp"],
     vendor: true
 }
 
