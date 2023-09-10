@@ -46,6 +46,30 @@
       },
       "revId": "1efe1a2a07e7c0218c9acaf534a7455d847f5798",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f369002_ae7339d9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-10T20:53:03Z",
+      "side": 1,
+      "message": "Ok, so this commit alone without that part doesn\u0027t make any sense.",
+      "parentUuid": "08ddd74b_408ec372",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 32
+      },
+      "revId": "1efe1a2a07e7c0218c9acaf534a7455d847f5798",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
