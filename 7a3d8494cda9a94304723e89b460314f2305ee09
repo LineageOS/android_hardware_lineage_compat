@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0b99024_315d40cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-09-10T11:07:52Z",
+      "side": 1,
+      "message": "Instead of doing a separate cleanup commit, amend the commits that should have deleted those",
+      "revId": "7a3d8494cda9a94304723e89b460314f2305ee09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
