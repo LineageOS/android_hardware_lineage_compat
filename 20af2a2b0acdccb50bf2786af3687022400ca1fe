@@ -16,6 +16,24 @@
       "message": "Drop this flag from this commit",
       "revId": "20af2a2b0acdccb50bf2786af3687022400ca1fe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6176f9ea_09c73196",
+        "filename": "libc/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-09-10T11:34:24Z",
+      "side": 1,
+      "message": "better to lemme drop this commit maybe\n\npthread_cond.cpp is unused in the end anyway",
+      "parentUuid": "b92f1115_219e4600",
+      "revId": "20af2a2b0acdccb50bf2786af3687022400ca1fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
