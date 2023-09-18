@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47af6f93_8dbd175a",
+        "filename": "Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-09-18T09:27:13Z",
+      "side": 1,
+      "message": "Add \"_shim\" suffix, to follow the naming convention.",
+      "range": {
+        "startLine": 364,
+        "startChar": 11,
+        "endLine": 364,
+        "endChar": 24
+      },
+      "revId": "7377a641cd6b5c3c44180cd5a0700c52228a2571",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
