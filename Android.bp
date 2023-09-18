@@ -201,6 +201,14 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "android.hardware.gnss@1.0_types",
+    srcs: ["interfaces/gnss/1.0/types.cpp"],
+    shared_libs: ["android.hardware.gnss@1.0"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
     name: "android.hardware.graphics.common@1.0_types",
     srcs: ["interfaces/graphics/common/1.0/types.cpp"],
     shared_libs: ["android.hardware.graphics.common@1.0"],
