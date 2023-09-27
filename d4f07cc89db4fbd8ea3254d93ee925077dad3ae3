@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1545a78b_39001a85",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2023-09-27T14:18:22Z",
+      "side": 1,
+      "message": "Uploaded for reference to discuss proper naming.\n\nWill then also fix Android.bp and sort alphabetically.",
+      "revId": "d4f07cc89db4fbd8ea3254d93ee925077dad3ae3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
