@@ -323,6 +323,14 @@ cc_library {
 }
 
 cc_library {
+    name: "libhidlbase_shim",
+    srcs: ["libhidlbase/gBnsConstructorMap.cpp"],
+    shared_libs: ["libhidlbase"],
+    compile_multilib: "both",
+    vendor: true,
+}
+
+cc_library {
     name: "libmemset_shim",
     target: {
         android_arm: {
