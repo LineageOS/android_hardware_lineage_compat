@@ -404,3 +404,11 @@ cc_library_shared {
     compile_multilib: "64",
     vendor: true,
 }
+
+cc_library {
+    name: "libbnconstructormap_shim",
+    srcs: ["libhidlbase/bnconstructormap.cpp"],
+    shared_libs: ["libhidlbase"],
+    compile_multilib: "both",
+    vendor: true,
+}
