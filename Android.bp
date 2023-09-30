@@ -256,7 +256,10 @@ cc_defaults {
 cc_library {
     name: "libbase_shim",
     shared_libs: ["libbase"],
-    srcs: ["libbase/logging.cpp"],
+    srcs: [
+        "libbase/logging.cpp",
+        "libbase/strings.cpp",
+    ],
     vendor: true
 }
 
