@@ -16,6 +16,46 @@
       "message": "Required by a bunch of MTK devices, especially those with an NVRAM stack:\n- CANNOT LINK EXECUTABLE \"/vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service\": cannot locate symbol \"_ZN7android4base10StartsWithERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPKc\" referenced by \"/vendor/lib64/libnvram.so\"...",
       "revId": "99e092b223a4eea0c62dda5b44bdc7ce11537ad1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c90ad1a8_9455a067",
+        "filename": "libbase/strings.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-30T14:54:41Z",
+      "side": 1,
+      "message": "s",
+      "range": {
+        "startLine": 12,
+        "startChar": 35,
+        "endLine": 12,
+        "endChar": 38
+      },
+      "revId": "99e092b223a4eea0c62dda5b44bdc7ce11537ad1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d32117c_21dee75b",
+        "filename": "libbase/strings.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-09-30T14:54:41Z",
+      "side": 1,
+      "message": "It\u0027s probably fine, but I don\u0027t like the implicit casting to sv\nDo\n`return strncmp(s.c_str(), prefix, strlen(prefix)) \u003d\u003d 0;`",
+      "revId": "99e092b223a4eea0c62dda5b44bdc7ce11537ad1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
