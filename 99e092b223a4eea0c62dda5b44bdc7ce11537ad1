@@ -41,6 +41,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e6ced23_f7afdfe9",
+        "filename": "libbase/strings.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 32620
+      },
+      "writtenOn": "2023-09-30T15:02:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c90ad1a8_9455a067",
+      "range": {
+        "startLine": 12,
+        "startChar": 35,
+        "endLine": 12,
+        "endChar": 38
+      },
+      "revId": "99e092b223a4eea0c62dda5b44bdc7ce11537ad1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9d32117c_21dee75b",
@@ -54,6 +78,24 @@
       "writtenOn": "2023-09-30T14:54:41Z",
       "side": 1,
       "message": "It\u0027s probably fine, but I don\u0027t like the implicit casting to sv\nDo\n`return strncmp(s.c_str(), prefix, strlen(prefix)) \u003d\u003d 0;`",
+      "revId": "99e092b223a4eea0c62dda5b44bdc7ce11537ad1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6100c3d_61ed9781",
+        "filename": "libbase/strings.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 32620
+      },
+      "writtenOn": "2023-09-30T15:02:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9d32117c_21dee75b",
       "revId": "99e092b223a4eea0c62dda5b44bdc7ce11537ad1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
