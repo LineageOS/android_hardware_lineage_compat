@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1c16977_b8b9fb9b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32620
+      },
+      "writtenOn": "2023-09-30T14:42:01Z",
+      "side": 1,
+      "message": "Required by a bunch of MTK devices, especially those with an NVRAM stack:\n- CANNOT LINK EXECUTABLE \"/vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service\": cannot locate symbol \"_ZN7android4base10StartsWithERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPKc\" referenced by \"/vendor/lib64/libnvram.so\"...",
+      "revId": "99e092b223a4eea0c62dda5b44bdc7ce11537ad1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
