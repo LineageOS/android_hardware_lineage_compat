@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac4cdce7_9898eccc",
+        "filename": "libbase/strings.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32620
+      },
+      "writtenOn": "2023-10-03T08:32:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e49bf9c_85516fdf",
+      "revId": "c27de50275e2adf9c2a8cb9e421b9405701d3f3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "349b60d7_ad5c5d3f",
@@ -48,6 +66,24 @@
       "writtenOn": "2023-10-03T07:29:55Z",
       "side": 1,
       "message": "I think strcmp should be included explicitly, string.h",
+      "revId": "c27de50275e2adf9c2a8cb9e421b9405701d3f3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "398a8672_04719909",
+        "filename": "libbase/strings.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 32620
+      },
+      "writtenOn": "2023-10-03T08:32:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "349b60d7_ad5c5d3f",
       "revId": "c27de50275e2adf9c2a8cb9e421b9405701d3f3a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
