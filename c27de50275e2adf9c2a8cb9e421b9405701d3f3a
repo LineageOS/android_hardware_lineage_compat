@@ -16,6 +16,40 @@
       "message": "Bump?",
       "revId": "c27de50275e2adf9c2a8cb9e421b9405701d3f3a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e49bf9c_85516fdf",
+        "filename": "libbase/strings.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-10-03T07:29:55Z",
+      "side": 1,
+      "message": "probably not needed",
+      "revId": "c27de50275e2adf9c2a8cb9e421b9405701d3f3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "349b60d7_ad5c5d3f",
+        "filename": "libbase/strings.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2023-10-03T07:29:55Z",
+      "side": 1,
+      "message": "I think strcmp should be included explicitly, string.h",
+      "revId": "c27de50275e2adf9c2a8cb9e421b9405701d3f3a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
