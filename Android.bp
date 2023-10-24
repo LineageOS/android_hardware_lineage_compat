@@ -414,3 +414,41 @@ cc_library_shared {
     compile_multilib: "64",
     vendor: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-full-vendorcompat",
+    stem: "libprotobuf-cpp-full",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v29/arm/libprotobuf-cpp-full.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v29/arm64/libprotobuf-cpp-full.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-lite-vendorcompat",
+    stem: "libprotobuf-cpp-lite",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v29/arm/libprotobuf-cpp-lite.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v29/arm64/libprotobuf-cpp-lite.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
