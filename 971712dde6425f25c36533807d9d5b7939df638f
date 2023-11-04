@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1db19014_c7f80a0f",
+        "filename": "Android.bp",
+        "patchSetId": 2
+      },
+      "lineNbr": 326,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-04T15:10:14Z",
+      "side": 1,
+      "message": "This name is cool enough so that we can sed s/libhidltransport.so/libhidlbase_shim.so/g.\n\n- https://review.lineageos.org/c/LineageOS/android_device_fxtec_pro1/+/372473",
+      "range": {
+        "startLine": 326,
+        "startChar": 11,
+        "endLine": 326,
+        "endChar": 27
+      },
+      "revId": "971712dde6425f25c36533807d9d5b7939df638f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
