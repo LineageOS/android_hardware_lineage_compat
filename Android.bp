@@ -325,9 +325,16 @@ cc_library {
 cc_library {
     name: "libhidlbase_shim",
     srcs: ["libhidlbase/gBnsConstructorMap.cpp"],
-    shared_libs: ["libhidlbase"],
+    shared_libs: ["libcutils", "liblog", "libutils"],
+    static_libs: ["libhwbinder-impl-internal"],
     compile_multilib: "both",
     vendor: true,
+    header_libs: ["libfmq-base"],
+    generated_headers: ["android.hidl.base@1.0_genc++_headers"],
+    include_dirs: [
+        "system/libhidl/base/include",
+        "system/libhidl/transport/include",
+    ],
 }
 
 cc_library {
