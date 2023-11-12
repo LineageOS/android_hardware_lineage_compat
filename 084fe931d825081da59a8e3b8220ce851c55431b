@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef156a46_1fb55a59",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-11-12T21:25:52Z",
+      "side": 1,
+      "message": "this lets me ship nile with 0 old vndk prebuilts.",
+      "revId": "084fe931d825081da59a8e3b8220ce851c55431b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
