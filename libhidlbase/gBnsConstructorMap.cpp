@@ -10,6 +10,6 @@ DoNotDestruct<BnConstructorMap> gBnConstructorMap{};
 // Deprecated; kept for ABI compatibility. Use getBsConstructorMap.
 DoNotDestruct<BsConstructorMap> gBsConstructorMap{};
 
-} // namespace details
-} // namespace hardware
-} // namespace android
+}  // namespace details
+}  // namespace hardware
+}  // namespace android
