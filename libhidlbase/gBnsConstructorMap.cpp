@@ -5,10 +5,10 @@ namespace hardware {
 namespace details {
 
 // Deprecated; kept for ABI compatibility. Use getBnConstructorMap.
-DoNotDestruct<BnConstructorMap> gBnConstructorMap{};
+auto gBnConstructorMap = &getBnConstructorMap();
 
 // Deprecated; kept for ABI compatibility. Use getBsConstructorMap.
-DoNotDestruct<BsConstructorMap> gBsConstructorMap{};
+auto gBsConstructorMap = &getBsConstructorMap();
 
 }  // namespace details
 }  // namespace hardware
