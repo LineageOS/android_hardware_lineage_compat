@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6e2dc20_03bef53c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28270
+      },
+      "writtenOn": "2023-12-23T12:34:12Z",
+      "side": 1,
+      "message": "If we need to build these ndk_platform variants, we can just need to add NEED_AIDL_NDK_PLATFORM_BACKEND :\u003d true and then build the ones we need. These compat libs conflicts with DTs which has NEED_AIDL_NDK_PLATFORM_BACKEND :\u003d true set and shows duplicate package error.",
+      "revId": "c3e0f5da224e8451ce00b22d49d8e1167cab564b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
