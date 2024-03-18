@@ -296,6 +296,24 @@ cc_library {
     vendor: true
 }
 
+cc_prebuilt_library_shared {
+    name: "libcrypto-v33",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v33/arm/libcrypto-v33.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v33/arm64/libcrypto-v33.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
+
 cc_library {
     name: "libcutils_shim",
     shared_libs: [
