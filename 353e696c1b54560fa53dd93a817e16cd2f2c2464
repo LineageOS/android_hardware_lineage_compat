@@ -69,6 +69,24 @@
       "message": "I would prefer that these be renamed to something else (for example libcrypto-compat-v33.so or something like this) to not conflict with many people already shipping it in the DT, for example:\nhttps://github.com/LineageOS/android_device_samsung_sm7125-common/blob/lineage-21/common.mk#L413\n\nAnother method would be guarding this repo with a namespace",
       "revId": "353e696c1b54560fa53dd93a817e16cd2f2c2464",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3b8d771_2ecca959",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-03-19T19:57:47Z",
+      "side": 1,
+      "message": "you sure that you can boot up w/o this change + https://review.lineageos.org/c/LineageOS/android_device_samsung_gts4lv-common/+/386517?",
+      "parentUuid": "cf191266_5037eb68",
+      "revId": "353e696c1b54560fa53dd93a817e16cd2f2c2464",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
