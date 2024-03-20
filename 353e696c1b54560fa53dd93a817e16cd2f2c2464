@@ -122,6 +122,24 @@
       "message": "Im booting just fine building this by symlinking the blob instead of using this repo, as are others. Keeping it as is makes this a potentially breaking change, and just renaming the blobs will fix this issue.",
       "revId": "353e696c1b54560fa53dd93a817e16cd2f2c2464",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0528bdc8_3774020c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-03-20T07:50:28Z",
+      "side": 1,
+      "message": "Symlinking a VNDK lib is always bad",
+      "parentUuid": "681f5dd4_9262135a",
+      "revId": "353e696c1b54560fa53dd93a817e16cd2f2c2464",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
