@@ -105,6 +105,23 @@
       "parentUuid": "d3b8d771_2ecca959",
       "revId": "353e696c1b54560fa53dd93a817e16cd2f2c2464",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "681f5dd4_9262135a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31815
+      },
+      "writtenOn": "2024-03-20T06:56:49Z",
+      "side": 1,
+      "message": "Im booting just fine building this by symlinking the blob instead of using this repo, as are others. Keeping it as is makes this a potentially breaking change, and just renaming the blobs will fix this issue.",
+      "revId": "353e696c1b54560fa53dd93a817e16cd2f2c2464",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
