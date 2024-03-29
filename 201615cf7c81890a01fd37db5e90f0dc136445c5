@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "010c4f17_f58e8c39",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-03-29T08:57:27Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it be better to also name this lineage.hardware.radio.config?",
+      "range": {
+        "startLine": 10,
+        "startChar": 14,
+        "endLine": 10,
+        "endChar": 43
+      },
+      "revId": "201615cf7c81890a01fd37db5e90f0dc136445c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
