@@ -18,58 +18,25 @@ else
 _lib_dir := lib
 endif
 
-include $(CLEAR_VARS)
-_version := 1.0
-_sed_pattern := "s|$(_frontend_hidl_package_name)@$(_version)::$(_frontend_hidl_interface_name)|$(_backend_hidl_package_name)@$(_version)::$(_backend_hidl_interface_name)|g;s|$(_frontend_hidl_package_name)(@1\.[0-9]\.so)|$(_shim_hidl_library_name)\1|g"
+define _shim_hidl_library_template
+	_version := $(1)
+	_sed_pattern := "s|$$(_frontend_hidl_package_name)@$$(_version)::$$(_frontend_hidl_interface_name)|$$(_backend_hidl_package_name)@$$(_version)::$$(_backend_hidl_interface_name)|g;s|$$(_frontend_hidl_package_name)(@[0-9]+\.[0-9]+\.so)|$$(_shim_hidl_library_name)\1|g"
 
-LOCAL_MODULE       := $(_shim_hidl_library_name)@$(_version)
-LOCAL_MODULE_STEM  := $(LOCAL_MODULE).so
-LOCAL_MODULE_CLASS := DATA
-LOCAL_MODULE_TAGS  := optional
-LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/$(_lib_dir)
-LOCAL_REQUIRED_MODULES := $(_frontend_hidl_package_name)@$(_version).vendor
-LOCAL_PREBUILT_MODULE_FILE := $(TARGET_OUT_VENDOR)/$(_lib_dir)/$(_frontend_hidl_package_name)@$(_version).so
-LOCAL_POST_INSTALL_CMD := /usr/bin/sed -E -i $(_sed_pattern) $(LOCAL_MODULE_PATH)/$(LOCAL_MODULE_STEM)
-include $(BUILD_PREBUILT)
+	include $$(CLEAR_VARS)
 
-include $(CLEAR_VARS)
-_version := 1.1
-_sed_pattern := "s|$(_frontend_hidl_package_name)@$(_version)::$(_frontend_hidl_interface_name)|$(_backend_hidl_package_name)@$(_version)::$(_backend_hidl_interface_name)|g;s|$(_frontend_hidl_package_name)(@1\.[0-9]\.so)|$(_shim_hidl_library_name)\1|g"
+	LOCAL_MODULE       := $$(_shim_hidl_library_name)@$$(_version)
 
-LOCAL_MODULE       := $(_shim_hidl_library_name)@$(_version)
-LOCAL_MODULE_STEM  := $(LOCAL_MODULE).so
-LOCAL_MODULE_CLASS := DATA
-LOCAL_MODULE_TAGS  := optional
-LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/$(_lib_dir)
-LOCAL_REQUIRED_MODULES := $(_frontend_hidl_package_name)@$(_version).vendor
-LOCAL_PREBUILT_MODULE_FILE := $(TARGET_OUT_VENDOR)/$(_lib_dir)/$(_frontend_hidl_package_name)@$(_version).so
-LOCAL_POST_INSTALL_CMD := /usr/bin/sed -E -i $(_sed_pattern) $(LOCAL_MODULE_PATH)/$(LOCAL_MODULE_STEM)
-include $(BUILD_PREBUILT)
+	LOCAL_MODULE_STEM  := $$(LOCAL_MODULE).so
+	LOCAL_MODULE_CLASS := DATA
+	LOCAL_MODULE_TAGS  := optional
+	LOCAL_MODULE_PATH  := $$(TARGET_OUT_VENDOR)/$$(_lib_dir)
+	LOCAL_REQUIRED_MODULES := $$(_frontend_hidl_package_name)@$$(_version).vendor
+	LOCAL_PREBUILT_MODULE_FILE := $$(TARGET_OUT_VENDOR)/$$(_lib_dir)/$$(_frontend_hidl_package_name)@$$(_version).so
+	LOCAL_POST_INSTALL_CMD := /usr/bin/sed -E -i $$(_sed_pattern) $$(LOCAL_MODULE_PATH)/$$(LOCAL_MODULE_STEM)
+	include $$(BUILD_PREBUILT)
+endef
 
-include $(CLEAR_VARS)
-_version := 1.2
-_sed_pattern := "s|$(_frontend_hidl_package_name)@$(_version)::$(_frontend_hidl_interface_name)|$(_backend_hidl_package_name)@$(_version)::$(_backend_hidl_interface_name)|g;s|$(_frontend_hidl_package_name)(@1\.[0-9]\.so)|$(_shim_hidl_library_name)\1|g"
-
-LOCAL_MODULE       := $(_shim_hidl_library_name)@$(_version)
-LOCAL_MODULE_STEM  := $(LOCAL_MODULE).so
-LOCAL_MODULE_CLASS := DATA
-LOCAL_MODULE_TAGS  := optional
-LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/$(_lib_dir)
-LOCAL_REQUIRED_MODULES := $(_frontend_hidl_package_name)@$(_version).vendor
-LOCAL_PREBUILT_MODULE_FILE := $(TARGET_OUT_VENDOR)/$(_lib_dir)/$(_frontend_hidl_package_name)@$(_version).so
-LOCAL_POST_INSTALL_CMD := /usr/bin/sed -E -i $(_sed_pattern) $(LOCAL_MODULE_PATH)/$(LOCAL_MODULE_STEM)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-_version := 1.3
-_sed_pattern := "s|$(_frontend_hidl_package_name)@$(_version)::$(_frontend_hidl_interface_name)|$(_backend_hidl_package_name)@$(_version)::$(_backend_hidl_interface_name)|g;s|$(_frontend_hidl_package_name)(@1\.[0-9]\.so)|$(_shim_hidl_library_name)\1|g"
-
-LOCAL_MODULE       := $(_shim_hidl_library_name)@$(_version)
-LOCAL_MODULE_STEM  := $(LOCAL_MODULE).so
-LOCAL_MODULE_CLASS := DATA
-LOCAL_MODULE_TAGS  := optional
-LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/$(_lib_dir)
-LOCAL_REQUIRED_MODULES := $(_frontend_hidl_package_name)@$(_version).vendor
-LOCAL_PREBUILT_MODULE_FILE := $(TARGET_OUT_VENDOR)/$(_lib_dir)/$(_frontend_hidl_package_name)@$(_version).so
-LOCAL_POST_INSTALL_CMD := /usr/bin/sed -E -i $(_sed_pattern) $(LOCAL_MODULE_PATH)/$(LOCAL_MODULE_STEM)
-include $(BUILD_PREBUILT)
+$(eval $(call _shim_hidl_library_template,1.0))
+$(eval $(call _shim_hidl_library_template,1.1))
+$(eval $(call _shim_hidl_library_template,1.2))
+$(eval $(call _shim_hidl_library_template,1.3))
