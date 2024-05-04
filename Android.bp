@@ -296,6 +296,24 @@ cc_library {
     vendor: true
 }
 
+cc_library_shared {
+    name: "libcamera_provider_shim",
+    shared_libs: [
+        "camera.device@1.0-impl",
+        "camera.device@3.2-impl",
+        "camera.device@3.3-impl",
+        "camera.device@3.4-impl",
+        "camera.device@3.5-impl",
+        "libcamera_metadata",
+    ],
+    include_dirs: [
+        "hardware/interfaces/camera/common/default/include/",
+        "hardware/libhardware/include",
+    ],
+    srcs: ["libcamera_provider/camera_provider.cpp"],
+    vendor: true,
+}
+
 cc_prebuilt_library_shared {
     name: "libcrypto-v33",
     vendor: true,
