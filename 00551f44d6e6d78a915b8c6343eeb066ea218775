@@ -33,6 +33,23 @@
       "message": "https://cs.android.com/android/platform/superproject/main/+/main:hardware/interfaces/camera/common/default/include/CameraModule.h;drc\u003d92a07c46716df0efdbc93e4c2d5eb3746052c764;l\u003d97\n\nThey provide a src compat that simply points to this same symbol, so gtg",
       "revId": "00551f44d6e6d78a915b8c6343eeb066ea218775",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "caf48d42_b92466d2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2024-05-05T11:25:26Z",
+      "side": 1,
+      "message": "mi cámara no sirve para grabar",
+      "revId": "00551f44d6e6d78a915b8c6343eeb066ea218775",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
