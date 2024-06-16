@@ -22,4 +22,11 @@ status_t _ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPvP
     return _ZN7android19GraphicBufferMapper4lockEPK13native_handlejRKNS_4RectEPPv(
             thisptr, handle, usage, bounds, vaddr);
 }
+
+status_t _ZNK7android14Gralloc4Mapper6unlockEPK13native_handle(buffer_handle_t handle);
+
+status_t _ZN7android19GraphicBufferMapper6unlockEPK13native_handle(
+        buffer_handle_t handle, android::base::unique_fd* /*outFence*/) {
+    return _ZNK7android14Gralloc4Mapper6unlockEPK13native_handle(handle);
+}
 }
