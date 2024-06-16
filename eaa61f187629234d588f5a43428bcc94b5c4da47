@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cde76fad_0c29d2c2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-06-16T15:28:08Z",
+      "side": 1,
+      "message": "Wasn\u0027t this unintentionally carried over from previous change?",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 14
+      },
+      "revId": "eaa61f187629234d588f5a43428bcc94b5c4da47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
