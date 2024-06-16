@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3409afa_d9943ea7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2024-06-16T15:11:12Z",
+      "side": 1,
+      "message": "Required by our IMS stack after QPR3 (tested on Xiaomi mt6895)",
+      "revId": "299f5c9bc848d6bed09424323f68ceaf0f9c41dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
