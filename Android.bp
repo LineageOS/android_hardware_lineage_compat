@@ -345,6 +345,18 @@ cc_library {
 }
 
 cc_library {
+    name: "libdisplayconfig_shim",
+    shared_libs: [
+        "libutils",
+        "vendor.display.config@2.0",
+    ],
+    srcs: [
+        "libdisplayconfig/DisplayConfig.cpp",
+    ],
+    vendor: true,
+}
+
+cc_library {
     name: "libgui_shim",
     defaults: ["libgui_shim_defaults"],
     shared_libs: ["libgui"],
