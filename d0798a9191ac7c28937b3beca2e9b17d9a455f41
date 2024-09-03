@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6933c2ad_b7cdeb65",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2024-09-03T16:44:19Z",
+      "side": 1,
+      "message": "Test: fixes elf checks",
+      "revId": "d0798a9191ac7c28937b3beca2e9b17d9a455f41",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
