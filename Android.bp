@@ -239,6 +239,22 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "android.hardware.sensors@1.0-convert-shared",
+    shared_libs: ["libhidlbase"],
+    static_libs: ["android.hardware.sensors@1.0-convert"],
+    vendor_available: true,
+    ldflags: [
+        "-u _ZN7android8hardware7sensors4V1_014implementation15convertToSensorERKNS2_10SensorInfoEP8sensor_t",
+        "-u _ZN7android8hardware7sensors4V1_014implementation17convertFromSensorERK8sensor_tPNS2_10SensorInfoE",
+        "-u _ZN7android8hardware7sensors4V1_014implementation20convertFromRateLevelENS2_9RateLevelE",
+        "-u _ZN7android8hardware7sensors4V1_014implementation20convertToSensorEventERKNS2_5EventEP15sensors_event_t",
+        "-u _ZN7android8hardware7sensors4V1_014implementation22convertFromSensorEventERK15sensors_event_tPNS2_5EventE",
+        "-u _ZN7android8hardware7sensors4V1_014implementation23convertFromASensorEventERK12ASensorEventPNS2_5EventE",
+        "-u _ZN7android8hardware7sensors4V1_014implementation24convertFromSharedMemInfoERKNS2_13SharedMemInfoEP20sensors_direct_mem_t",
+    ],
+}
+
+cc_library_shared {
     name: "libavservices_minijail_vendor",
     shared_libs: ["libavservices_minijail"],
     vendor: true,
