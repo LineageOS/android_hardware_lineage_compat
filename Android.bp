@@ -239,6 +239,13 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "android.hardware.sensors@1.0-convert-shared",
+    shared_libs: ["libhidlbase"],
+    whole_static_libs: ["android.hardware.sensors@1.0-convert"],
+    vendor_available: true,
+}
+
+cc_library_shared {
     name: "libaudioproxy_shim",
     srcs: ["libaudioproxy/libaudioproxy_shim.cpp"],
     proprietary: true,
