@@ -33,6 +33,24 @@
       "message": "To avoid I81ac625b629a9f3c5586dee43b628b3800942172, can\u0027t you force adding those symbols by referencing them somehow in a .cpp file?",
       "revId": "d4d124e950bb3ca89341da7eeb5fc53174e37c3c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3cb17c7_6af08676",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2024-09-04T06:30:57Z",
+      "side": 1,
+      "message": "Yes, but that\u0027d be rather ugly (as I have to call all those, thus create dummy code for it, and to make it compile I need the header files, parameters, which generates warnings etc) and will not really express what I want to achieve (which is really just exposing these symbols)",
+      "parentUuid": "fabea82f_1b2ce6cf",
+      "revId": "d4d124e950bb3ca89341da7eeb5fc53174e37c3c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
