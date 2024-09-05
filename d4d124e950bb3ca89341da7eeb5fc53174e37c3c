@@ -51,6 +51,24 @@
       "parentUuid": "fabea82f_1b2ce6cf",
       "revId": "d4d124e950bb3ca89341da7eeb5fc53174e37c3c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e02b801c_2ce522f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2024-09-05T12:34:48Z",
+      "side": 1,
+      "message": "I just learned that I can just use whole_static_libs instead...",
+      "parentUuid": "e3cb17c7_6af08676",
+      "revId": "d4d124e950bb3ca89341da7eeb5fc53174e37c3c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
