@@ -378,7 +378,10 @@ cc_library {
 
 cc_library {
     name: "libhidlbase_shim",
-    srcs: ["libhidlbase/gBnsConstructorMap.cpp"],
+    srcs: [
+        "libhidlbase/gBnsConstructorMap.cpp",
+        "libhidlbase/Parcel.cpp",
+    ],
     shared_libs: ["libhidlbase"],
     compile_multilib: "both",
     vendor: true,
