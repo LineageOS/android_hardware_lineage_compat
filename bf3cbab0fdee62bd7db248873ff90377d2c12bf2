@@ -51,6 +51,29 @@
       "parentUuid": "e67e3d94_f90bb56a",
       "revId": "bf3cbab0fdee62bd7db248873ff90377d2c12bf2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "904952de_58247c13",
+        "filename": "libhidlbase/Parcel.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-09-06T20:32:19Z",
+      "side": 1,
+      "message": "```cpp\nstatus_t Parcel::setData(const uint8_t* buffer, size_t len)\n{\n    status_t err \u003d setDataSize(len);\n    if (err \u003d\u003d NO_ERROR) {\n        memcpy(const_cast\u003cuint8_t*\u003e(data()), buffer, len);\n    }\n    return err;\n}\n```\n\nand get rid of everything else?",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 15
+      },
+      "revId": "bf3cbab0fdee62bd7db248873ff90377d2c12bf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
