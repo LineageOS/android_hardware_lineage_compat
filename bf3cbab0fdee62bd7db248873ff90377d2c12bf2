@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e619cb10_f945cafc",
+        "filename": "libhidlbase/Parcel.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-09-06T15:28:58Z",
+      "side": 1,
+      "message": "this is probably not optimal :\u0027)",
+      "revId": "bf3cbab0fdee62bd7db248873ff90377d2c12bf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
