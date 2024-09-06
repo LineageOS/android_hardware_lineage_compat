@@ -33,6 +33,24 @@
       "message": "does extern work?",
       "revId": "bf3cbab0fdee62bd7db248873ff90377d2c12bf2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dae9b624_614efbb9",
+        "filename": "libhidlbase/Parcel.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-09-06T20:24:46Z",
+      "side": 1,
+      "message": "no, it\u0027s declared as static in the original file thus it complains about the symbol missing :/",
+      "parentUuid": "e67e3d94_f90bb56a",
+      "revId": "bf3cbab0fdee62bd7db248873ff90377d2c12bf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
