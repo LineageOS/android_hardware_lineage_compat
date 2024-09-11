@@ -351,6 +351,15 @@ cc_prebuilt_library_shared {
 }
 
 cc_library {
+    name: "libcrypto_shim",
+    shared_libs: ["libcrypto"],
+    srcs: [
+        "libcrypto/cbs.c",
+    ],
+    vendor: true
+}
+
+cc_library {
     name: "libcutils_shim",
     shared_libs: [
         "libcutils",
