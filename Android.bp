@@ -393,6 +393,15 @@ cc_library {
 }
 
 cc_library {
+    name: "libmeminfo_shim",
+    shared_libs: ["libmeminfo"],
+    srcs: [
+        "libmeminfo/procmeminfo.cpp",
+    ],
+    vendor: true
+}
+
+cc_library {
     name: "libmemset_shim",
     target: {
         android_arm: {
