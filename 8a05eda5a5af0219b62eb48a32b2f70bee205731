@@ -16,6 +16,24 @@
       "message": "can you try this patchset?",
       "revId": "8a05eda5a5af0219b62eb48a32b2f70bee205731",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "52a25ebe_bb5abdcf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-09-12T16:00:24Z",
+      "side": 1,
+      "message": "it seems to run fine, though i\u0027m not sure in which cases this is actually used by my blobs",
+      "parentUuid": "40c7b7c5_488d13c7",
+      "revId": "8a05eda5a5af0219b62eb48a32b2f70bee205731",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
