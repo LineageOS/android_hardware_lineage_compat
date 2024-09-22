@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e9d9346_190b9a91",
+        "filename": "libmeminfo/procmeminfo.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-09-22T13:07:09Z",
+      "side": 1,
+      "message": "does this not work?\n\n```cpp\nbool _ZN7android7meminfo11ProcMemInfo18ForEachVmaFromMapsERKNSt3__18functionIFvRKNS0_3VmaEEEE(\n        const VmaCallback\u0026 callback) {\n    return _ZN7android7meminfo11ProcMemInfo18ForEachVmaFromMapsERKNSt3__18functionIFbRNS0_3VmaEEEE(\n            callback);\n}\n```",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 1
+      },
+      "revId": "14ea60b1cc95bcecb686a9b2ba549a26d7b2f847",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
