@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ceeb8784_2f2c8976",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2024-09-28T17:12:06Z",
+      "side": 1,
+      "message": "Test: Allows MediaTek A12 camera stack to properly load when checkelf is enabled (some of those libs have missing symbols related to liblog.so)",
+      "revId": "eb3da9e2c924f97f0526835f2d0d1814ecef4054",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
