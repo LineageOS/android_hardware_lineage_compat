@@ -53,6 +53,42 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ffdab67_96892486",
+        "filename": "libhidlbase/Parcel.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-09-29T14:04:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e619cb10_f945cafc",
+      "revId": "bf3cbab0fdee62bd7db248873ff90377d2c12bf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d1547a2_901cd3c4",
+        "filename": "libhidlbase/Parcel.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-09-29T14:04:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dae9b624_614efbb9",
+      "revId": "bf3cbab0fdee62bd7db248873ff90377d2c12bf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "904952de_58247c13",
@@ -66,6 +102,30 @@
       "writtenOn": "2024-09-06T20:32:19Z",
       "side": 1,
       "message": "```cpp\nstatus_t Parcel::setData(const uint8_t* buffer, size_t len)\n{\n    status_t err \u003d setDataSize(len);\n    if (err \u003d\u003d NO_ERROR) {\n        memcpy(const_cast\u003cuint8_t*\u003e(data()), buffer, len);\n    }\n    return err;\n}\n```\n\nand get rid of everything else?",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 15
+      },
+      "revId": "bf3cbab0fdee62bd7db248873ff90377d2c12bf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "83e8f03c_aed843b9",
+        "filename": "libhidlbase/Parcel.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-09-29T14:04:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "904952de_58247c13",
       "range": {
         "startLine": 37,
         "startChar": 0,
