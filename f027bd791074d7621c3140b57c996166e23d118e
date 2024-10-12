@@ -16,6 +16,24 @@
       "message": "looking at the other shims above and below, they specifically put `extern \"C\" void` into its own line - should also do this here",
       "revId": "f027bd791074d7621c3140b57c996166e23d118e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb27126b_14713cdc",
+        "filename": "libinput/Input.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-10-12T18:15:00Z",
+      "side": 1,
+      "message": "clang-format does that when line is too long, this one here is relatively short.",
+      "parentUuid": "4e1886e4_a5fd5028",
+      "revId": "f027bd791074d7621c3140b57c996166e23d118e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
