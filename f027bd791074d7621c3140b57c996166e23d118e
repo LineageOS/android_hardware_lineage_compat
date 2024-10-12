@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e1886e4_a5fd5028",
+        "filename": "libinput/Input.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-10-12T18:11:11Z",
+      "side": 1,
+      "message": "looking at the other shims above and below, they specifically put `extern \"C\" void` into its own line - should also do this here",
+      "revId": "f027bd791074d7621c3140b57c996166e23d118e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
