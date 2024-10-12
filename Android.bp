@@ -392,6 +392,7 @@ cc_library {
         },
     },
     include_dirs: [
+        "frameworks/native/include",
         "frameworks/native/libs/ui/include",
     ],
     shared_libs: ["libinput"],

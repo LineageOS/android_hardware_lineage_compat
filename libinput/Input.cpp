@@ -5,6 +5,7 @@
  */
 
 #include <sys/types.h>
+#include <input/Input.h>
 #include <ui/LogicalDisplayId.h>
 
 extern "C" void _ZN7android11MotionEvent10initializeEiijNS_2ui16LogicalDisplayIdENSt3__15arrayIhLm32EEEiiiiiiNS_20MotionClassificationERKNS1_9TransformEffffS9_llmPKNS_17PointerPropertiesEPKNS_13PointerCoordsE(
@@ -20,4 +21,9 @@ extern "C" void _ZN7android11MotionEvent10initializeEiijiNSt3__15arrayIhLm32EEEi
         id, deviceId, source, android::ui::LogicalDisplayId{displayId}, hmac, action, actionButton, flags, edgeFlags, metaState,
         buttonState, classification, transform, xPrecision, yPrecision, rawXCursorPosition, rawYCursorPosition,
         rawTransform, downTime, eventTime, pointerCount, pointerProperties, pointerCoords);
+}
+
+extern "C" void _ZN7android17PointerProperties8copyFromERKS0_(android::PointerProperties* thisptr, const android::PointerProperties& other) {
+    thisptr->id = other.id;
+    thisptr->toolType = other.toolType;
 }
