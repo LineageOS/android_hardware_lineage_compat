@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+#include <input/Input.h>
 #include <sys/types.h>
 #include <ui/LogicalDisplayId.h>
 
@@ -29,4 +30,10 @@ _ZN7android11MotionEvent10initializeEiijiNSt3__15arrayIhLm32EEEiiiiiiNS_20Motion
             actionButton, flags, edgeFlags, metaState, buttonState, classification, transform,
             xPrecision, yPrecision, rawXCursorPosition, rawYCursorPosition, rawTransform, downTime,
             eventTime, pointerCount, pointerProperties, pointerCoords);
+}
+
+extern "C" void _ZN7android17PointerProperties8copyFromERKS0_(
+        android::PointerProperties* thisptr, const android::PointerProperties& other) {
+    thisptr->id = other.id;
+    thisptr->toolType = other.toolType;
 }
