@@ -385,6 +385,20 @@ cc_library {
 }
 
 cc_library {
+    name: "libinput_shim",
+    target: {
+        android_arm64: {
+            srcs: ["libinput/Input.cpp"],
+        },
+    },
+    include_dirs: [
+        "frameworks/native/libs/ui/include",
+    ],
+    shared_libs: ["libinput"],
+    system_ext_specific: true,
+}
+
+cc_library {
     name: "libmemset_shim",
     target: {
         android_arm: {
