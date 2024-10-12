@@ -410,6 +410,7 @@ cc_library {
     name: "libinput_shim",
     srcs: ["libinput/Input.cpp"],
     include_dirs: [
+        "frameworks/native/include",
         "frameworks/native/libs/ui/include",
     ],
     shared_libs: ["libinput"],
