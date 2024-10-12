@@ -8,10 +8,22 @@
 #include <input/Input.h>
 #include <ui/LogicalDisplayId.h>
 
+extern "C" void _ZN7android8KeyEvent10initializeEiijNS_2ui16LogicalDisplayIdENSt3__15arrayIhLm32EEEiiiiiill(
+    int32_t id, int32_t deviceId, uint32_t source, android::ui::LogicalDisplayId displayId, std::array<uint8_t, 32> hmac, int32_t action, int32_t flags, int32_t keyCode, int32_t scanCode, int32_t metaState,
+    int32_t repeatCount, void* downTime, void* eventTime);
+
 extern "C" void _ZN7android11MotionEvent10initializeEiijNS_2ui16LogicalDisplayIdENSt3__15arrayIhLm32EEEiiiiiiNS_20MotionClassificationERKNS1_9TransformEffffS9_llmPKNS_17PointerPropertiesEPKNS_13PointerCoordsE(
     int32_t id, int32_t deviceId, uint32_t source, android::ui::LogicalDisplayId displayId, std::array<uint8_t, 32> hmac, int32_t action, int32_t actionButton, int32_t flags, int32_t edgeFlags, int32_t metaState,
     int32_t buttonState, void* classification, void* transform, float xPrecision, float yPrecision, float rawXCursorPosition, float rawYCursorPosition,
     void* rawTransform, void* downTime, void* eventTime, size_t pointerCount, void* pointerProperties, void* pointerCoords);
+
+extern "C" void _ZN7android8KeyEvent10initializeEiijiNSt3__15arrayIhLm32EEEiiiiiill(
+    int32_t id, int32_t deviceId, uint32_t source, int32_t displayId, std::array<uint8_t, 32> hmac, int32_t action, int32_t flags, int32_t keyCode, int32_t scanCode, int32_t metaState,
+    int32_t repeatCount, void* downTime, void* eventTime) {
+    _ZN7android8KeyEvent10initializeEiijNS_2ui16LogicalDisplayIdENSt3__15arrayIhLm32EEEiiiiiill(
+        id, deviceId, source, android::ui::LogicalDisplayId{displayId}, hmac, action, flags, keyCode, scanCode, metaState,
+        repeatCount, downTime, eventTime);
+}
 
 extern "C" void _ZN7android11MotionEvent10initializeEiijiNSt3__15arrayIhLm32EEEiiiiiiNS_20MotionClassificationERKNS_2ui9TransformEffffS8_llmPKNS_17PointerPropertiesEPKNS_13PointerCoordsE(
     int32_t id, int32_t deviceId, uint32_t source, int32_t displayId, std::array<uint8_t, 32> hmac, int32_t action, int32_t actionButton, int32_t flags, int32_t edgeFlags, int32_t metaState,
