@@ -16,6 +16,24 @@
       "message": "Did you run clang-format here?",
       "revId": "7939646964f78e225968814b14d133764afb6952",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee22e428_edcf9d63",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2024-10-18T13:52:37Z",
+      "side": 1,
+      "message": "No, just pushed new PS that ran through clang-format",
+      "parentUuid": "4dbd8179_6ea69c65",
+      "revId": "7939646964f78e225968814b14d133764afb6952",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
