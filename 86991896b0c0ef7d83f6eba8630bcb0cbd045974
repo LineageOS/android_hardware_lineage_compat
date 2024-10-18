@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d5f3e5e_fceed067",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2024-10-18T13:56:33Z",
+      "side": 1,
+      "message": "actually, I was just wondering, do I need to add thisptr as first parameter because it\u0027s a constructor",
+      "revId": "86991896b0c0ef7d83f6eba8630bcb0cbd045974",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
