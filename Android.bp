@@ -460,6 +460,24 @@ cc_library_shared {
     vendor_available: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libui-v30",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v33/arm/libui-v30.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v33/arm64/libui-v30.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
+
 cc_library_shared {
     name: "libutils_shim",
     shared_libs: ["libutils"],
