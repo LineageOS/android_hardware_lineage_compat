@@ -34,6 +34,24 @@
       "parentUuid": "4e1886e4_a5fd5028",
       "revId": "f027bd791074d7621c3140b57c996166e23d118e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc0c6528_1ea15b8f",
+        "filename": "libinput/Input.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-10-19T12:17:24Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "cb27126b_14713cdc",
+      "revId": "f027bd791074d7621c3140b57c996166e23d118e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
