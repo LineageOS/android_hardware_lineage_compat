@@ -281,6 +281,24 @@ cc_prebuilt_library_shared {
     check_elf_files: false,
 }
 
+cc_prebuilt_library_shared {
+    name: "libbinder-v32",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v32/arm/libbinder-v32.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v32/arm64/libbinder-v32.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
+
 cc_library {
     name: "libbinder_shim",
     shared_libs: ["libbinder", "libutils"],
@@ -376,6 +394,24 @@ cc_library {
     vendor: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libhidlbase-v32",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v32/arm/libhidlbase-v32.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v32/arm64/libhidlbase-v32.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
+
 cc_library {
     name: "libhidlbase_shim",
     srcs: ["libhidlbase/gBnsConstructorMap.cpp"],
@@ -424,6 +460,24 @@ cc_library_shared {
     ],
     system_ext_specific: true,
     vendor_available: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libutils-v32",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v32/arm/libutils-v32.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v32/arm64/libutils-v32.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
 }
 
 cc_library_shared {
