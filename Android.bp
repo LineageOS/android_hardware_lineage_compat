@@ -366,7 +366,8 @@ cc_library {
     srcs: [
         "libcrypto/cbs.c",
     ],
-    vendor: true
+    system_ext_specific: true,
+    vendor_available: true,
 }
 
 cc_library {
