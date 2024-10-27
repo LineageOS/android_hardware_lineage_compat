@@ -46,6 +46,30 @@
       },
       "revId": "14ea60b1cc95bcecb686a9b2ba549a26d7b2f847",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3c32cb5_e66e5f7c",
+        "filename": "libmeminfo/procmeminfo.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-10-27T10:08:36Z",
+      "side": 1,
+      "message": "Didn\u0027t notice any issues on barbet at least. elf checks pass and cameras work",
+      "parentUuid": "9e9d9346_190b9a91",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 1
+      },
+      "revId": "14ea60b1cc95bcecb686a9b2ba549a26d7b2f847",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
