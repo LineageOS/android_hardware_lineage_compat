@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7adc1c1c_13f5bbe9",
+        "filename": "libmeminfo/procmeminfo.cpp",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-10-27T10:06:19Z",
+      "side": 1,
+      "message": "unused",
+      "revId": "ab44b2ecbe6cd015d42e39fc8370c858b77ad3c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
