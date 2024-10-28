@@ -69,6 +69,24 @@
       "parentUuid": "494953c7_6b3be3fb",
       "revId": "f5550fe48b931d36249de30e1803b04da592192d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca9d84fc_86b86708",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-10-28T07:19:20Z",
+      "side": 1,
+      "message": "well, here\u0027s your problem. Either use elf checks so that it gets built automatically or apply https://review.lineageos.org/c/LineageOS/android_device_sony_nile-common/+/407038",
+      "parentUuid": "67fbad65_7746d43d",
+      "revId": "f5550fe48b931d36249de30e1803b04da592192d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
