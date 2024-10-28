@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "054a1732_d60264c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 9760
+      },
+      "writtenOn": "2024-10-28T07:14:32Z",
+      "side": 1,
+      "message": "After this patch, I get a cyclic error in the logs (on oneplus SM8150 devices):\n\nF linker  : CANNOT LINK EXECUTABLE \"/odm/bin/hw/android.hardware.drm@1.3-service.widevine\": library \"libcrypto_shim.so\" not found: needed by /odm/lib64/libwvhidl.so in namespace (default)",
+      "revId": "f5550fe48b931d36249de30e1803b04da592192d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
