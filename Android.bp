@@ -440,7 +440,8 @@ cc_library {
     ],
     shared_libs: ["libhidlbase"],
     compile_multilib: "both",
-    vendor: true,
+    system_ext_specific: true,
+    vendor_available: true,
 }
 
 cc_library {
