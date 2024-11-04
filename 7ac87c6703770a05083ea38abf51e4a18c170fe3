@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "240fe9a5_5068642e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2024-11-04T20:33:24Z",
+      "side": 1,
+      "message": "We need this on mata for our touch blobs to work in recovery, now that the /vendor version has been patched to load libhidlbase-v32",
+      "revId": "7ac87c6703770a05083ea38abf51e4a18c170fe3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
