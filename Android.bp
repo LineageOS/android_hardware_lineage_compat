@@ -397,6 +397,7 @@ cc_library {
 cc_prebuilt_library_shared {
     name: "libhidlbase-v32",
     system_ext_specific: true,
+    recovery_available: true,
     vendor_available: true,
     strip: {
         none: true,
