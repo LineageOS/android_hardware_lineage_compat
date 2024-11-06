@@ -464,6 +464,16 @@ cc_library {
 }
 
 cc_library {
+    name: "libjsoncpp_shim",
+    srcs: [
+        "libjsoncpp/json_value.cpp",
+    ],
+    shared_libs: ["libjsoncpp"],
+    compile_multilib: "both",
+    vendor: true,
+}
+
+cc_library {
     name: "libmeminfo_shim",
     shared_libs: ["libmeminfo"],
     srcs: [
