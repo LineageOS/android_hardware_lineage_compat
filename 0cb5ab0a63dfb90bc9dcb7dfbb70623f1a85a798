@@ -16,6 +16,23 @@
       "message": "works on Z01R as our pm-service needs this fix.\n\ndevice tree commit:\nhttps://review.lineageos.org/c/LineageOS/android_device_asus_Z01R/+/410054\n\nas discussed here I\u0027m adding Luk\nhttps://review.lineageos.org/c/LineageOS/android_device_xiaomi_sdm845-common/+/375060",
       "revId": "0cb5ab0a63dfb90bc9dcb7dfbb70623f1a85a798",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf6a6da4_b416d6ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-11-29T06:06:02Z",
+      "side": 1,
+      "message": "pls use patchily 0.18\n\nI really really want to kill 0.9 asap",
+      "revId": "0cb5ab0a63dfb90bc9dcb7dfbb70623f1a85a798",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
