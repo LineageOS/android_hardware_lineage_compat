@@ -50,6 +50,24 @@
       "message": "I need to prep some devices for this too, m1s1/wahoo/nokia_660/moto_8998/aura/moto_sdm632 lol",
       "revId": "0cb5ab0a63dfb90bc9dcb7dfbb70623f1a85a798",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6591de8f_b1262c95",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2024-11-29T06:27:07Z",
+      "side": 1,
+      "message": "well, it\u0027s a patchelf once and it\u0027s done kinda thing, so does it matter that much? you can nuke patchelf 0.9 I don\u0027t need it anymore that the blobs are delt with",
+      "parentUuid": "cf6a6da4_b416d6ff",
+      "revId": "0cb5ab0a63dfb90bc9dcb7dfbb70623f1a85a798",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
