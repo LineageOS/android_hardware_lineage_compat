@@ -310,9 +310,14 @@ cc_library {
     shared_libs: ["libbinder", "libutils"],
     srcs: [
         "libbinder/IServiceManager.cpp",
+        "libbinder/OS_android.cpp",
         "libbinder/PermissionCache.cpp",
     ],
-    vendor: true
+    header_libs: [
+        "libbinder_headers",
+    ],
+    version_script: "libbinder/libbinder.map",
+    vendor_available: true
 }
 
 cc_library {
