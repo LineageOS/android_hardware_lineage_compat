@@ -308,11 +308,14 @@ cc_prebuilt_library_shared {
 cc_library {
     name: "libbinder_shim",
     shared_libs: ["libbinder", "libutils"],
+    header_libs: ["libbinder_headers"],
     srcs: [
         "libbinder/IServiceManager.cpp",
+        "libbinder/OS_android.cpp",
         "libbinder/PermissionCache.cpp",
     ],
-    vendor: true
+    version_script: "libbinder/libbinder.map",
+    vendor_available: true
 }
 
 cc_library {

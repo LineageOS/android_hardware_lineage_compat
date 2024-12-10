@@ -1,0 +1,5 @@
+LIBBINDER {
+  global:
+    _ZN7android6binder12atrace_beginEmPKc*;
+    _ZN7android6binder10atrace_endEm*;
+};
