@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "60c02230_135d4e3e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32548
+      },
+      "writtenOn": "2024-12-13T09:45:16Z",
+      "side": 1,
+      "message": "Builds and boot fine (xiaomi-sm8450) - marble",
+      "revId": "7a3eab3f573de129b3bf4a5cbd553e6bb749a4a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
