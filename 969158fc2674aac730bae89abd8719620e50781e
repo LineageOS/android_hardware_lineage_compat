@@ -16,6 +16,23 @@
       "message": "My device doesn\u0027t have libwvhidl.so, it is using aidl instead. I should not adapt this commit?",
       "revId": "969158fc2674aac730bae89abd8719620e50781e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df4007bc_d5cb0288",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2024-12-18T10:16:02Z",
+      "side": 1,
+      "message": "solved my question. i dont need this.",
+      "revId": "969158fc2674aac730bae89abd8719620e50781e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
