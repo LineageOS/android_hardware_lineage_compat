@@ -33,6 +33,24 @@
       "message": "EXPLANATION FOR DOCUMENTATION\n\nGoogle gets the IMapper instance using some distributed per-version classes and funcs in libui, based around the GraphicBufferMapper Singleton (https://cs.android.com/android/platform/superproject/main/+/main:frameworks/native/libs/ui/include/ui/GraphicBufferMapper.h)\n\nThe new composer libs set mMapper up as a GraphicBufferMapper\u0026, and assign on construction as is required. However, composer impls with gralloc2 and possibly others are not linked to call the constructor, and call init() for entrypoint instead. Google, no longer caring about composer 2.x and certainly not about prebuilt compatibility, did not consider that using init() would not call the constructor and mMapper would not be assigned. Since you cannot reassign a reference (it becomes an alias), any solution would be invasive and likely ignored by Google. Instead, we will preserve this previous iteration.",
       "revId": "f420da160298479b1d8977419950d7d102782fb0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e39edd3_6540ccdb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-30T22:01:31Z",
+      "side": 1,
+      "message": "Add to commit message.",
+      "parentUuid": "f1666705_d3ffeebe",
+      "revId": "f420da160298479b1d8977419950d7d102782fb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
