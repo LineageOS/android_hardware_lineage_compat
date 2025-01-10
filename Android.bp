@@ -404,8 +404,12 @@ cc_prebuilt_library_shared {
 
 cc_library {
     name: "libcrypto_shim",
+    shared_libs: [
+        "libcrypto",
+    ],
     srcs: [
         "libcrypto/cbs.c",
+        "libcrypto/sk.c",
     ],
     system_ext_specific: true,
     vendor_available: true,
