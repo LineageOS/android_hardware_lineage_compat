@@ -16,6 +16,23 @@
       "message": "`[100% 356/356] Install: /mnt/out/out/lineage-22/target/product/troika/system/lib64/libnativehelper_shim.so (priority: 3)`",
       "revId": "85d5c13ee4cbdda4869e682c2922ad45a2bdd7c8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b842f31f_21b42cf3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-01-24T17:06:07Z",
+      "side": 1,
+      "message": "clear_symbol_version isn\u0027t enough?",
+      "revId": "85d5c13ee4cbdda4869e682c2922ad45a2bdd7c8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
