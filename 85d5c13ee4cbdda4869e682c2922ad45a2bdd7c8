@@ -33,6 +33,24 @@
       "message": "clear_symbol_version isn\u0027t enough?",
       "revId": "85d5c13ee4cbdda4869e682c2922ad45a2bdd7c8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49a54207_2445cae6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-01-24T17:19:24Z",
+      "side": 1,
+      "message": "The symbol didn\u0027t move namespaces, it was removed entirely",
+      "parentUuid": "b842f31f_21b42cf3",
+      "revId": "85d5c13ee4cbdda4869e682c2922ad45a2bdd7c8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
