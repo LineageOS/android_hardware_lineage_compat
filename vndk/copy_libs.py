@@ -9,6 +9,9 @@ TOP = f"{SCRIPT_DIR}/../../../.."
 PATCHELF_PATH = f"{TOP}/prebuilts/extract-tools/linux-x86/bin/patchelf-0_9"
 
 for vndk_version, libs in {
+    "v29": [
+        "libgatekeeper",
+    ],
     "v30": [
         "libui",
     ],

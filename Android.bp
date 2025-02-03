@@ -707,3 +707,21 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
     check_elf_files: false,
 }
+
+cc_prebuilt_library_shared {
+    name: "libgatekeeper-v29",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v29/arm/libgatekeeper-v29.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v29/arm64/libgatekeeper-v29.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
