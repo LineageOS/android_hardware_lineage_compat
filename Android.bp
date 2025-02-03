@@ -725,3 +725,13 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
     check_elf_files: false,
 }
+
+cc_library_shared {
+    name: "libkeymaster_shim",
+    shared_libs: ["libkeymaster_messages"],
+    srcs: [
+        "libkeymaster/android_keymaster_messages.cpp",
+        "libkeymaster/copy_size_and_data_from_buf.cpp",
+    ],
+    vendor: true,
+}
