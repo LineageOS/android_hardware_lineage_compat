@@ -16,6 +16,24 @@
       "message": "I don\u0027t think its a good idea to stub copy_size_and_data_from_buf and you could put at lke",
       "revId": "bffd7d2c44da5aad4022c4d5bb29db55ba531ad0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccc6a0c7_0808904e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2025-02-05T17:04:59Z",
+      "side": 1,
+      "message": "sorry I accidentally submitted the comment without finishing typing;\n\nI don\u0027t think its a good idea to stub copy_size_and_data_from_buf and you could put at least ~GenerateKeyResponse() and ~AttestKeyResponse() into one file called android_keymaster_messages.cpp like the original one, theres no need to have 3 files tbh",
+      "parentUuid": "2e32978b_43116130",
+      "revId": "bffd7d2c44da5aad4022c4d5bb29db55ba531ad0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
