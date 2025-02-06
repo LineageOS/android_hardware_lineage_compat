@@ -735,3 +735,25 @@ cc_library_shared {
     ],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "android.hardware.audio.common@4.0-util-wrapper",
+    shared_libs: [
+        "android.hardware.audio.common@4.0",
+        "android.hardware.audio.common@4.0-util"
+    ],
+    srcs: ["audio_utils/AudioUtils_V4_0.cpp"],
+    header_libs: ["libaudio_system_headers"],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "android.hardware.audio.common@5.0-util-wrapper",
+    shared_libs: [
+        "android.hardware.audio.common@5.0",
+        "android.hardware.audio.common@5.0-util"
+    ],
+    srcs: ["audio_utils/AudioUtils_V5_0.cpp"],
+    header_libs: ["libaudio_system_headers"],
+    vendor: true,
+}
