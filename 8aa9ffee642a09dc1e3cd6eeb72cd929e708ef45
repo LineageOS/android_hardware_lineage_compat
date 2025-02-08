@@ -22,6 +22,30 @@
       },
       "revId": "8aa9ffee642a09dc1e3cd6eeb72cd929e708ef45",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "436b77db_bad83f14",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 712,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2025-02-08T12:11:56Z",
+      "side": 1,
+      "message": "Isn\u0027t it pointless since this file isn\u0027t even sorted alphabetically to begin with ?",
+      "parentUuid": "2cdfb3a4_2eb7b774",
+      "range": {
+        "startLine": 712,
+        "startChar": 11,
+        "endLine": 712,
+        "endChar": 24
+      },
+      "revId": "8aa9ffee642a09dc1e3cd6eeb72cd929e708ef45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
