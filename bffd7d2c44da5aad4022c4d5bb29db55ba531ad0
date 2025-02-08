@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "930715d7_b1e95512",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2025-02-08T11:51:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ccc6a0c7_0808904e",
+      "revId": "bffd7d2c44da5aad4022c4d5bb29db55ba531ad0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f300c5b1_f0503f9c",
@@ -67,6 +85,24 @@
       "side": 1,
       "message": "also symbols for it still exist, they just take std::unique_ptr\u003cT\u003e instead of keymaster::UniquePtr\u003cT\u003e",
       "parentUuid": "f300c5b1_f0503f9c",
+      "revId": "bffd7d2c44da5aad4022c4d5bb29db55ba531ad0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "977e8323_65577d9b",
+        "filename": "libkeymaster/copy_size_and_data_from_buf.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2025-02-08T11:51:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0d45e018_3ba9df86",
       "revId": "bffd7d2c44da5aad4022c4d5bb29db55ba531ad0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
