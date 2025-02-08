@@ -105,6 +105,24 @@
       "parentUuid": "0d45e018_3ba9df86",
       "revId": "bffd7d2c44da5aad4022c4d5bb29db55ba531ad0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "172e4d0c_062f3e8e",
+        "filename": "libkeymaster/copy_size_and_data_from_buf.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2025-02-08T12:18:59Z",
+      "side": 1,
+      "message": "Is std::unique_ptr ABI-compatible with keymaster::UniquePtr? If not, reinterpret_cast would cause random segfaults, I guess.",
+      "parentUuid": "977e8323_65577d9b",
+      "revId": "bffd7d2c44da5aad4022c4d5bb29db55ba531ad0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
