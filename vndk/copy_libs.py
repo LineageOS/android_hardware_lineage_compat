@@ -12,6 +12,7 @@ for vndk_version, libs in {
     "v30": [
         "libui",
         "libmedia_helper",
+        "libutils",
     ],
     "v32": [
         "libbinder",
