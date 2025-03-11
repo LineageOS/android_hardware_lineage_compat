@@ -85,6 +85,23 @@
       "message": "exynos 850 devices need this and it works on a21s and a12s.",
       "revId": "6521434652464776dfc3775b1f0568ac807f94c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d981a8ac_33a674f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34512
+      },
+      "writtenOn": "2025-03-11T19:40:00Z",
+      "side": 1,
+      "message": "submit?",
+      "revId": "6521434652464776dfc3775b1f0568ac807f94c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
