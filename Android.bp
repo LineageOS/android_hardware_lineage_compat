@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2022-2023 The LineageOS Project
+// Copyright (C) 2022-2025 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -621,6 +621,17 @@ cc_library {
     srcs: [
         "libnativehelper/libnativehelper.cpp",
     ],
+}
+
+cc_library_shared {
+    name: "libprocessgroup_shim",
+    srcs: [
+        "libprocessgroup/processgroup.cpp",
+    ],
+    shared_libs: [
+        "libprocessgroup",
+    ],
+    vendor: true,
 }
 
 cc_library_shared {
