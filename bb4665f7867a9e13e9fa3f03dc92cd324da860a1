@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c69ff0a6_414e85d6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-03-14T08:12:35Z",
+      "side": 1,
+      "message": "Add SetTaskProfiles to the shim here: https://review.lineageos.org/c/LineageOS/android_hardware_lineage_compat/+/422638",
+      "revId": "bb4665f7867a9e13e9fa3f03dc92cd324da860a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
