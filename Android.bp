@@ -529,6 +529,24 @@ cc_library_shared {
     vendor: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libprocessgroup-v32",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v32/arm/libprocessgroup-v32.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v32/arm64/libprocessgroup-v32.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
+
 cc_library_shared {
     name: "libui_shim",
     shared_libs: [

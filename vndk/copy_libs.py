@@ -15,6 +15,7 @@ for vndk_version, libs in {
     "v32": [
         "libbinder",
         "libhidlbase",
+        "libprocessgroup",
         "libutils",
     ],
     "v33": [
