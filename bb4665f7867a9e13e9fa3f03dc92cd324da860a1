@@ -16,6 +16,23 @@
       "message": "Add SetTaskProfiles to the shim here: https://review.lineageos.org/c/LineageOS/android_hardware_lineage_compat/+/422638",
       "revId": "bb4665f7867a9e13e9fa3f03dc92cd324da860a1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd1283dc_692e6861",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14962
+      },
+      "writtenOn": "2025-03-15T01:34:28Z",
+      "side": 1,
+      "message": "Use libprocessgroup_shim instead.",
+      "revId": "bb4665f7867a9e13e9fa3f03dc92cd324da860a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
