@@ -49,7 +49,7 @@ for vndk_version, libs in {
                         ]
                     )
 
-                    if vndk_version == "v32" and lib == "libutils":
+                    if vndk_version in ["v30", "v32"] and lib == "libutils":
                         subprocess.run(
                             [
                                 PATCHELF_PATH,
