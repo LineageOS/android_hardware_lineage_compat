@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d67b130c_ec3e5347",
+        "filename": "vndk/copy_libs.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2025-03-17T15:28:23Z",
+      "side": 1,
+      "message": "```suggestion\n                    if vndk_version in [\"v30\", \"v32\"] and lib \u003d\u003d \"libutils\":\n                        subprocess.run(\n                            [\n                                PATCHELF_PATH,\n                                \"--add-needed\",\n                                \"libprocessgroup_shim.so\",\n                                lib_dest,\n                            ]\n                        )\n```",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 71,
+        "endChar": 25
+      },
+      "revId": "87d3d471c58bfdd2c77e425152179eb1ef8ae5ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
