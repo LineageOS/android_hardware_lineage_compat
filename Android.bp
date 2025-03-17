@@ -590,9 +590,11 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: ["vndk/v30/arm/libutils-v30.so"],
+            shared_libs: ["libprocessgroup_shim"],
         },
         android_arm64: {
             srcs: ["vndk/v30/arm64/libutils-v30.so"],
+            shared_libs: ["libprocessgroup_shim"],
         },
     },
     compile_multilib: "both",
