@@ -49,6 +49,17 @@ for vndk_version, libs in {
                         ]
                     )
 
+                    if vndk_version == "v30" and lib == "libutils":
+                        subprocess.run(
+                            [
+                                PATCHELF_PATH,
+                                "--add-needed",
+                                "libprocessgroup_shim.so",
+                                lib_dest,
+                            ]
+                        )
+
+
                     if vndk_version == "v32" and lib == "libutils":
                         subprocess.run(
                             [
