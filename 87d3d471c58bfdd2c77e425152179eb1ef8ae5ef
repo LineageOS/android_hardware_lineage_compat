@@ -22,6 +22,30 @@
       },
       "revId": "87d3d471c58bfdd2c77e425152179eb1ef8ae5ef",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8557ab8_48998bee",
+        "filename": "vndk/copy_libs.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 29230
+      },
+      "writtenOn": "2025-03-19T15:21:49Z",
+      "side": 1,
+      "message": "Fixed",
+      "parentUuid": "d67b130c_ec3e5347",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 71,
+        "endChar": 25
+      },
+      "revId": "87d3d471c58bfdd2c77e425152179eb1ef8ae5ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
