@@ -411,6 +411,26 @@ cc_library {
     vendor_available: true,
 }
 
+
+cc_prebuilt_library_shared {
+    name: "libcutils-v29",
+    system_ext_specific: true,
+    vendor_available: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v29/arm/libcutils-v29.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v29/arm64/libcutils-v29.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
+
 cc_library {
     name: "libcutils_shim",
     shared_libs: [
