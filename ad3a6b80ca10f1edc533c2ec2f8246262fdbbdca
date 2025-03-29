@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4919b6d2_aeac4871",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-03-29T21:05:13Z",
+      "side": 1,
+      "message": "Is this worth it for a few or a single device?",
+      "revId": "ad3a6b80ca10f1edc533c2ec2f8246262fdbbdca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
