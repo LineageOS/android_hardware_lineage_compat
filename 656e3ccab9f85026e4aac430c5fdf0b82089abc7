@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81042162_ca78d9be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2025-03-30T12:00:48Z",
+      "side": 1,
+      "message": "Would it be possible to move (and merge) this to the lineage-22.2 branch? We need it to satisfy ELF checks on Xiaomi SM8350.",
+      "revId": "656e3ccab9f85026e4aac430c5fdf0b82089abc7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
