@@ -638,6 +638,19 @@ cc_library_shared {
     vendor_available: true,
 }
 
+cc_library_shared {
+    name: "libwfdservice_shim",
+    shared_libs: [
+        "android.media.audio.common.types-V4-cpp",
+        "audioclient-types-aidl-cpp",
+        "libaudioclient",
+        "libaudiofoundation",
+        "libutils",
+    ],
+    srcs: ["libwfdservice/libwfdservice_shim.cpp"],
+    system_ext_specific: true,
+}
+
 cc_library {
     name: "libip_checksum_shim",
     whole_static_libs: [
