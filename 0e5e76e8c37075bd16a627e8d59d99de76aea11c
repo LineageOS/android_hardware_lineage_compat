@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6dcc2a9_3653c327",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-03T20:29:55Z",
+      "side": 1,
+      "message": "verified v1 on sony-sm6375, v2 is untested by me.",
+      "revId": "0e5e76e8c37075bd16a627e8d59d99de76aea11c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
