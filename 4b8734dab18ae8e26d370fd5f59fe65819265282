@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "274f9af3_1813f660",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-04-03T17:15:26Z",
+      "side": 1,
+      "message": "```suggestion\nThis is required for QCOM WFD compiled prior to 15 QPR2.\n```",
+      "revId": "4b8734dab18ae8e26d370fd5f59fe65819265282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
