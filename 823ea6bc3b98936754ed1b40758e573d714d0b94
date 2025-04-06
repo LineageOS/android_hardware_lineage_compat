@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "10b65185_a53362a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-06T18:49:24Z",
+      "side": 1,
+      "message": "I\u0027m pretty sure that read and write to parcel methods are wrong",
+      "revId": "823ea6bc3b98936754ed1b40758e573d714d0b94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
