@@ -56,6 +56,23 @@
       "message": "and then you can just delete and let it use default constructor",
       "revId": "5d6843b9993de3eabc4169783774e48baa140b50",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0af8368b_2219bbf2",
+        "filename": "libgui/CwbBufferListener.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-06T16:55:23Z",
+      "side": 1,
+      "message": "```suggestion\n    Status notifyCWBBufferDone(const CwbResults\u0026 results) final;\n```",
+      "revId": "5d6843b9993de3eabc4169783774e48baa140b50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
