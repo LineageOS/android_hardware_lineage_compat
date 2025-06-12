@@ -267,10 +267,17 @@ cc_defaults {
 }
 
 cc_library_shared {
-    name: "libaudioclient_shim",
+    name: "libaudioclient_legacy",
     shared_libs: ["libaudioclient", "libutils", "liblog"],
     header_libs: ["libmedia_headers"],
     srcs: ["libaudioclient/AudioTrack.cpp"],
+}
+
+cc_library_shared {
+    name: "libaudioclient_shim",
+    shared_libs: ["libaudioclient", "libutils", "liblog"],
+    header_libs: ["libmedia_headers"],
+    srcs: ["libaudioclient/AudioSystem.cpp"],
 }
 
 cc_library {
