@@ -35,7 +35,7 @@ extern "C" int _ZN18WiFiDisplaySession31broadcastWifiDisplayAudioIntentEb(
 
     AudioSystem::setDeviceConnectionState(
             enabled ? AUDIO_POLICY_DEVICE_STATE_AVAILABLE : AUDIO_POLICY_DEVICE_STATE_UNAVAILABLE,
-            audioPortFw.hal, AUDIO_FORMAT_PCM);
+            audioPortFw.hal, AUDIO_FORMAT_PCM, false);
 
     return 0;
 }
