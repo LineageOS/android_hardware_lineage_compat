@@ -38,3 +38,12 @@ extern "C" void _ZN7android21SurfaceComposerClient14destroyDisplayERKNS_2spINS_7
         void* displayToken) {
     _ZN7android21SurfaceComposerClient21destroyVirtualDisplayERKNS_2spINS_7IBinderEEE(displayToken);
 }
+
+extern "C" void*
+_ZN7android21SurfaceComposerClient20createVirtualDisplayERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEbS9_f(
+        void* displayName, bool isSecure, void* uniqueId, float requestedRefreshRate) {
+    return _ZN7android21SurfaceComposerClient20createVirtualDisplayERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEbbS9_f(
+            displayName, isSecure, true, uniqueId, requestedRefreshRate);
+}
+
+extern "C" void* _ZTVN7android21SurfaceComposerClient11TransactionE = nullptr;
