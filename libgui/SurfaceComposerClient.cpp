@@ -26,6 +26,8 @@ status_t destroyDisplay(const sp<IBinder>& displayToken) {
     return destroyVirtualDisplay(displayToken);
 }
 
+Transaction::~Transaction() = default;
+
 status_t Transaction::apply(bool synchronous) {
     return apply(synchronous, false);
 }
