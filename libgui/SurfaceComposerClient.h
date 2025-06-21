@@ -22,6 +22,8 @@ status_t destroyDisplay(const sp<IBinder>& displayToken);
 
 class Transaction {
   public:
+    virtual ~Transaction();
+
     status_t apply(bool synchronous, bool oneWay);
     status_t apply(bool synchronous);
 };
