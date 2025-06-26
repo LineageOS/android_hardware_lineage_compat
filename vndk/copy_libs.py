@@ -50,6 +50,17 @@ for vndk_version, libs in {
                         ]
                     )
 
+                    if vndk_version == "v30" and lib == "libui":
+                        subprocess.run(
+                            [
+                                PATCHELF_PATH,
+                                "--replace-needed",
+                                "android.hardware.graphics.common-V1-ndk_platform.so",
+                                "android.hardware.graphics.common-V1-ndk",
+                                lib_dest,
+                            ]
+                        )
+
                     if vndk_version == "v32" and lib == "libutils":
                         subprocess.run(
                             [
