@@ -288,6 +288,24 @@ cc_library_shared {
     srcs: ["libaudioclient/AudioSystem.cpp"],
 }
 
+cc_prebuilt_library_shared {
+    name: "libaudioroute-v34",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vndk/v34/arm/libaudioroute-v34.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v34/arm64/libaudioroute-v34.so"],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+}
+
 cc_library {
     name: "libbase_shim",
     shared_libs: ["libbase"],
