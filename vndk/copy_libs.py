@@ -19,6 +19,9 @@ for vndk_version, libs in {
         "libstagefright_foundation",
         "libutils",
     ],
+    "v34": [
+        "libaudioroute",
+    ],
 }.items():
     for lib in libs:
         for arch in ["arm", "arm64"]:
