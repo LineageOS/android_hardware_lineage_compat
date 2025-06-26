@@ -15,8 +15,8 @@
 
 cc_library {
     name: "android.hardware.graphics.composer@2.1-resources-v34",
-    system_ext_specific: true,
     defaults: ["hidl_defaults"],
+    system_ext_specific: true,
     vendor_available: true,
     shared_libs: [
         "android.hardware.graphics.composer@2.1",
