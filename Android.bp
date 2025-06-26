@@ -98,6 +98,14 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "libexpat",
+        "liblog",
+        "libtinyalsa",
+        "libutils",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v34/arm/libaudioroute-v34.so"],
@@ -107,7 +115,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -126,6 +133,10 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+        "liblog",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v33/arm/libbase-v33.so"],
@@ -135,7 +146,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -223,7 +233,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -242,6 +251,11 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libbase",
+        "libc++",
+        "liblog",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v29/arm/libcutils-v29.so"],
@@ -251,7 +265,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -296,6 +309,14 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libbase",
+        "libc++",
+        "libcutils",
+        "liblog",
+        "libutils",
+        //"libvndksupport", not recovery_available
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v32/arm/libhidlbase-v32.so"],
@@ -305,7 +326,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
+    check_elf_files: false, // TODO remove after libvndksupport issue is fixed
 }
 
 cc_library {
@@ -404,18 +425,23 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "liblog",
+        "libprocessgroup",
+        "libprocessgroup_shim",
+        "libvndksupport",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v32/arm/libutils-v32.so"],
-            shared_libs: ["libprocessgroup_shim"],
         },
         android_arm64: {
             srcs: ["vndk/v32/arm64/libutils-v32.so"],
-            shared_libs: ["libprocessgroup_shim"],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -424,6 +450,12 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "liblog",
+        "libvndksupport",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v33/arm/libutils-v33.so"],
@@ -433,7 +465,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library_shared {
@@ -519,6 +550,11 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+        "liblog",
+        "libz",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v29/arm/libprotobuf-cpp-full-v29.so"],
@@ -528,7 +564,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -537,6 +572,9 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v29/arm/libprotobuf-cpp-lite-v29.so"],
@@ -546,7 +584,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -556,6 +593,11 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+        "liblog",
+        "libz",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v29/arm/libprotobuf-cpp-full.so"],
@@ -565,7 +607,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -575,6 +616,9 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v29/arm/libprotobuf-cpp-lite.so"],
@@ -584,7 +628,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -593,6 +636,12 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "liblog",
+        "libutils",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v33/arm/libstagefright_foundation-v33.so"],
@@ -602,5 +651,4 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
