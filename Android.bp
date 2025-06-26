@@ -294,6 +294,14 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "libexpat",
+        "liblog",
+        "libtinyalsa",
+        "libutils",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v34/arm/libaudioroute-v34.so"],
@@ -303,7 +311,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -331,7 +338,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -349,7 +355,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -437,7 +442,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -465,7 +469,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -519,7 +522,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -627,7 +629,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -647,7 +648,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -665,7 +665,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library_shared {
@@ -760,7 +759,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -778,7 +776,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -797,7 +794,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -816,7 +812,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -825,6 +820,11 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+        shared_libs: [
+        "libcutils",
+        "liblog",
+        "libutils",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v33/arm/libstagefright_foundation-v33.so"],
@@ -834,5 +834,4 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
