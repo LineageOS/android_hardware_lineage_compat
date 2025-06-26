@@ -294,7 +294,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -322,7 +321,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -340,7 +338,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -428,7 +425,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -456,7 +452,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -510,7 +505,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -618,7 +612,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -638,7 +631,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -656,7 +648,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library_shared {
@@ -751,7 +742,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -769,7 +759,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -788,7 +777,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -807,7 +795,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -825,5 +812,4 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
