@@ -268,7 +268,11 @@ cc_defaults {
 
 cc_library_shared {
     name: "libaudioclient_shim",
-    shared_libs: ["libaudioclient", "libutils", "liblog"],
+    shared_libs: [
+        "libaudioclient",
+        "libutils",
+        "liblog",
+    ],
     header_libs: ["libmedia_headers"],
     srcs: [
         "libaudioclient/AudioSystem.cpp",
@@ -300,7 +304,7 @@ cc_library {
         "libbase/logging.cpp",
         "libbase/strings.cpp",
     ],
-    vendor: true
+    vendor: true,
 }
 
 cc_prebuilt_library_shared {
@@ -341,7 +345,10 @@ cc_prebuilt_library_shared {
 
 cc_library {
     name: "libbinder_shim",
-    shared_libs: ["libbinder", "libutils"],
+    shared_libs: [
+        "libbinder",
+        "libutils",
+    ],
     header_libs: ["libbinder_headers"],
     srcs: [
         "libbinder/IServiceManager.cpp",
@@ -349,30 +356,32 @@ cc_library {
         "libbinder/PermissionCache.cpp",
     ],
     version_script: "libbinder/libbinder.map",
-    vendor_available: true
+    vendor_available: true,
 }
 
 cc_library {
     name: "libc_mutexdestroy_shim",
     shared_libs: ["libc"],
     srcs: ["libc/pthread_mutex_destroy.cpp"],
-    sanitize: { never: true },
+    sanitize: {
+        never: true,
+    },
     stl: "none",
-    vendor: true
+    vendor: true,
 }
 
 cc_library {
     name: "libc_pthreadts_shim",
     shared_libs: ["libc"],
     srcs: ["libc/pthread_cond_timedwait.cpp"],
-    vendor: true
+    vendor: true,
 }
 
 cc_library {
     name: "libcamera_metadata_shim",
     shared_libs: ["libcamera_metadata"],
     srcs: ["libcamera_metadata/camera_metadata.cpp"],
-    vendor: true
+    vendor: true,
 }
 
 cc_library_shared {
@@ -467,7 +476,7 @@ cc_library {
     vendor_available: true,
     whole_static_libs: [
         "libc++demangle",
-    ]
+    ],
 }
 
 cc_library {
