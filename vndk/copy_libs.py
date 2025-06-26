@@ -7,6 +7,7 @@ SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 TOP = f"{SCRIPT_DIR}/../../../.."
 
 PATCHELF_PATH = f"{TOP}/prebuilts/extract-tools/linux-x86/bin/patchelf-0_9"
+PATCHELF_0_18_PATH = f"{TOP}/prebuilts/extract-tools/linux-x86/bin/patchelf-0_18"
 
 for vndk_version, libs in {
     "v30": [
@@ -49,6 +50,17 @@ for vndk_version, libs in {
                             lib_dest,
                         ]
                     )
+
+                    if vndk_version == "v30" and lib == "libui":
+                        subprocess.run(
+                            [
+                                PATCHELF_0_18_PATH,
+                                "--replace-needed",
+                                "android.hardware.graphics.common-V1-ndk_platform.so",
+                                "android.hardware.graphics.common-V1-ndk.so",
+                                lib_dest,
+                            ]
+                        )
 
                     if vndk_version == "v32" and lib == "libutils":
                         subprocess.run(
