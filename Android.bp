@@ -290,6 +290,14 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    shared_libs: [
+        "libc++",
+        "libcutils",
+        "libexpat",
+        "liblog",
+        "libtinyalsa",
+        "libutils",
+    ],
     target: {
         android_arm: {
             srcs: ["vndk/v35/arm/libaudioroute-v35.so"],
@@ -299,7 +307,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -327,7 +334,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -345,7 +351,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -433,7 +438,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -461,7 +465,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -515,7 +518,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library {
@@ -623,7 +625,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -643,7 +644,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -661,7 +661,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_library_shared {
@@ -756,7 +755,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -774,7 +772,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -793,7 +790,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -812,7 +808,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -830,5 +825,4 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
 }
