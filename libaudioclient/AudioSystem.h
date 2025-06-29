@@ -13,11 +13,11 @@ namespace android {
 namespace AudioSystem {
 
 status_t setDeviceConnectionState(audio_policy_dev_state_t state,
-                                 const android::media::audio::common::AudioPort& port,
-                                 audio_format_t encodedFormat, bool deviceSwitch);
+                                  const android::media::audio::common::AudioPort& port,
+                                  audio_format_t encodedFormat, bool deviceSwitch);
 status_t setDeviceConnectionState(audio_policy_dev_state_t state,
-                                 const android::media::audio::common::AudioPort& port,
-                                 audio_format_t encodedFormat);
+                                  const android::media::audio::common::AudioPort& port,
+                                  audio_format_t encodedFormat);
 
 }  // namespace AudioSystem
 }  // namespace android
