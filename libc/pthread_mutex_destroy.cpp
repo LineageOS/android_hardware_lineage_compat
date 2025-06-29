@@ -26,8 +26,8 @@
  * SUCH DAMAGE.
  */
 
-#include <pthread.h>
 #include <dlfcn.h>
+#include <pthread.h>
 
 #include <errno.h>
 #include <limits.h>
@@ -57,7 +57,7 @@ static_assert(alignof(pthread_mutex_t) == 4,
               "pthread_mutex_t should fulfill the alignment of pthread_mutex_internal_t.");
 
 static inline pthread_mutex_internal_t* __get_internal_mutex(pthread_mutex_t* mutex_interface) {
-  return reinterpret_cast<pthread_mutex_internal_t*>(mutex_interface);
+    return reinterpret_cast<pthread_mutex_internal_t*>(mutex_interface);
 }
 
 static inline __always_inline bool IsMutexDestroyed(uint16_t mutex_state) {
@@ -73,6 +73,6 @@ int pthread_mutex_destroy(pthread_mutex_t* mutex_interface) {
     }
 
     int (*real_pthread_mutex_destroy)(pthread_mutex_t*);
-    *(void **)&real_pthread_mutex_destroy = dlsym(RTLD_NEXT, "pthread_mutex_destroy");
+    *(void**)&real_pthread_mutex_destroy = dlsym(RTLD_NEXT, "pthread_mutex_destroy");
     return real_pthread_mutex_destroy(mutex_interface);
 }

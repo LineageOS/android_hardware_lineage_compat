@@ -26,8 +26,8 @@
  * SUCH DAMAGE.
  */
 
-#include <pthread.h>
 #include <dlfcn.h>
+#include <pthread.h>
 
 #include <errno.h>
 #include <time.h>
@@ -35,17 +35,17 @@
 // From bionic_constants.h
 #define NS_PER_S 1000000000
 
-int pthread_cond_timedwait(pthread_cond_t *cond_interface, pthread_mutex_t * mutex,
-                           const timespec *abstime) {
-  // HAX: Timespec checks are failing if tv_nsec >= 1000000000L (aka 1 sec).
-  // Increment tv_sec while subtracting NS_PER_S from tv_nsec till tv_nsec is
-  // < 1000000000L such that tv_nsec doesn't overflow and passes check_timespec().
-  while (abstime->tv_nsec >= NS_PER_S) {
-    const_cast<timespec*>(abstime)->tv_nsec -= NS_PER_S;
-    const_cast<timespec*>(abstime)->tv_sec++;
-  }
+int pthread_cond_timedwait(pthread_cond_t* cond_interface, pthread_mutex_t* mutex,
+                           const timespec* abstime) {
+    // HAX: Timespec checks are failing if tv_nsec >= 1000000000L (aka 1 sec).
+    // Increment tv_sec while subtracting NS_PER_S from tv_nsec till tv_nsec is
+    // < 1000000000L such that tv_nsec doesn't overflow and passes check_timespec().
+    while (abstime->tv_nsec >= NS_PER_S) {
+        const_cast<timespec*>(abstime)->tv_nsec -= NS_PER_S;
+        const_cast<timespec*>(abstime)->tv_sec++;
+    }
 
-  int (*real_pthread_cond_timedwait)(pthread_cond_t*, pthread_mutex_t*, const timespec*);
-  *(void **)&real_pthread_cond_timedwait = dlsym(RTLD_NEXT, "pthread_cond_timedwait");
-  return real_pthread_cond_timedwait(cond_interface, mutex, abstime);
+    int (*real_pthread_cond_timedwait)(pthread_cond_t*, pthread_mutex_t*, const timespec*);
+    *(void**)&real_pthread_cond_timedwait = dlsym(RTLD_NEXT, "pthread_cond_timedwait");
+    return real_pthread_cond_timedwait(cond_interface, mutex, abstime);
 }
