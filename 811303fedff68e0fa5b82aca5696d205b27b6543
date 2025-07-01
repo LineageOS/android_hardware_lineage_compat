@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d2c0adc7_c84d7b70",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32548
+      },
+      "writtenOn": "2025-07-01T12:16:53Z",
+      "side": 1,
+      "message": "hardware/lineage/compat/libstagefright_foundation-v33/android_vendor_arm64_armv8-2a-dotprod_cortex-a55_shared/libstagefright_foundation-v33.so: error: DT_NEEDED \"libutils.so\" is not specified in shared_libs.\nhardware/lineage/compat/libstagefright_foundation-v33/android_vendor_arm64_armv8-2a-dotprod_cortex-a55_shared/libstagefright_foundation-v33.so: error: DT_NEEDED \"libcutils.so\" is not specified in shared_libs.\nhardware/lineage/compat/libstagefright_foundation-v33/android_vendor_arm64_armv8-2a-dotprod_cortex-a55_shared/libstagefright_foundation-v33.so: error: DT_NEEDED \"liblog.so\" is not specified in shared_libs.",
+      "revId": "811303fedff68e0fa5b82aca5696d205b27b6543",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
