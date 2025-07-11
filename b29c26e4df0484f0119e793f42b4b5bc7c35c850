@@ -16,6 +16,40 @@
       "message": "ping?",
       "revId": "b29c26e4df0484f0119e793f42b4b5bc7c35c850",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74248646_8134eded",
+        "filename": "libjsoncpp/json_value.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-11T09:20:33Z",
+      "side": 1,
+      "message": "`sed _ZN4Json5ValueC1Ex -\u003e _ZN4Json5ValueC1El` would be equal to this change, since Json::Int64 is defined as `long` by the looks of it.",
+      "revId": "b29c26e4df0484f0119e793f42b4b5bc7c35c850",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9244e0c8_9c5710fa",
+        "filename": "libjsoncpp/json_value.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-11T09:20:33Z",
+      "side": 1,
+      "message": "`sed _ZN4Json5ValueC1Ey -\u003e _ZN4Json5ValueC1Em` would be equal to this change, since Json::UInt64 is defined as `unsigned long` by the looks of it.",
+      "revId": "b29c26e4df0484f0119e793f42b4b5bc7c35c850",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
