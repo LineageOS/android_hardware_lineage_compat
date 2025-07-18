@@ -16,6 +16,24 @@
       "message": "```suggestion\nThey are not used by any shipping device on 22.2\n```",
       "revId": "3f823385c633648c3950fef2e081ce2a4c73f9eb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0802614b_8f15cd21",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-07-18T21:15:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bf98f95f_f407bf5c",
+      "revId": "3f823385c633648c3950fef2e081ce2a4c73f9eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
