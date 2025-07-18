@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf98f95f_f407bf5c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-07-18T20:57:50Z",
+      "side": 1,
+      "message": "```suggestion\nThey are not used by any shipping device on 22.2\n```",
+      "revId": "3f823385c633648c3950fef2e081ce2a4c73f9eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
