@@ -1,0 +1,21 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "android.hardware.radio.c_shim@1.2",
+    srcs: ["*.cpp"],
+    shared_libs: [
+        "android.hardware.radio@1.0",
+        "android.hardware.radio.c_shim@1.0",
+        "android.hardware.radio.c_shim@1.1",
+        "libc++",
+        "libcutils",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+    export_include_dirs: ["include"],
+    vendor: true,
+}
