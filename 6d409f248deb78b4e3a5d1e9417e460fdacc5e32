@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72bebe15_b8c71fb0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2025-08-14T17:14:37Z",
+      "side": 1,
+      "message": "Required by mtkfusionrild to avoid a fatal crash on Android 16",
+      "revId": "6d409f248deb78b4e3a5d1e9417e460fdacc5e32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
