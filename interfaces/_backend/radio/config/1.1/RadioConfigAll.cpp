@@ -21,7 +21,7 @@ namespace radio {
 namespace config {
 namespace V1_1 {
 
-const char* IRadioConfig::descriptor("android.hardware.radio.config@1.1::IRadioConfig");
+const char* IRadioConfig::descriptor("lineage.hardware.radio.config@1.1::IRadioConfig");
 
 __attribute__((constructor)) static void static_constructor() {
     ::android::hardware::details::getBnConstructorMap().set(IRadioConfig::descriptor,
@@ -123,12 +123,12 @@ __attribute__((destructor))static void static_destructor() {
 
 ::android::hardware::Return<::android::sp<::android::hardware::radio::config::V1_1::IRadioConfig>> IRadioConfig::castFrom(const ::android::sp<::android::hardware::radio::config::V1_0::IRadioConfig>& parent, bool emitError) {
     return ::android::hardware::details::castInterface<IRadioConfig, ::android::hardware::radio::config::V1_0::IRadioConfig, BpHwRadioConfig>(
-            parent, "android.hardware.radio.config@1.1::IRadioConfig", emitError);
+            parent, "lineage.hardware.radio.config@1.1::IRadioConfig", emitError);
 }
 
 ::android::hardware::Return<::android::sp<::android::hardware::radio::config::V1_1::IRadioConfig>> IRadioConfig::castFrom(const ::android::sp<::android::hidl::base::V1_0::IBase>& parent, bool emitError) {
     return ::android::hardware::details::castInterface<IRadioConfig, ::android::hidl::base::V1_0::IBase, BpHwRadioConfig>(
-            parent, "android.hardware.radio.config@1.1::IRadioConfig", emitError);
+            parent, "lineage.hardware.radio.config@1.1::IRadioConfig", emitError);
 }
 
 BpHwRadioConfig::BpHwRadioConfig(const ::android::sp<::android::hardware::IBinder> &_hidl_impl)
@@ -841,7 +841,7 @@ bool IRadioConfig::registerForNotifications(
         return false;
     }
     ::android::hardware::Return<bool> success =
-            sm->registerForNotifications("android.hardware.radio.config@1.1::IRadioConfig",
+            sm->registerForNotifications("lineage.hardware.radio.config@1.1::IRadioConfig",
                     serviceName, notification);
     return success.isOk() && success;
 }

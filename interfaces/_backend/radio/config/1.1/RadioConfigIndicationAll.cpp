@@ -21,7 +21,7 @@ namespace radio {
 namespace config {
 namespace V1_1 {
 
-const char* IRadioConfigIndication::descriptor("android.hardware.radio.config@1.1::IRadioConfigIndication");
+const char* IRadioConfigIndication::descriptor("lineage.hardware.radio.config@1.1::IRadioConfigIndication");
 
 __attribute__((constructor)) static void static_constructor() {
     ::android::hardware::details::getBnConstructorMap().set(IRadioConfigIndication::descriptor,
@@ -115,12 +115,12 @@ __attribute__((destructor))static void static_destructor() {
 
 ::android::hardware::Return<::android::sp<::android::hardware::radio::config::V1_1::IRadioConfigIndication>> IRadioConfigIndication::castFrom(const ::android::sp<::android::hardware::radio::config::V1_0::IRadioConfigIndication>& parent, bool emitError) {
     return ::android::hardware::details::castInterface<IRadioConfigIndication, ::android::hardware::radio::config::V1_0::IRadioConfigIndication, BpHwRadioConfigIndication>(
-            parent, "android.hardware.radio.config@1.1::IRadioConfigIndication", emitError);
+            parent, "lineage.hardware.radio.config@1.1::IRadioConfigIndication", emitError);
 }
 
 ::android::hardware::Return<::android::sp<::android::hardware::radio::config::V1_1::IRadioConfigIndication>> IRadioConfigIndication::castFrom(const ::android::sp<::android::hidl::base::V1_0::IBase>& parent, bool emitError) {
     return ::android::hardware::details::castInterface<IRadioConfigIndication, ::android::hidl::base::V1_0::IBase, BpHwRadioConfigIndication>(
-            parent, "android.hardware.radio.config@1.1::IRadioConfigIndication", emitError);
+            parent, "lineage.hardware.radio.config@1.1::IRadioConfigIndication", emitError);
 }
 
 BpHwRadioConfigIndication::BpHwRadioConfigIndication(const ::android::sp<::android::hardware::IBinder> &_hidl_impl)
@@ -313,7 +313,7 @@ bool IRadioConfigIndication::registerForNotifications(
         return false;
     }
     ::android::hardware::Return<bool> success =
-            sm->registerForNotifications("android.hardware.radio.config@1.1::IRadioConfigIndication",
+            sm->registerForNotifications("lineage.hardware.radio.config@1.1::IRadioConfigIndication",
                     serviceName, notification);
     return success.isOk() && success;
 }
