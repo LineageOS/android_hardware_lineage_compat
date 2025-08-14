@@ -21,7 +21,7 @@ namespace radio {
 namespace config {
 namespace V1_1 {
 
-const char* IRadioConfigResponse::descriptor("android.hardware.radio.config@1.1::IRadioConfigResponse");
+const char* IRadioConfigResponse::descriptor("lineage.hardware.radio.config@1.1::IRadioConfigResponse");
 
 __attribute__((constructor)) static void static_constructor() {
     ::android::hardware::details::getBnConstructorMap().set(IRadioConfigResponse::descriptor,
@@ -122,12 +122,12 @@ __attribute__((destructor))static void static_destructor() {
 
 ::android::hardware::Return<::android::sp<::android::hardware::radio::config::V1_1::IRadioConfigResponse>> IRadioConfigResponse::castFrom(const ::android::sp<::android::hardware::radio::config::V1_0::IRadioConfigResponse>& parent, bool emitError) {
     return ::android::hardware::details::castInterface<IRadioConfigResponse, ::android::hardware::radio::config::V1_0::IRadioConfigResponse, BpHwRadioConfigResponse>(
-            parent, "android.hardware.radio.config@1.1::IRadioConfigResponse", emitError);
+            parent, "lineage.hardware.radio.config@1.1::IRadioConfigResponse", emitError);
 }
 
 ::android::hardware::Return<::android::sp<::android::hardware::radio::config::V1_1::IRadioConfigResponse>> IRadioConfigResponse::castFrom(const ::android::sp<::android::hidl::base::V1_0::IBase>& parent, bool emitError) {
     return ::android::hardware::details::castInterface<IRadioConfigResponse, ::android::hidl::base::V1_0::IBase, BpHwRadioConfigResponse>(
-            parent, "android.hardware.radio.config@1.1::IRadioConfigResponse", emitError);
+            parent, "lineage.hardware.radio.config@1.1::IRadioConfigResponse", emitError);
 }
 
 BpHwRadioConfigResponse::BpHwRadioConfigResponse(const ::android::sp<::android::hardware::IBinder> &_hidl_impl)
@@ -864,7 +864,7 @@ bool IRadioConfigResponse::registerForNotifications(
         return false;
     }
     ::android::hardware::Return<bool> success =
-            sm->registerForNotifications("android.hardware.radio.config@1.1::IRadioConfigResponse",
+            sm->registerForNotifications("lineage.hardware.radio.config@1.1::IRadioConfigResponse",
                     serviceName, notification);
     return success.isOk() && success;
 }

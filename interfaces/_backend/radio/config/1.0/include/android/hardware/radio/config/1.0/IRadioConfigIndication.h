@@ -29,7 +29,7 @@ struct IRadioConfigIndication : public ::android::hidl::base::V1_0::IBase {
     typedef ::android::hardware::details::i_tag _hidl_tag;
 
     /**
-     * Fully qualified interface name: "android.hardware.radio.config@1.0::IRadioConfigIndication"
+     * Fully qualified interface name: "lineage.hardware.radio.config@1.0::IRadioConfigIndication"
      */
     static const char* descriptor;
 
