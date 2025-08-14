@@ -22,6 +22,7 @@ for vndk_version, libs in {
     "v34": [
         "libaudioroute",
         "libui",
+        "libutils",
     ],
 }.items():
     for lib in libs:
