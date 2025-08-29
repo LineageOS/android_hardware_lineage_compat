@@ -21,11 +21,11 @@ namespace android {
 
 typedef void (*legacy_callback_t)(int event, void* user, void* info);
 class LegacyCallbackWrapper : public AudioTrack::IAudioTrackCallback {
-    const AudioTrack::legacy_callback_t mCallback;
+    const legacy_callback_t mCallback;
     void* const mData;
 
   public:
-    LegacyCallbackWrapper(AudioTrack::legacy_callback_t callback, void* user)
+    LegacyCallbackWrapper(legacy_callback_t callback, void* user)
         : mCallback(callback), mData(user) {}
     size_t onMoreData(const AudioTrack::Buffer& buffer) override {
         AudioTrack::Buffer copy = buffer;
