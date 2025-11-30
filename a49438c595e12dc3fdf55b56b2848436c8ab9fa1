@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7857c460_1f0e7dc0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2025-11-30T10:05:10Z",
+      "side": 1,
+      "message": "Fixes a lot of older legacy devices",
+      "revId": "a49438c595e12dc3fdf55b56b2848436c8ab9fa1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
