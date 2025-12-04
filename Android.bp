@@ -110,6 +110,7 @@ cc_library {
     name: "libbase_shim",
     shared_libs: ["libbase"],
     srcs: [
+        "libbase/file.cpp",
         "libbase/logging.cpp",
         "libbase/strings.cpp",
     ],
