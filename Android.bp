@@ -561,6 +561,12 @@ cc_library {
 }
 
 cc_library_shared {
+    name: "libdng_shim",
+    srcs: ["libdng/dng_shim.cpp"],
+    vendor: true,
+}
+
+cc_library_shared {
     name: "libpiex_shim",
     shared_libs: ["libpiex"],
     srcs: ["libpiex/piex_shim.cpp"],
