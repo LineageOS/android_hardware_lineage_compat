@@ -277,6 +277,15 @@ cc_library {
     ],
 }
 
+cc_library_shared {
+    name: "libdng_sdk_shim",
+    srcs: ["libdng_sdk/dng_area_task.cpp"],
+    shared_libs: [
+        "libdng_sdk",
+    ],
+    vendor: true,
+}
+
 cc_library {
     name: "libgui_shim",
     defaults: ["libgui_shim_defaults"],
