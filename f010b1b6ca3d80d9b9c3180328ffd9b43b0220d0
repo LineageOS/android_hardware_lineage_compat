@@ -34,6 +34,24 @@
       "parentUuid": "5ba3ea29_f568fb9c",
       "revId": "f010b1b6ca3d80d9b9c3180328ffd9b43b0220d0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "20021968_179d2ae3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2025-12-05T09:16:15Z",
+      "side": 1,
+      "message": "Easy to just include for existing xiaomi devices. But we can seperate it.",
+      "parentUuid": "5ba84198_f403e50f",
+      "revId": "f010b1b6ca3d80d9b9c3180328ffd9b43b0220d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
