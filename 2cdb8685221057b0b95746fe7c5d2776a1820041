@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5db4bcba_2c529f8a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-07T21:57:50Z",
+      "side": 1,
+      "message": "We will fix the source for now, since the repo is forked anyway and avoid patching ~25 blobs. Can be picked as a shim in 23.1+.",
+      "revId": "2cdb8685221057b0b95746fe7c5d2776a1820041",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
