@@ -576,6 +576,51 @@ cc_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-full-21.7",
+    system_ext_specific: true,
+    vendor_available: true,
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "libc++",
+        "liblog",
+        "libz",
+    ],
+    target: {
+        android_arm: {
+            srcs: ["libprotobuf/arm/libprotobuf-cpp-full-21.7.so"],
+        },
+        android_arm64: {
+            srcs: ["libprotobuf/arm64/libprotobuf-cpp-full-21.7.so"],
+        },
+    },
+    compile_multilib: "both",
+}
+
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-lite-21.7",
+    system_ext_specific: true,
+    vendor_available: true,
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "libc++",
+        "liblog",
+    ],
+    target: {
+        android_arm: {
+            srcs: ["libprotobuf/arm/libprotobuf-cpp-lite-21.7.so"],
+        },
+        android_arm64: {
+            srcs: ["libprotobuf/arm64/libprotobuf-cpp-lite-21.7.so"],
+        },
+    },
+    compile_multilib: "both",
+}
+
+cc_prebuilt_library_shared {
     name: "libprotobuf-cpp-full-v29",
     vendor: true,
     strip: {
