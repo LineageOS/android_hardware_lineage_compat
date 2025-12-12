@@ -697,10 +697,10 @@ binder_status_t Parameter::Specific::readFromParcel(const AParcel* _parcel) {
     ::aidl::android::hardware::audio::effect::Eraser _aidl_value;
     if ((_aidl_ret_status = ::ndk::AParcel_readData(_parcel, &_aidl_value)) != STATUS_OK) return _aidl_ret_status;
     if constexpr (std::is_trivially_copyable_v<::aidl::android::hardware::audio::effect::Eraser>) {
-      set<eraser>(_aidl_value);
+      _eraser = _aidl_value;
     } else {
       // NOLINTNEXTLINE(performance-move-const-arg)
-      set<eraser>(std::move(_aidl_value));
+      _eraser = std::move(_aidl_value);
     }
     return STATUS_OK; }
   }
@@ -727,7 +727,7 @@ binder_status_t Parameter::Specific::writeToParcel(AParcel* _parcel) const {
   case visualizer: return ::ndk::AParcel_writeData(_parcel, get<visualizer>());
   case volume: return ::ndk::AParcel_writeData(_parcel, get<volume>());
   case spatializer: return ::ndk::AParcel_writeData(_parcel, get<spatializer>());
-  case eraser: return ::ndk::AParcel_writeData(_parcel, get<eraser>());
+  case eraser: return ::ndk::AParcel_writeData(_parcel, _eraser);
   }
   __assert2(__FILE__, __LINE__, __PRETTY_FUNCTION__, "can't reach here");
 }
