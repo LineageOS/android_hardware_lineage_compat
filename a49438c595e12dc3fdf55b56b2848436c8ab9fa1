@@ -16,6 +16,23 @@
       "message": "Fixes a lot of older legacy devices",
       "revId": "a49438c595e12dc3fdf55b56b2848436c8ab9fa1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7919fb53_7e477b67",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36341
+      },
+      "writtenOn": "2025-12-12T18:43:00Z",
+      "side": 1,
+      "message": "Affecting mediatek devices shipping \u003e16 firmware",
+      "revId": "a49438c595e12dc3fdf55b56b2848436c8ab9fa1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
