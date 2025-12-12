@@ -50,6 +50,15 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "android.media.audio.common.types_V3_to_V4-ndk",
+    local_include_dirs: ["android.media.audio.common.types_V3_to_V4-ndk/include"],
+    srcs: ["android.media.audio.common.types_V3_to_V4-ndk/android/media/audio/common/*.cpp"],
+    shared_libs: ["libbinder_ndk"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
     name: "libaudioproxy_shim",
     srcs: ["libaudioproxy/libaudioproxy_shim.cpp"],
     proprietary: true,
