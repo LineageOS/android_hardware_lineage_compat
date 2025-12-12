@@ -42,7 +42,7 @@ public:
   std::vector<::aidl::android::media::audio::common::AudioFormatDescription> encodedFormats;
   int32_t encapsulationModes = 0;
   int32_t encapsulationMetadataTypes = 0;
-  std::optional<::aidl::android::media::audio::common::AudioChannelLayout> speakerLayout;
+  static inline std::optional<::aidl::android::media::audio::common::AudioChannelLayout> speakerLayout;
 
   binder_status_t readFromParcel(const AParcel* parcel);
   binder_status_t writeToParcel(AParcel* parcel) const;
