@@ -65,8 +65,8 @@ binder_status_t AudioPortDeviceExt::readFromParcel(const AParcel* _aidl_parcel) 
     AParcel_setDataPosition(_aidl_parcel, _aidl_start_pos + _aidl_parcelable_size);
     return _aidl_ret_status;
   }
-  _aidl_ret_status = ::ndk::AParcel_readNullableData(_aidl_parcel, &speakerLayout);
-  if (_aidl_ret_status != STATUS_OK) return _aidl_ret_status;
+  /*_aidl_ret_status = ::ndk::AParcel_readNullableData(_aidl_parcel, &speakerLayout);
+  if (_aidl_ret_status != STATUS_OK) return _aidl_ret_status;*/
 
   AParcel_setDataPosition(_aidl_parcel, _aidl_start_pos + _aidl_parcelable_size);
   return _aidl_ret_status;
