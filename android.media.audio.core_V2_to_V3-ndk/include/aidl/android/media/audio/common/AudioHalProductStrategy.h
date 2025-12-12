@@ -44,8 +44,8 @@ public:
 
   int32_t id = -1;
   std::vector<::aidl::android::media::audio::common::AudioHalAttributesGroup> attributesGroups;
-  std::optional<std::string> name;
-  int32_t zoneId = 0;
+  static inline std::optional<std::string> name;
+  static inline int32_t zoneId = 0;
 
   binder_status_t readFromParcel(const AParcel* parcel);
   binder_status_t writeToParcel(AParcel* parcel) const;

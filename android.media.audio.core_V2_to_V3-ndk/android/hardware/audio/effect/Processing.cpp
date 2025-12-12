@@ -106,10 +106,10 @@ binder_status_t Processing::Type::readFromParcel(const AParcel* _parcel) {
     ::aidl::android::media::audio::common::AudioDevice _aidl_value;
     if ((_aidl_ret_status = ::ndk::AParcel_readData(_parcel, &_aidl_value)) != STATUS_OK) return _aidl_ret_status;
     if constexpr (std::is_trivially_copyable_v<::aidl::android::media::audio::common::AudioDevice>) {
-      set<device>(_aidl_value);
+      _device = _aidl_value;
     } else {
       // NOLINTNEXTLINE(performance-move-const-arg)
-      set<device>(std::move(_aidl_value));
+      _device = std::move(_aidl_value);
     }
     return STATUS_OK; }
   }
@@ -121,7 +121,7 @@ binder_status_t Processing::Type::writeToParcel(AParcel* _parcel) const {
   switch (getTag()) {
   case streamType: return ::ndk::AParcel_writeData(_parcel, get<streamType>());
   case source: return ::ndk::AParcel_writeData(_parcel, get<source>());
-  case device: return ::ndk::AParcel_writeData(_parcel, get<device>());
+  case device: return ::ndk::AParcel_writeData(_parcel, _device);
   }
   __assert2(__FILE__, __LINE__, __PRETTY_FUNCTION__, "can't reach here");
 }
