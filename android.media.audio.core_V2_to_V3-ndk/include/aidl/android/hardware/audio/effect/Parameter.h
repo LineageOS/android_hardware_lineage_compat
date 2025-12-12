@@ -459,13 +459,14 @@ public:
       case visualizer: os << "visualizer: " << ::android::internal::ToString(get<visualizer>()); break;
       case volume: os << "volume: " << ::android::internal::ToString(get<volume>()); break;
       case spatializer: os << "spatializer: " << ::android::internal::ToString(get<spatializer>()); break;
-      case eraser: os << "eraser: " << ::android::internal::ToString(get<eraser>()); break;
+      case eraser: os << "eraser: " << ::android::internal::ToString(_eraser); break;
       }
       os << "}";
       return os.str();
     }
   private:
-    std::variant<::aidl::android::hardware::audio::effect::VendorExtension, ::aidl::android::hardware::audio::effect::AcousticEchoCanceler, ::aidl::android::hardware::audio::effect::AutomaticGainControlV1, ::aidl::android::hardware::audio::effect::AutomaticGainControlV2, ::aidl::android::hardware::audio::effect::BassBoost, ::aidl::android::hardware::audio::effect::Downmix, ::aidl::android::hardware::audio::effect::DynamicsProcessing, ::aidl::android::hardware::audio::effect::EnvironmentalReverb, ::aidl::android::hardware::audio::effect::Equalizer, ::aidl::android::hardware::audio::effect::HapticGenerator, ::aidl::android::hardware::audio::effect::LoudnessEnhancer, ::aidl::android::hardware::audio::effect::NoiseSuppression, ::aidl::android::hardware::audio::effect::PresetReverb, ::aidl::android::hardware::audio::effect::Virtualizer, ::aidl::android::hardware::audio::effect::Visualizer, ::aidl::android::hardware::audio::effect::Volume, ::aidl::android::hardware::audio::effect::Spatializer, ::aidl::android::hardware::audio::effect::Eraser> _value;
+    std::variant<::aidl::android::hardware::audio::effect::VendorExtension, ::aidl::android::hardware::audio::effect::AcousticEchoCanceler, ::aidl::android::hardware::audio::effect::AutomaticGainControlV1, ::aidl::android::hardware::audio::effect::AutomaticGainControlV2, ::aidl::android::hardware::audio::effect::BassBoost, ::aidl::android::hardware::audio::effect::Downmix, ::aidl::android::hardware::audio::effect::DynamicsProcessing, ::aidl::android::hardware::audio::effect::EnvironmentalReverb, ::aidl::android::hardware::audio::effect::Equalizer, ::aidl::android::hardware::audio::effect::HapticGenerator, ::aidl::android::hardware::audio::effect::LoudnessEnhancer, ::aidl::android::hardware::audio::effect::NoiseSuppression, ::aidl::android::hardware::audio::effect::PresetReverb, ::aidl::android::hardware::audio::effect::Virtualizer, ::aidl::android::hardware::audio::effect::Visualizer, ::aidl::android::hardware::audio::effect::Volume, ::aidl::android::hardware::audio::effect::Spatializer> _value;
+    static inline ::aidl::android::hardware::audio::effect::Eraser _eraser;
   };
   // Expose tag symbols for legacy code
   static const inline Tag common = Tag::common;

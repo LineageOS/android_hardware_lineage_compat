@@ -165,8 +165,8 @@ public:
 
     int32_t id = 0;
     ::aidl::android::hardware::audio::effect::HapticGenerator::VibratorScale scale = ::aidl::android::hardware::audio::effect::HapticGenerator::VibratorScale::MUTE;
-    float scaleFactor = -1.000000f;
-    float adaptiveScaleFactor = -1.000000f;
+    static inline float scaleFactor = -1.000000f;
+    static inline float adaptiveScaleFactor = -1.000000f;
 
     binder_status_t readFromParcel(const AParcel* parcel);
     binder_status_t writeToParcel(AParcel* parcel) const;
