@@ -50,6 +50,19 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "android.hardware.audio.core_V2_to_V3-ndk",
+    local_include_dirs: ["android.hardware.audio.core_V2_to_V3-ndk/include"],
+    srcs: ["android.hardware.audio.core_V2_to_V3-ndk/android/**/*.cpp"],
+    shared_libs: [
+        "android.hardware.common-V2-ndk",
+        "android.hardware.common.fmq-V1-ndk",
+        "libbinder_ndk",
+    ],
+    system_ext_specific: true,
+    vendor_available: true,
+}
+
+cc_library_shared {
     name: "libaudioproxy_shim",
     srcs: ["libaudioproxy/libaudioproxy_shim.cpp"],
     proprietary: true,
