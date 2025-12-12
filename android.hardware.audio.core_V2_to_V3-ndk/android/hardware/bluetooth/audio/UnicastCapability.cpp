@@ -200,10 +200,10 @@ binder_status_t UnicastCapability::LeAudioCodecCapabilities::readFromParcel(cons
     ::aidl::android::hardware::bluetooth::audio::OpusCapabilities _aidl_value;
     if ((_aidl_ret_status = ::ndk::AParcel_readData(_parcel, &_aidl_value)) != STATUS_OK) return _aidl_ret_status;
     if constexpr (std::is_trivially_copyable_v<::aidl::android::hardware::bluetooth::audio::OpusCapabilities>) {
-      set<opusCapabilities>(_aidl_value);
+      _opusCapabilities = _aidl_value;
     } else {
       // NOLINTNEXTLINE(performance-move-const-arg)
-      set<opusCapabilities>(std::move(_aidl_value));
+      _opusCapabilities = std::move(_aidl_value);
     }
     return STATUS_OK; }
   }
@@ -216,7 +216,7 @@ binder_status_t UnicastCapability::LeAudioCodecCapabilities::writeToParcel(AParc
   case lc3Capabilities: return ::ndk::AParcel_writeData(_parcel, get<lc3Capabilities>());
   case vendorCapabillities: return ::ndk::AParcel_writeData(_parcel, get<vendorCapabillities>());
   case aptxAdaptiveLeCapabilities: return ::ndk::AParcel_writeData(_parcel, get<aptxAdaptiveLeCapabilities>());
-  case opusCapabilities: return ::ndk::AParcel_writeData(_parcel, get<opusCapabilities>());
+  case opusCapabilities: return ::ndk::AParcel_writeData(_parcel, _opusCapabilities);
   }
   __assert2(__FILE__, __LINE__, __PRETTY_FUNCTION__, "can't reach here");
 }

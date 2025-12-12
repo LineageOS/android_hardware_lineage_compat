@@ -188,7 +188,7 @@ public:
   ::aidl::android::hardware::bluetooth::audio::AudioLocation supportedChannel = ::aidl::android::hardware::bluetooth::audio::AudioLocation(0);
   int32_t channelCountPerStream = 0;
   ::aidl::android::hardware::bluetooth::audio::BroadcastCapability::LeAudioCodecCapabilities leAudioCodecCapabilities;
-  std::optional<::aidl::android::hardware::bluetooth::audio::CodecSpecificConfigurationLtv::AudioChannelAllocation> audioLocation;
+  static inline std::optional<::aidl::android::hardware::bluetooth::audio::CodecSpecificConfigurationLtv::AudioChannelAllocation> audioLocation;
 
   binder_status_t readFromParcel(const AParcel* parcel);
   binder_status_t writeToParcel(AParcel* parcel) const;

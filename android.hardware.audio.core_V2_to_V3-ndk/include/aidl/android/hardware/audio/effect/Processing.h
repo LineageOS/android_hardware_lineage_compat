@@ -144,13 +144,14 @@ public:
       switch (getTag()) {
       case streamType: os << "streamType: " << ::android::internal::ToString(get<streamType>()); break;
       case source: os << "source: " << ::android::internal::ToString(get<source>()); break;
-      case device: os << "device: " << ::android::internal::ToString(get<device>()); break;
+      case device: os << "device: " << ::android::internal::ToString(_device); break;
       }
       os << "}";
       return os.str();
     }
   private:
-    std::variant<::aidl::android::media::audio::common::AudioStreamType, ::aidl::android::media::audio::common::AudioSource, ::aidl::android::media::audio::common::AudioDevice> _value;
+    std::variant<::aidl::android::media::audio::common::AudioStreamType, ::aidl::android::media::audio::common::AudioSource> _value;
+    static inline ::aidl::android::media::audio::common::AudioDevice _device;
   };
   ::aidl::android::hardware::audio::effect::Processing::Type type;
   std::vector<::aidl::android::hardware::audio::effect::Descriptor> ids;
