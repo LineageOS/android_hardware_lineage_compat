@@ -56,10 +56,10 @@ binder_status_t LeAudioCodecConfiguration::readFromParcel(const AParcel* _parcel
     ::aidl::android::hardware::bluetooth::audio::OpusConfiguration _aidl_value;
     if ((_aidl_ret_status = ::ndk::AParcel_readData(_parcel, &_aidl_value)) != STATUS_OK) return _aidl_ret_status;
     if constexpr (std::is_trivially_copyable_v<::aidl::android::hardware::bluetooth::audio::OpusConfiguration>) {
-      set<opusConfig>(_aidl_value);
+      _opusConfiguration = _aidl_value;
     } else {
       // NOLINTNEXTLINE(performance-move-const-arg)
-      set<opusConfig>(std::move(_aidl_value));
+      _opusConfiguration = std::move(_aidl_value);
     }
     return STATUS_OK; }
   }
@@ -72,7 +72,7 @@ binder_status_t LeAudioCodecConfiguration::writeToParcel(AParcel* _parcel) const
   case lc3Config: return ::ndk::AParcel_writeData(_parcel, get<lc3Config>());
   case vendorConfig: return ::ndk::AParcel_writeData(_parcel, get<vendorConfig>());
   case aptxAdaptiveLeConfig: return ::ndk::AParcel_writeData(_parcel, get<aptxAdaptiveLeConfig>());
-  case opusConfig: return ::ndk::AParcel_writeData(_parcel, get<opusConfig>());
+  case opusConfig: return ::ndk::AParcel_writeData(_parcel, _opusConfiguration);
   }
   __assert2(__FILE__, __LINE__, __PRETTY_FUNCTION__, "can't reach here");
 }

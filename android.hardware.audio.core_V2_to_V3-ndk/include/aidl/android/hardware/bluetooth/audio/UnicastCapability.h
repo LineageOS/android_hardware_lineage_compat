@@ -186,20 +186,21 @@ public:
       case lc3Capabilities: os << "lc3Capabilities: " << ::android::internal::ToString(get<lc3Capabilities>()); break;
       case vendorCapabillities: os << "vendorCapabillities: " << ::android::internal::ToString(get<vendorCapabillities>()); break;
       case aptxAdaptiveLeCapabilities: os << "aptxAdaptiveLeCapabilities: " << ::android::internal::ToString(get<aptxAdaptiveLeCapabilities>()); break;
-      case opusCapabilities: os << "opusCapabilities: " << ::android::internal::ToString(get<opusCapabilities>()); break;
+      case opusCapabilities: os << "opusCapabilities: " << ::android::internal::ToString(_opusCapabilities); break;
       }
       os << "}";
       return os.str();
     }
   private:
-    std::variant<::aidl::android::hardware::bluetooth::audio::Lc3Capabilities, ::aidl::android::hardware::bluetooth::audio::UnicastCapability::VendorCapabilities, ::aidl::android::hardware::bluetooth::audio::AptxAdaptiveLeCapabilities, ::aidl::android::hardware::bluetooth::audio::OpusCapabilities> _value;
+    std::variant<::aidl::android::hardware::bluetooth::audio::Lc3Capabilities, ::aidl::android::hardware::bluetooth::audio::UnicastCapability::VendorCapabilities, ::aidl::android::hardware::bluetooth::audio::AptxAdaptiveLeCapabilities> _value;
+    static inline ::aidl::android::hardware::bluetooth::audio::OpusCapabilities _opusCapabilities;
   };
   ::aidl::android::hardware::bluetooth::audio::CodecType codecType = ::aidl::android::hardware::bluetooth::audio::CodecType(0);
   ::aidl::android::hardware::bluetooth::audio::AudioLocation supportedChannel = ::aidl::android::hardware::bluetooth::audio::AudioLocation(0);
   int32_t deviceCount = 0;
   int32_t channelCountPerDevice = 0;
   ::aidl::android::hardware::bluetooth::audio::UnicastCapability::LeAudioCodecCapabilities leAudioCodecCapabilities;
-  std::optional<::aidl::android::hardware::bluetooth::audio::CodecSpecificConfigurationLtv::AudioChannelAllocation> audioLocation;
+  static inline std::optional<::aidl::android::hardware::bluetooth::audio::CodecSpecificConfigurationLtv::AudioChannelAllocation> audioLocation;
 
   binder_status_t readFromParcel(const AParcel* parcel);
   binder_status_t writeToParcel(AParcel* parcel) const;

@@ -178,13 +178,14 @@ public:
     case lc3Config: os << "lc3Config: " << ::android::internal::ToString(get<lc3Config>()); break;
     case vendorConfig: os << "vendorConfig: " << ::android::internal::ToString(get<vendorConfig>()); break;
     case aptxAdaptiveLeConfig: os << "aptxAdaptiveLeConfig: " << ::android::internal::ToString(get<aptxAdaptiveLeConfig>()); break;
-    case opusConfig: os << "opusConfig: " << ::android::internal::ToString(get<opusConfig>()); break;
+    case opusConfig: os << "opusConfig: " << ::android::internal::ToString(_opusConfiguration); break;
     }
     os << "}";
     return os.str();
   }
 private:
-  std::variant<::aidl::android::hardware::bluetooth::audio::Lc3Configuration, ::aidl::android::hardware::bluetooth::audio::LeAudioCodecConfiguration::VendorConfiguration, ::aidl::android::hardware::bluetooth::audio::AptxAdaptiveLeConfiguration, ::aidl::android::hardware::bluetooth::audio::OpusConfiguration> _value;
+  std::variant<::aidl::android::hardware::bluetooth::audio::Lc3Configuration, ::aidl::android::hardware::bluetooth::audio::LeAudioCodecConfiguration::VendorConfiguration, ::aidl::android::hardware::bluetooth::audio::AptxAdaptiveLeConfiguration> _value;
+  static inline ::aidl::android::hardware::bluetooth::audio::OpusConfiguration _opusConfiguration;
 };
 }  // namespace audio
 }  // namespace bluetooth
