@@ -20,6 +20,7 @@ for vndk_version, libs in {
         "libutils",
     ],
     "v34": [
+        "libbase",
         "libaudioroute",
         "libui",
     ],

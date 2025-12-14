@@ -137,6 +137,27 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
 }
 
+cc_prebuilt_library_shared {
+    name: "libbase-v34",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "libc++",
+        "liblog",
+    ],
+    target: {
+        android_arm: {
+            srcs: ["vndk/v34/arm/libbase-v34.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v34/arm64/libbase-v34.so"],
+        },
+    },
+    compile_multilib: "both",
+}
+
 cc_library {
     name: "libbinder_shim",
     shared_libs: [
