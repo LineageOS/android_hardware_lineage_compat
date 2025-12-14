@@ -51,6 +51,24 @@
       "parentUuid": "25451174_70abdc1c",
       "revId": "c155f594639b5c9fa39d775fd7fbf610bac76a37",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c3f5d6f_5852953b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-14T17:05:37Z",
+      "side": 1,
+      "message": "It\u0027s not done, as least per .clang-format rules in this repo.",
+      "parentUuid": "a0bd7702_2eb1aef3",
+      "revId": "c155f594639b5c9fa39d775fd7fbf610bac76a37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
