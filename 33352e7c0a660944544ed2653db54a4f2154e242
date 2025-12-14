@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eaedeae5_556c354a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-14T17:09:53Z",
+      "side": 1,
+      "message": "By the way, next time don\u0027t upload a duplicate change. You already had it in lineage-23.0 ( https://review.lineageos.org/c/LineageOS/android_hardware_lineage_compat/+/463728 ) and could have just moved it to this branch.",
+      "revId": "33352e7c0a660944544ed2653db54a4f2154e242",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
