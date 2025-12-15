@@ -105,6 +105,24 @@
       "parentUuid": "9d66559c_b638415b",
       "revId": "ce754a1413a94405f63badbffba4b618c1fbcc38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81dd82b9_d3dc3c60",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-12-15T11:06:22Z",
+      "side": 1,
+      "message": "It does affect 20+ devices https://github.com/search?q\u003dorg%3ALineageOS%20libui-v34\u0026type\u003dcode and this exact fixup can probably be used on all of them, it was tried on xiaomi sm8450, xiaomi sm6150, motorola 7250",
+      "parentUuid": "81854793_533f0d8f",
+      "revId": "ce754a1413a94405f63badbffba4b618c1fbcc38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
