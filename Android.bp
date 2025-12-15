@@ -409,48 +409,6 @@ cc_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libui-v34",
-    vendor: true,
-    strip: {
-        none: true,
-    },
-    shared_libs: [
-        "android.hardware.graphics.common-V7-ndk",
-        "android.hardware.graphics.allocator-V2-ndk",
-        "android.hardware.graphics.allocator@2.0",
-        "android.hardware.graphics.allocator@3.0",
-        "android.hardware.graphics.allocator@4.0",
-        "android.hardware.graphics.common@1.2",
-        "android.hardware.graphics.mapper@2.0",
-        "android.hardware.graphics.mapper@2.1",
-        "android.hardware.graphics.mapper@3.0",
-        "android.hardware.graphics.mapper@4.0",
-        "libbase",
-        "libbinder_ndk",
-        "libcutils",
-        "libgralloctypes",
-        "libhidlbase",
-        "libsync",
-        "libutils",
-        "liblog",
-        "libvndksupport",
-        "libc++",
-        "libc",
-        "libm",
-        "libdl",
-    ],
-    target: {
-        android_arm: {
-            srcs: ["vndk/v34/arm/libui-v34.so"],
-        },
-        android_arm64: {
-            srcs: ["vndk/v34/arm64/libui-v34.so"],
-        },
-    },
-    compile_multilib: "both",
-}
-
-cc_prebuilt_library_shared {
     name: "libutils-v32",
     vendor: true,
     strip: {
