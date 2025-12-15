@@ -87,6 +87,24 @@
       "parentUuid": "32798534_e16e15cc",
       "revId": "ce754a1413a94405f63badbffba4b618c1fbcc38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81854793_533f0d8f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-15T10:50:35Z",
+      "side": 1,
+      "message": "I am not sure if we should have that very specific fixup in extract-utils.",
+      "parentUuid": "9d66559c_b638415b",
+      "revId": "ce754a1413a94405f63badbffba4b618c1fbcc38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
