@@ -34,6 +34,24 @@
       "parentUuid": "6cc2ebae_e6ce586d",
       "revId": "ce754a1413a94405f63badbffba4b618c1fbcc38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3565f74c_72403e8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-15T08:21:41Z",
+      "side": 1,
+      "message": "I have the same question, so please add an explanation in the commit message.",
+      "parentUuid": "6cc2ebae_e6ce586d",
+      "revId": "ce754a1413a94405f63badbffba4b618c1fbcc38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
