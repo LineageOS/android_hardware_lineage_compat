@@ -69,6 +69,24 @@
       "message": "If we go this route, blob_fixup_graphic_buffer_size should be at least somewhere common/inside extract-utils. I don\u0027t think we really want 100 commits copy pasting it in device trees",
       "revId": "ce754a1413a94405f63badbffba4b618c1fbcc38",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d66559c_b638415b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-12-15T09:54:54Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_tools_extract-utils/+/465187",
+      "parentUuid": "32798534_e16e15cc",
+      "revId": "ce754a1413a94405f63badbffba4b618c1fbcc38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
