@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ba4d457_ccdc5a3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36084
+      },
+      "writtenOn": "2025-12-17T15:54:43Z",
+      "side": 1,
+      "message": "Required for some blobs:\n\n```\nvendor/oneplus/sm8450-common/proprietary/vendor/bin/qguard: error: Unresolved symbol: _ZN7android4base15WriteStringToFdERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS0_11borrowed_fdE\n```",
+      "revId": "b5d19c6984cbc73ea55ac7404737a10a50e4421b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
