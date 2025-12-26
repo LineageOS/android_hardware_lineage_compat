@@ -21,6 +21,7 @@ for vndk_version, libs in {
     ],
     "v34": [
         "libaudioroute",
+        "libtinyxml2",
         "libui",
     ],
 }.items():

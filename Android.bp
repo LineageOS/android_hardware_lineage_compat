@@ -569,6 +569,30 @@ cc_library_shared {
     vendor_available: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libtinyxml2-v34",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "liblog",
+        "libc++",
+        "libc",
+        "libm",
+        "libdl",
+    ],
+    target: {
+        android_arm: {
+            srcs: ["vndk/v34/arm/libtinyxml2-v34.so"],
+        },
+        android_arm64: {
+            srcs: ["vndk/v34/arm64/libtinyxml2-v34.so"],
+        },
+    },
+    compile_multilib: "both",
+}
+
 cc_library_shared {
     name: "libcomparetf2_shim",
     srcs: ["libcomparetf2/comparetf2.c"],
