@@ -16,6 +16,24 @@
       "message": "Can\u0027t we pick https://review.lineageos.org/c/LineageOS/android_external_dng_sdk/+/465835?",
       "revId": "38dd77a373c47d470ab528ae0976b6b177b3e57e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37002007_0bebf636",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2026-01-16T05:48:29Z",
+      "side": 1,
+      "message": "No, we do not fork external/dng_sdk on 23.2 - https://review.lineageos.org/c/LineageOS/android_hardware_lineage_compat/+/463406/comments/5db4bcba_2c529f8a",
+      "parentUuid": "587e5d82_b163a8aa",
+      "revId": "38dd77a373c47d470ab528ae0976b6b177b3e57e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
