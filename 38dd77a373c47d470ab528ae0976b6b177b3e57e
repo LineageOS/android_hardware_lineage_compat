@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "587e5d82_b163a8aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2026-01-16T05:42:40Z",
+      "side": 1,
+      "message": "Can\u0027t we pick https://review.lineageos.org/c/LineageOS/android_external_dng_sdk/+/465835?",
+      "revId": "38dd77a373c47d470ab528ae0976b6b177b3e57e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
