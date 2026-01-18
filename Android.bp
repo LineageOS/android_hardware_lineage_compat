@@ -502,7 +502,10 @@ cc_prebuilt_library_shared {
 cc_library_shared {
     name: "libutils_shim",
     shared_libs: ["libutils"],
-    srcs: ["libutils/String16.cpp"],
+    srcs: [
+        "libutils/String16.cpp",
+        "libutils/Thread.cpp",
+    ],
     system_ext_specific: true,
     vendor_available: true,
 }
