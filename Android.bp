@@ -72,6 +72,17 @@ cc_library_shared {
     vendor: true,
 }
 
+cc_library_shared {
+    name: "libbluetooth_audio_session_aidl_shim",
+    shared_libs: [
+        "libbluetooth_audio_session_aidl",
+    ],
+    srcs: [
+        "libbluetooth_audio_session_aidl/BluetoothAudioSession.cpp",
+    ],
+    vendor: true,
+}
+
 cc_defaults {
     name: "libgui_shim_defaults",
     shared_libs: ["libutils"],
