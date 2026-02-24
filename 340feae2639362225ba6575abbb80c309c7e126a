@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dbcc9069_a1ee036b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-02-24T12:23:28Z",
+      "side": 1,
+      "message": "Required for devices with blobs that are ancient",
+      "revId": "340feae2639362225ba6575abbb80c309c7e126a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
