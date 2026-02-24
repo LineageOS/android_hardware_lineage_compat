@@ -764,3 +764,12 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
 }
+
+java_library {
+    name: "telephony-common-stub",
+    installable: true,
+
+    srcs: [
+        "frameworks/telephony-common-stub/src/**/*.java",
+    ],
+}
