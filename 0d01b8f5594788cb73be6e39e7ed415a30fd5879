@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3929e269_d20123ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-02-25T21:17:28Z",
+      "side": 1,
+      "message": "Works on Pacman and PacmanPro (Nothing Phone (2a) and (2a) Plus)",
+      "revId": "0d01b8f5594788cb73be6e39e7ed415a30fd5879",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
