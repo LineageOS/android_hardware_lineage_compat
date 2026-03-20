@@ -687,6 +687,81 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-full-21.12-vendorcompat",
+    stem: "libprotobuf-cpp-full-21.12",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "libc++",
+        "liblog",
+        "libz",
+    ],
+    target: {
+        android_arm: {
+            srcs: ["libprotobuf/arm/libprotobuf-cpp-full-21.12.so"],
+        },
+        android_arm64: {
+            srcs: select(soong_config_variable("ANDROID", "target_max_page_size_supported"), {
+                "16384": ["libprotobuf/arm64_16k/libprotobuf-cpp-full-21.12.so"],
+                default: ["libprotobuf/arm64/libprotobuf-cpp-full-21.12.so"],
+            }),
+        },
+    },
+    compile_multilib: "both",
+}
+
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-lite-21.12-vendorcompat",
+    stem: "libprotobuf-cpp-lite-21.12",
+    vendor: true,
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "libc++",
+        "liblog",
+    ],
+    target: {
+        android_arm: {
+            srcs: ["libprotobuf/arm/libprotobuf-cpp-lite-21.12.so"],
+        },
+        android_arm64: {
+            srcs: select(soong_config_variable("ANDROID", "target_max_page_size_supported"), {
+                "16384": ["libprotobuf/arm64_16k/libprotobuf-cpp-lite-21.12.so"],
+                default: ["libprotobuf/arm64/libprotobuf-cpp-lite-21.12.so"],
+            }),
+        },
+    },
+    compile_multilib: "both",
+}
+
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-lite-21.12",
+    system_ext_specific: true,
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "libc++",
+        "liblog",
+    ],
+    target: {
+        android_arm: {
+            srcs: ["libprotobuf/arm/libprotobuf-cpp-lite-21.12.so"],
+        },
+        android_arm64: {
+            srcs: select(soong_config_variable("ANDROID", "target_max_page_size_supported"), {
+                "16384": ["libprotobuf/arm64_16k/libprotobuf-cpp-lite-21.12.so"],
+                default: ["libprotobuf/arm64/libprotobuf-cpp-lite-21.12.so"],
+            }),
+        },
+    },
+    compile_multilib: "both",
+}
+
+cc_prebuilt_library_shared {
     name: "libprotobuf-cpp-full-v29",
     vendor: true,
     strip: {
