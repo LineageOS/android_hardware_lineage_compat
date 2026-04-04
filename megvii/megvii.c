@@ -18,3 +18,7 @@ void* mg_facepp[] = {
         &stub_fail, &stub_fail, &stub_fail, &stub_fail,     &stub_fail,     &stub_fail, &stub_fail,
         &stub_fail, &stub_fail, &stub_fail, &stub_fail,     &stub_fail,     &stub_fail,
 };
+
+void* _meg_beauty_body_get_api_impl(void) {
+    return NULL;
+}
