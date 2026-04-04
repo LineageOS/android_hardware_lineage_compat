@@ -383,8 +383,19 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "libMegviiBeautyBody",
+    defaults: ["libMegviiFacepp_defaults"],
+    vendor: true,
+}
+
+cc_library_shared {
     name: "libmegface",
     defaults: ["libMegviiFacepp_defaults"],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "libmegskeleton",
     vendor: true,
 }
 
