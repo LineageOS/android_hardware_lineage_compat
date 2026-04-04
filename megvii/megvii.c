@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+#define MGBB_STATUS_FAILURE 0xb
+
 static int stub_fail() {
     return -1;
 }
@@ -18,3 +20,7 @@ void* mg_facepp[] = {
         &stub_fail, &stub_fail, &stub_fail, &stub_fail,     &stub_fail,     &stub_fail, &stub_fail,
         &stub_fail, &stub_fail, &stub_fail, &stub_fail,     &stub_fail,     &stub_fail,
 };
+
+long _meg_beauty_body_get_api_impl(long /*param1*/, ...) {
+    return MGBB_STATUS_FAILURE;
+}
