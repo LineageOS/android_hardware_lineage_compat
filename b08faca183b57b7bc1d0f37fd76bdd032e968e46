@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a034a00d_663938f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-04-06T17:05:00Z",
+      "side": 1,
+      "message": "I\u0027d leave this one out of here. Only hardware/xiaomi uses it and some random lenovo.",
+      "revId": "b08faca183b57b7bc1d0f37fd76bdd032e968e46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
