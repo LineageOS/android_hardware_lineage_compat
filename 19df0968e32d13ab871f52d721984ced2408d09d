@@ -16,6 +16,24 @@
       "message": "I doubt this returns nothing at all? Make it return nullptr at least",
       "revId": "19df0968e32d13ab871f52d721984ced2408d09d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "737b6735_c2d7061a",
+        "filename": "megvii/megvii.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-04-07T04:01:54Z",
+      "side": 1,
+      "message": "Can you please give me an example? Tbh I don\u0027t know how these stubs work",
+      "parentUuid": "0484efce_7296da5a",
+      "revId": "19df0968e32d13ab871f52d721984ced2408d09d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
