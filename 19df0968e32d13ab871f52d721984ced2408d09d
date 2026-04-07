@@ -52,6 +52,24 @@
       "parentUuid": "737b6735_c2d7061a",
       "revId": "19df0968e32d13ab871f52d721984ced2408d09d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a2ae71d5_1537491f",
+        "filename": "megvii/megvii.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-04-07T21:58:18Z",
+      "side": 1,
+      "message": "FAILED: out/soong/.intermediates/hardware/lineage/compat/libMegviiBeautyBody/android_vendor_arm64_armv8-2a_shared/obj/hardware/lineage/compat/megvii/megvii.o\nPWD\u003d/proc/self/cwd /usr/bin/ccache prebuilts/clang/host/linux-x86/clang-r563880c/bin/clang -c -nostdlibinc -D__ANDROID_VNDK__ -D__ANDROID_VENDOR__ -D__ANDROID_VENDOR_API__\u003d202504  -Werror\u003dimplicit-function-declaration -D__BIONIC_DEPRECATED_PAGE_SIZE_MACRO -O2 -Wall -Wextra -Wpointer-arith -Wunguarded-availability -Werror\u003dbool-operation -Werror\u003ddate-time -Werror\u003dint-conversion -Werror\u003dmultichar -Werror\u003dpragma-pack -Werror\u003dpragma-pack-suspicious-include -Werror\u003dsizeof-array-div -Werror\u003dsizeof-pointer-memaccess -Werror\u003dstring-plus-int -Werror\u003dunreachable-code-loop-increment -Wno-error\u003ddeprecated-declarations -Wno-error\u003dunused-variable -Wno-c23-extensions -Wno-c99-designator -Wno-gnu-folding-constant -Wno-inconsistent-missing-override -Wno-error\u003dreorder-init-list -Wno-reorder-init-list -Wno-sign-compare -Wno-unused -DANDROID -DNDEBUG -UDEBUG -D__compiler_offsetof\u003d__builtin_offsetof -D__ANDROID_UNAVAILABLE_SYMBOLS_ARE_WEAK__ -faddrsig -fdebug-default-version\u003d5 -fcolor-diagnostics -ffp-contract\u003doff -fno-exceptions -fno-strict-aliasing -fmessage-length\u003d0 -gsimple-template-names -gz\u003dzstd -no-canonical-prefixes -fdebug-prefix-map\u003d/proc/self/cwd\u003d -ftrivial-auto-var-init\u003dzero -Wno-unused-command-line-argument -g -ffunction-sections -fdata-sections -fno-short-enums -funwind-tables -fstack-protector-strong -Wa,--noexecstack -D_FORTIFY_SOURCE\u003d3 -Werror\u003dnon-virtual-dtor -Werror\u003daddress -Werror\u003dsequence-point -Werror\u003dformat-security -Wno-enum-compare -Wno-enum-compare-switch -Wno-null-pointer-arithmetic -Wno-psabi -Wno-null-pointer-subtraction -Wno-string-concatenation -Wno-deprecated-non-prototype -Wno-unused -Wno-unused-but-set-variable -Wno-deprecated -Wno-tautological-constant-compare -Wno-error\u003drange-loop-construct -march\u003darmv8.2-a  -target aarch64-linux-android36 -DANDROID_STRICT -fPIC  -Ihardware/lineage/compat -Iprebuilts/clang/host/linux-x86/clang-r563880c/android_libc++/platform/aarch64/include/c++/v1 -Iprebuilts/clang/host/linux-x86/clang-r563880c/include/c++/v1 -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi/asm-arm64 -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -Werror -DDO_NOT_CHECK_MANUAL_BINDER_INTERFACES -flto\u003dthin -fsplit-lto-unit -std\u003dgnu23  -Werror\u003daddress-of-temporary -Werror\u003ddangling -Werror\u003dformat-insufficient-args -Werror\u003dfortify-source -Werror\u003dincompatible-function-pointer-types -Werror\u003dint-in-bool-context -Werror\u003dint-to-pointer-cast -Werror\u003dnull-dereference -Werror\u003dreturn-type -Werror\u003dxor-used-as-pow -Wno-missing-field-initializers -Wno-packed-non-pod -Wno-error\u003dtautological-constant-compare -Wno-implicit-int-float-conversion -Wno-tautological-overlap-compare -Wno-deprecated-copy -Wno-zero-as-null-pointer-constant -Wno-deprecated-anon-enum-enum-conversion -Wno-deprecated-enum-enum-conversion -Wno-error\u003dpessimizing-move -Wno-non-c-typedef-for-linkage -Wno-align-mismatch -Wno-error\u003dunused-but-set-parameter -Wno-error\u003ddeprecated -Wno-error\u003dinvalid-offsetof -Wno-nontrivial-memcall -Wno-invalid-specialization -Wno-vla-cxx-extension -Wno-cast-function-type-mismatch  -fcommon -Wno-format-insufficient-args -Wno-misleading-indentation -Wno-unused -Wno-unused-parameter -Wno-unused-but-set-parameter -Wno-unused-variable -Wno-unqualified-std-cast-call -Wno-array-parameter -Wno-gnu-offsetof-extensions -Wno-pessimizing-move -Wno-pointer-to-int-cast -MD -MF out/soong/.intermediates/hardware/lineage/compat/libMegviiBeautyBody/android_vendor_arm64_armv8-2a_shared/obj/hardware/lineage/compat/megvii/megvii.o.d -o out/soong/.intermediates/hardware/lineage/compat/libMegviiBeautyBody/android_vendor_arm64_armv8-2a_shared/obj/hardware/lineage/compat/megvii/megvii.o hardware/lineage/compat/megvii/megvii.c\nhardware/lineage/compat/megvii/megvii.c:23:12: error: use of undeclared identifier \u0027NULL\u0027\n   23 |     return NULL;\n      |            ^\n1 error generated.",
+      "parentUuid": "ffa09b99_0433166c",
+      "revId": "19df0968e32d13ab871f52d721984ced2408d09d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
