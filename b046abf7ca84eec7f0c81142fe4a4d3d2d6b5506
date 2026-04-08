@@ -18,6 +18,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b32076a2_fa29d454",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-04-08T02:54:06Z",
+      "side": 1,
+      "message": "PS2 added the include stddef.h and it built, but now camera crashes\n\nhttps://katb.in/eyoyuxoyube",
+      "revId": "b046abf7ca84eec7f0c81142fe4a4d3d2d6b5506",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0cdb9b09_17f99f0b",
