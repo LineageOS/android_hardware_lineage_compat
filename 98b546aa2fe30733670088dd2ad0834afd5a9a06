@@ -16,6 +16,24 @@
       "message": "PS3 works on zippo, camera app works and I can take pictures and they save on the device",
       "revId": "98b546aa2fe30733670088dd2ad0834afd5a9a06",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7cda4247_fbbce8b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-04-08T19:59:20Z",
+      "side": 1,
+      "message": "Like I wrote in the first change on the chain, move this to your device.",
+      "parentUuid": "b9ad49cd_a5a2e17f",
+      "revId": "98b546aa2fe30733670088dd2ad0834afd5a9a06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
