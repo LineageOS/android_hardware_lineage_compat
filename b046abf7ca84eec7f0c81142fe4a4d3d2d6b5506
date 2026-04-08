@@ -102,6 +102,24 @@
       "message": "decompiled output /w debug symbols suggests that this returns this i32 enum rather than ptr.\n\n```\nenum MGBB_STATUS : __int32\n{\n    MGBB_STATUS::MGBB_STATUS_OK      \u003d 0x0,\n    MGBB_STATUS::MGBB_STATUS_INVALID_ARGUMENT \u003d 0x1,\n    MGBB_STATUS::MGBB_STATUS_INVALID_HANDLE \u003d 0x2,\n    MGBB_STATUS::MGBB_STATUS_INVALID_MODEL \u003d 0x3,\n    MGBB_STATUS::MGBB_STATUS_OPENGLES_CONTEXT \u003d 0x4,\n    MGBB_STATUS::MGBB_STATUS_DETECT_FAILURE \u003d 0x5,\n    MGBB_STATUS::MGBB_STATUS_CONFIG_ERROR \u003d 0x6,\n    MGBB_STATUS::MGBB_STATUS_NOT_FOUND_FACE \u003d 0x7,\n    MGBB_STATUS::MGBB_STATUS_RES_LOSE \u003d 0x8,\n    MGBB_STATUS::MGBB_STATUS_RES_ERROR \u003d 0x9,\n    MGBB_STATUS::MGBB_STATUS_GL_ERROR \u003d 0xA,\n    MGBB_STATUS::MGBB_STATUS_FAILURE \u003d 0xB,\n    MGBB_STATUS::MGBB_STATUS_SDK_EXPIRED \u003d 0x7E2,\n};\n```\n\n```\napi_impl \u003d (unsigned int)_meg_beauty_body_get_api_impl();\nif ( api_impl \u003d\u003d MGBB_STATUS::MGBB_STATUS_OK )\n  ...\n```",
       "revId": "b046abf7ca84eec7f0c81142fe4a4d3d2d6b5506",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "60d242b8_21190816",
+        "filename": "megvii/megvii.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-04-08T06:24:39Z",
+      "side": 1,
+      "message": "also this explains why it crashes if you return NULL ptr, it just assumes it initialized properly and tries to do more ^^",
+      "parentUuid": "b4505ed3_1345ac7d",
+      "revId": "b046abf7ca84eec7f0c81142fe4a4d3d2d6b5506",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
