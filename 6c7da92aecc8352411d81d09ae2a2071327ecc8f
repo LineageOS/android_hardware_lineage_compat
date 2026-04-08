@@ -33,6 +33,24 @@
       "message": "```suggestion\n// Copyright (C) 2022-2026 The LineageOS Project\n```",
       "revId": "6c7da92aecc8352411d81d09ae2a2071327ecc8f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cab94706_2d37b918",
+        "filename": "Android.bp",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-04-08T20:59:52Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "3563a22f_79c0f171",
+      "revId": "6c7da92aecc8352411d81d09ae2a2071327ecc8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
