@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a53672f6_56899da6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-08T20:31:45Z",
+      "side": 1,
+      "message": "We talked about this in discord, we already have qcom/mtk/exynos shims here - and if we\u0027re enforcing it",
+      "parentUuid": "7cda4247_fbbce8b2",
+      "revId": "98b546aa2fe30733670088dd2ad0834afd5a9a06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "22401f53_533e2990",
