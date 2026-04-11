@@ -774,7 +774,8 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libstagefright_foundation-v33",
-    vendor: true,
+    system_ext_specific: true,
+    vendor_available: true,
     strip: {
         none: true,
     },
