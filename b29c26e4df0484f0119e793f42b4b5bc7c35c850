@@ -53,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "859fc2a2_7155768d",
+        "filename": "libjsoncpp/json_value.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2026-04-17T19:11:57Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "8dfb003e_74bbeb56",
+      "revId": "b29c26e4df0484f0119e793f42b4b5bc7c35c850",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9244e0c8_9c5710fa",
@@ -84,6 +102,24 @@
       "side": 1,
       "message": "ditto",
       "parentUuid": "9244e0c8_9c5710fa",
+      "revId": "b29c26e4df0484f0119e793f42b4b5bc7c35c850",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d900867_4454f617",
+        "filename": "libjsoncpp/json_value.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2026-04-17T19:11:57Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "c70499ac_cd131d68",
       "revId": "b29c26e4df0484f0119e793f42b4b5bc7c35c850",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
