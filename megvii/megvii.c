@@ -45,6 +45,18 @@ void* mg_facepp[] = {
         // clang-format on
 };
 
+void* mg_beautify[] = {
+    &stub_fail,
+    &stub_fail,
+    &stub_fail,
+    &stub_fail,
+    &stub_fail,
+    &stub_fail,
+    &stub_fail,
+    &stub_fail,
+    &stub_fail,
+}
+
 int _meg_beauty_body_get_api_impl(void) {
     return MGBB_STATUS_FAILURE;
 }
