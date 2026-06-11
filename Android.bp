@@ -284,6 +284,7 @@ cc_library {
         "libbase/logging.cpp",
         "libbase/strings.cpp",
     ],
+    recovery_available: true,
     vendor: true,
 }
 
