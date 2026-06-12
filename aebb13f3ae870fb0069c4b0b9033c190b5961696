@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94ffad97_b9955a91",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-06-12T08:19:52Z",
+      "side": 1,
+      "message": "Maybe rather then restore call it \"don\u0027t dispatch Trim to libbase\" and at this point is the link against it even used?",
+      "revId": "aebb13f3ae870fb0069c4b0b9033c190b5961696",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
