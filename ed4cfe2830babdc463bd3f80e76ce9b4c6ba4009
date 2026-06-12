@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6761ffed_9de01197",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32674
+      },
+      "writtenOn": "2026-06-12T06:15:06Z",
+      "side": 1,
+      "message": "Reference: https://android.googlesource.com/platform/system/libbase/+/refs/heads/android13-release/strings.cpp",
+      "revId": "ed4cfe2830babdc463bd3f80e76ce9b4c6ba4009",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
