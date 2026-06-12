@@ -6,6 +6,9 @@
 
 #include <android-base/strings.h>
 
+#include <cctype>
+#include <string_view>
+
 namespace android {
 namespace base {
 bool StartsWith(const std::string& s, const char* prefix) {
@@ -13,7 +16,19 @@ bool StartsWith(const std::string& s, const char* prefix) {
 }
 
 std::string Trim(const std::string& s) {
-    return Trim(std::string_view(s));
+  std::string_view sv(s);
+
+  // Skip initial whitespace.
+  while (!sv.empty() && isspace(static_cast<unsigned char>(sv.front()))) {
+    sv.remove_prefix(1);
+  }
+
+  // Skip terminating whitespace.
+  while (!sv.empty() && isspace(static_cast<unsigned char>(sv.back()))) {
+    sv.remove_suffix(1);
+  }
+
+  return std::string(sv);
 }
 }  // namespace base
 }  // namespace android
