@@ -562,7 +562,7 @@ cc_library_shared {
 cc_library_shared {
     name: "libwfdservice_shim",
     shared_libs: [
-        "android.media.audio.common.types-V4-cpp",
+        "android.media.audio.common.types-V5-cpp",
         "audioclient-types-aidl-cpp",
         "libaudioclient",
         "libaudiofoundation",
