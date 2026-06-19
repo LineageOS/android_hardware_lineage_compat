@@ -804,3 +804,13 @@ java_library {
         "frameworks/telephony-common-stub/src/**/*.java",
     ],
 }
+
+cc_library_shared {
+    name: "libbluetooth_audio_session_aidl_shim",
+    srcs: ["libbluetooth_audio_session_aidl/bluetooth_audio_session_shim.cpp"],
+    vendor: true,
+    
+    shared_libs: [
+        "libbluetooth_audio_session_aidl",
+    ],
+}
