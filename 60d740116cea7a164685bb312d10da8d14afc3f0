@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "645b8667_1f0ea6da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30975
+      },
+      "writtenOn": "2026-06-19T04:01:21Z",
+      "side": 1,
+      "message": "There is already existing patch Ib65cf1a5dd770502d872e7f82c819dc5c341d9c4",
+      "revId": "60d740116cea7a164685bb312d10da8d14afc3f0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
