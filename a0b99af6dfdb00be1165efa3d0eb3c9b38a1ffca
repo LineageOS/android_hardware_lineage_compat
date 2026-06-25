@@ -16,6 +16,23 @@
       "message": "makes elf checks happy at least, haven\u0027t booted yet",
       "revId": "a0b99af6dfdb00be1165efa3d0eb3c9b38a1ffca",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f46a99c2_ebc12f42",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-06-25T05:42:38Z",
+      "side": 1,
+      "message": "Verified after booting on Oneplus N10 (billie)",
+      "revId": "a0b99af6dfdb00be1165efa3d0eb3c9b38a1ffca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
