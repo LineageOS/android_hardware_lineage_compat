@@ -87,6 +87,7 @@ cc_defaults {
     name: "libgui_shim_defaults",
     shared_libs: ["libutils"],
     srcs: [
+        "libgui/BufferItemConsumer.cpp",
         "libgui/GraphicBufferProducer.cpp",
         "libgui/SurfaceComposerClient.cpp",
     ],
