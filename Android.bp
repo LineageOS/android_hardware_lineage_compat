@@ -313,6 +313,18 @@ cc_library {
     vendor: true,
 }
 
+cc_library_shared {
+    name: "libgui_buffer_shim_vendor",
+    defaults: ["libgui_shim_defaults"],
+    srcs: ["libgui/BufferItemConsumer.cpp"],
+    shared_libs: [
+        "libgui_vendor",
+        "libutils",
+    ],
+    compile_multilib: "64",
+    vendor: true,
+}
+
 cc_prebuilt_library_shared {
     name: "libhidlbase-v32",
     system_ext_specific: true,
