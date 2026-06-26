@@ -197,6 +197,7 @@ cc_library {
 cc_library {
     name: "libcamera_metadata_shim",
     shared_libs: ["libcamera_metadata"],
+    header_libs: ["libcutils_headers"],
     srcs: ["libcamera_metadata/camera_metadata.cpp"],
     vendor: true,
 }
