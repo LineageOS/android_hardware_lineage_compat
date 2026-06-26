@@ -12,6 +12,13 @@ namespace SurfaceComposerClient {
 std::string kEmpty;
 
 sp<IBinder> createVirtualDisplay(const std::string& displayName, bool isSecure,
+                                 bool optimizeForPower, const std::string& uniqueId,
+                                 float requestedRefreshRate) {
+    return createVirtualDisplay(displayName, isSecure, optimizeForPower, uniqueId,
+                                static_cast<uid_t>(-1), requestedRefreshRate);
+}
+
+sp<IBinder> createVirtualDisplay(const std::string& displayName, bool isSecure,
                                  const std::string& uniqueId, float requestedRefreshRate) {
     return createVirtualDisplay(displayName, isSecure, true, uniqueId, static_cast<uid_t>(-1),
                                 requestedRefreshRate);
