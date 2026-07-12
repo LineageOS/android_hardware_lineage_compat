@@ -39,3 +39,8 @@ extern "C" int _ZN18WiFiDisplaySession31broadcastWifiDisplayAudioIntentEb(
 
     return 0;
 }
+
+extern "C" android::status_t _ZN7android11AudioSystem24setDeviceConnectionStateE24audio_policy_dev_state_tRKNS_5media5audio6common9AudioPortE14audio_format_t(
+        audio_policy_dev_state_t state, const android::media::audio::common::AudioPort& port, audio_format_t encodedFormat) {
+    return AudioSystem::setDeviceConnectionState(state, port, encodedFormat, false);
+}
