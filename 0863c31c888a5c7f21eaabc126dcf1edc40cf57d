@@ -16,6 +16,24 @@
       "message": "Run clang-format.",
       "revId": "0863c31c888a5c7f21eaabc126dcf1edc40cf57d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c598734_b1b2c013",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-07-14T01:43:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "55efb257_389b68cd",
+      "revId": "0863c31c888a5c7f21eaabc126dcf1edc40cf57d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
