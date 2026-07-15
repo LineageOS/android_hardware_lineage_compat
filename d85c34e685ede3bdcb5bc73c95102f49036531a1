@@ -33,6 +33,24 @@
       "message": "Will not work, WFD will resolve symbol but absolutely will not work.",
       "revId": "d85c34e685ede3bdcb5bc73c95102f49036531a1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ba9773d_8087d592",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37540
+      },
+      "writtenOn": "2026-07-15T05:11:11Z",
+      "side": 1,
+      "message": "Interesting, I was looking at the new code, it looked like setting flag to false used to go by the code path similar to the one in Lineage 22.2. So there was some change in this method semantics?  i.e. setting flag to false will not do the same as in old behavior?\nThank you!",
+      "parentUuid": "5b1426ae_e150731f",
+      "revId": "d85c34e685ede3bdcb5bc73c95102f49036531a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
