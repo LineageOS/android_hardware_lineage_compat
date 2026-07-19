@@ -6,6 +6,30 @@
 
 #include "SurfaceComposerClient.h"
 
+#include <cstdint>
+
+#pragma clang diagnostic ignored "-Wreturn-type-c-linkage"
+
+struct SpSurfaceControl {
+    void* ptr;
+    SpSurfaceControl(const SpSurfaceControl& other) : ptr(other.ptr) {}
+    ~SpSurfaceControl() {}
+};
+
+extern "C" SpSurfaceControl
+_ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjiiRKNS_2spINS_7IBinderEEERKNS_3gui13LayerMetadataEPj(
+        void* thisptr, const void* name, uint32_t w, uint32_t h, int32_t format, int32_t flags,
+        const void* parentHandle, const void* metadata, uint32_t* outTransformHint);
+
+extern "C" SpSurfaceControl
+_ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjiiRKNS_2spINS_7IBinderEEENS_3gui13LayerMetadataEPj(
+        void* thisptr, const void* name, uint32_t w, uint32_t h, int32_t format, int32_t flags,
+        const void* parentHandle, const void* metadata, uint32_t* outTransformHint) {
+    return
+_ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjiiRKNS_2spINS_7IBinderEEERKNS_3gui13LayerMetadataEPj(
+            thisptr, name, w, h, format, flags, parentHandle, metadata, outTransformHint);
+}
+
 namespace android {
 namespace SurfaceComposerClient {
 
