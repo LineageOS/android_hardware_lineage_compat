@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6ea69ec_a35f38a6",
+        "filename": "libgui/SurfaceComposerClient.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-07-22T15:57:38Z",
+      "side": 1,
+      "message": "ditto as before",
+      "revId": "65452067ac5098a6d25a7fdbbe02e43da12d82b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
