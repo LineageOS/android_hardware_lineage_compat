@@ -16,6 +16,24 @@
       "message": "Can\u0027t you simply add the missing createSurface() bits inside the namespace?",
       "revId": "4d62db7b3c81ef87f21b3d34493fc6c69b605aca",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8410286d_c7fe96cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-07-22T16:12:59Z",
+      "side": 1,
+      "message": "I tried this originally, and I could not get elf checks to accept that.",
+      "parentUuid": "736c47f3_c412c87b",
+      "revId": "4d62db7b3c81ef87f21b3d34493fc6c69b605aca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
