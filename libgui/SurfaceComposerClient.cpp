@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+#include <gui/PidUid.h>
+
 #include "SurfaceComposerClient.h"
 
 extern "C" void*
@@ -28,12 +30,12 @@ sp<IBinder> createVirtualDisplay(const std::string& displayName, bool isSecure,
                                  bool optimizeForPower, const std::string& uniqueId,
                                  float requestedRefreshRate) {
     return createVirtualDisplay(displayName, isSecure, optimizeForPower, uniqueId,
-                                static_cast<uid_t>(-1), requestedRefreshRate);
+                                gui::Uid::INVALID.val(), requestedRefreshRate);
 }
 
 sp<IBinder> createVirtualDisplay(const std::string& displayName, bool isSecure,
                                  const std::string& uniqueId, float requestedRefreshRate) {
-    return createVirtualDisplay(displayName, isSecure, true, uniqueId, static_cast<uid_t>(-1),
+    return createVirtualDisplay(displayName, isSecure, true, uniqueId, gui::Uid::INVALID.val(),
                                 requestedRefreshRate);
 }
 
