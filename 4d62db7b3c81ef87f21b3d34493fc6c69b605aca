@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "736c47f3_c412c87b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-07-22T15:59:32Z",
+      "side": 1,
+      "message": "Can\u0027t you simply add the missing createSurface() bits inside the namespace?",
+      "revId": "4d62db7b3c81ef87f21b3d34493fc6c69b605aca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
