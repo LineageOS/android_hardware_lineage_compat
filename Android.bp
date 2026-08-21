@@ -383,6 +383,13 @@ cc_library {
     system_ext_specific: true,
 }
 
+cc_library_shared {
+    name: "libion_shim",
+    srcs: ["libion/ion.cpp"],
+    header_libs: ["libion_headers"],
+    vendor: true,
+}
+
 cc_library {
     name: "libjsoncpp_shim",
     srcs: [
