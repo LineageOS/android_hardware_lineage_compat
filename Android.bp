@@ -384,6 +384,13 @@ cc_library {
 }
 
 cc_library {
+    name: "libion_shim",
+    srcs: ["libion/ion.cpp"],
+    stl: "none",
+    vendor: true,
+}
+
+cc_library {
     name: "libjsoncpp_shim",
     srcs: [
         "libjsoncpp/json_value.cpp",
