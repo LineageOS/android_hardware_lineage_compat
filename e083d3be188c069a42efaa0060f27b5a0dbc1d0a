@@ -69,6 +69,24 @@
       "parentUuid": "447e4a92_9cc0d9a4",
       "revId": "e083d3be188c069a42efaa0060f27b5a0dbc1d0a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "381089cc_c1dde511",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-08-29T12:27:01Z",
+      "side": 1,
+      "message": "This is just a shim for this lib... Xiaomi can get away with even weirder things.",
+      "parentUuid": "cf581d6d_1ed726cf",
+      "revId": "e083d3be188c069a42efaa0060f27b5a0dbc1d0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
