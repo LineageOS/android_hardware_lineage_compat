@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+
+     Audio policy module for the Bluetooth audio HAL that reaches the session
+     through the adapter. Its ports name no encoded formats, so they take
+     whatever the modules declared before it do not claim.
+-->
+<module name="bluetooth_lineage" halVersion="2.0">
+    <mixPorts>
+        <mixPort name="a2dp output" role="source"/>
+    </mixPorts>
+    <devicePorts>
+        <devicePort tagName="BT A2DP Out" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP" role="sink">
+            <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                     samplingRates="44100,48000,88200,96000"
+                     channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+        </devicePort>
+        <devicePort tagName="BT A2DP Headphones" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES" role="sink">
+            <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                     samplingRates="44100,48000,88200,96000"
+                     channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+        </devicePort>
+        <devicePort tagName="BT A2DP Speaker" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER" role="sink">
+            <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                     samplingRates="44100,48000,88200,96000"
+                     channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+        </devicePort>
+    </devicePorts>
+    <routes>
+        <route type="mix" sink="BT A2DP Out"
+               sources="a2dp output"/>
+        <route type="mix" sink="BT A2DP Headphones"
+               sources="a2dp output"/>
+        <route type="mix" sink="BT A2DP Speaker"
+               sources="a2dp output"/>
+    </routes>
+</module>

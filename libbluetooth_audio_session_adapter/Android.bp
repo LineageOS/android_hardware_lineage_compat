@@ -1,0 +1,92 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_defaults {
+    name: "bluetooth_audio_session_backend_defaults",
+    srcs: ["SessionBackend.cpp"],
+    local_include_dirs: ["."],
+    header_libs: ["libhardware_headers"],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+    ],
+    cflags: [
+        "-fvisibility=hidden",
+        "-Wall",
+        "-Werror",
+    ],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "libbluetooth_audio_session_backend_current",
+    defaults: [
+        "bluetooth_audio_session_backend_defaults",
+        "latest_android_hardware_bluetooth_audio_ndk_shared",
+    ],
+}
+
+cc_library_shared {
+    name: "libbluetooth_audio_session_adapter",
+    srcs: ["SessionAdapter.cpp"],
+    local_include_dirs: ["."],
+    export_include_dirs: ["include"],
+    header_libs: ["libhardware_headers"],
+    defaults: [
+        "latest_android_hardware_audio_common_ndk_shared",
+        "latest_android_hardware_bluetooth_audio_ndk_shared",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "audio.bluetooth_lineage.default",
+    defaults: [
+        "latest_android_hardware_audio_common_ndk_shared",
+        "latest_android_hardware_bluetooth_audio_ndk_shared",
+    ],
+    relative_install_path: "hw",
+    vendor: true,
+    srcs: [":audio_bluetooth_hw_srcs"],
+    header_libs: [
+        "audio_bluetooth_hw_headers",
+        "libhardware_headers",
+    ],
+    shared_libs: [
+        "libaudioutils",
+        "libbase",
+        "libbinder_ndk",
+        "libbluetooth_audio_session_adapter",
+        "libcutils",
+        "libfmq",
+        "liblog",
+        "libutils",
+        "android.hardware.bluetooth.audio@2.0",
+        "android.hardware.bluetooth.audio@2.1",
+        "libbluetooth_audio_session",
+        "libhidlbase",
+    ],
+    cflags: [
+        "-Wno-sign-compare",
+        "-Wno-unused-parameter",
+    ],
+}
+
+prebuilt_etc {
+    name: "bluetooth_lineage_audio_policy_configuration",
+    src: "bluetooth_lineage_audio_policy_configuration.xml",
+    filename_from_src: true,
+    vendor: true,
+}
