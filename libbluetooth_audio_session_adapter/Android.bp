@@ -22,6 +22,13 @@ cc_defaults {
 }
 
 cc_library_shared {
+    name: "libbluetooth_audio_session_backend_v3",
+    defaults: ["bluetooth_audio_session_backend_defaults"],
+    cflags: ["-DLINEAGE_BTA_V3"],
+    shared_libs: ["android.hardware.bluetooth.audio-V3-ndk"],
+}
+
+cc_library_shared {
     name: "libbluetooth_audio_session_backend_current",
     defaults: [
         "bluetooth_audio_session_backend_defaults",

@@ -21,7 +21,11 @@
 #include "SessionSymbols.h"
 #include "include/BluetoothAudioSession.h"
 
+#ifdef LINEAGE_BTA_V3
+#define BACKEND_VERSION 3
+#else
 #define BACKEND_VERSION 6
+#endif
 
 namespace lineage::bluetooth::audio {
 namespace {
@@ -29,13 +33,29 @@ namespace {
 using ::aidl::android::hardware::bluetooth::audio::AudioConfiguration;
 using ::aidl::android::hardware::bluetooth::audio::BluetoothAudioStatus;
 
+#ifdef LINEAGE_BTA_V3
+// Field order and signatures are the ABI: nothing here may be reordered, and
+// the slot that is never called still has to occupy its place.
+struct HalCallbacks {
+    std::function<void(uint16_t, bool, BluetoothAudioStatus)> control_result_cb_;
+    std::function<void(uint16_t)> session_changed_cb_;
+    std::function<void(uint16_t, const AudioConfiguration&)> audio_configuration_changed_cb_;
+    std::function<void(uint16_t, bool)> low_latency_mode_allowed_cb_;
+    std::function<void(uint16_t)> config_changed_aux_cb_;
+};
+#else
 using HalCallbacks = ::aidl::android::hardware::bluetooth::audio::PortStatusCallbacks;
+#endif
 
 using GetAudioConfigFn = AudioConfiguration (*)(SessionObject*);
 
 struct Resolved {
     GetSessionInstanceFn get_instance;
+#ifdef LINEAGE_BTA_V3
+    ReadyV3Fn is_ready;
+#else
     ReadyCurrentFn is_ready;
+#endif
     RegisterCbackFn register_cback;
     UnregisterCbackFn unregister_cback;
     GetAudioConfigFn get_audio_config;
@@ -75,7 +95,11 @@ SessionObject* Session(Context* ctx, int32_t session_type) {
 bool IsSessionReady(void* context, int32_t session_type) {
     Context* ctx = Of(context);
     SessionObject* session = Session(ctx, session_type);
+#ifdef LINEAGE_BTA_V3
+    return session != nullptr && ctx->resolved.is_ready(session);
+#else
     return session != nullptr && ctx->resolved.is_ready(session, true);
+#endif
 }
 
 uint16_t RegisterCbacks(void* context, int32_t session_type, const Callbacks* callbacks) {
@@ -93,9 +117,16 @@ uint16_t RegisterCbacks(void* context, int32_t session_type, const Callbacks* ca
     hal.session_changed_cb_ = [cbacks](uint16_t cookie) {
         cbacks.session_changed(cbacks.context, cookie);
     };
+#ifdef LINEAGE_BTA_V3
+    hal.audio_configuration_changed_cb_ = [cbacks](uint16_t cookie, const AudioConfiguration&) {
+        cbacks.audio_config_changed(cbacks.context, cookie);
+    };
+    hal.config_changed_aux_cb_ = [](uint16_t) {};
+#else
     hal.audio_configuration_changed_cb_ = [cbacks](uint16_t cookie) {
         cbacks.audio_config_changed(cbacks.context, cookie);
     };
+#endif
     hal.low_latency_mode_allowed_cb_ = [cbacks](uint16_t cookie, bool allowed) {
         cbacks.low_latency_allowed(cbacks.context, cookie, allowed);
     };
@@ -251,7 +282,11 @@ extern "C" __attribute__((visibility("default"))) const Backend* lineage_bta_ope
     Resolved& resolved = ctx->resolved;
 
     resolved.get_instance = Lookup<GetSessionInstanceFn>(library, symbols::kGetSessionInstance);
+#ifdef LINEAGE_BTA_V3
+    resolved.is_ready = Lookup<ReadyV3Fn>(library, symbols::kIsSessionReadyV3);
+#else
     resolved.is_ready = Lookup<ReadyCurrentFn>(library, symbols::kIsSessionReadyCurrent);
+#endif
     resolved.update_source = Lookup<UpdateMetadataFn>(library, symbols::kUpdateSourceMetadata);
     resolved.update_sink = Lookup<UpdateMetadataFn>(library, symbols::kUpdateSinkMetadata);
     resolved.register_cback = Lookup<RegisterCbackFn>(library, symbols::kRegisterStatusCback);

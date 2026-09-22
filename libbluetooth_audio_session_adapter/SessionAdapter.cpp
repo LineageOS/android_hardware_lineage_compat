@@ -71,10 +71,15 @@ void* BackendLibrary(const char* name) {
 
 const Backend* BackendFor(void* session_library) {
     namespace lba = ::lineage::bluetooth::audio;
-    if (dlsym(session_library, lba::symbols::kIsSessionReadyCurrent) == nullptr) {
+    const char* backend_name = nullptr;
+    if (dlsym(session_library, lba::symbols::kIsSessionReadyV3) != nullptr) {
+        backend_name = lba::kBackendV3;
+    } else if (dlsym(session_library, lba::symbols::kIsSessionReadyCurrent) != nullptr) {
+        backend_name = lba::kBackendCurrent;
+    } else {
         return nullptr;
     }
-    void* backend_library = BackendLibrary(lba::kBackendCurrent);
+    void* backend_library = BackendLibrary(backend_name);
     if (backend_library == nullptr) {
         return nullptr;
     }

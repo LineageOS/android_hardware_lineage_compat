@@ -18,6 +18,8 @@ namespace symbols {
 constexpr char kGetSessionInstance[] =
         "_ZN4aidl7android8hardware9bluetooth5audio29BluetoothAudioSessionInstance18"
         "GetSessionInstanceERKNS3_11SessionTypeE";
+constexpr char kIsSessionReadyV3[] =
+        "_ZN4aidl7android8hardware9bluetooth5audio21BluetoothAudioSession14IsSessionReadyEv";
 constexpr char kIsSessionReadyCurrent[] =
         "_ZN4aidl7android8hardware9bluetooth5audio21BluetoothAudioSession14IsSessionReadyEb";
 constexpr char kRegisterStatusCback[] =
@@ -64,6 +66,7 @@ constexpr char kInReadPcmData[] =
 struct SessionObject;
 
 using GetSessionInstanceFn = std::shared_ptr<SessionObject> (*)(const int32_t*);
+using ReadyV3Fn = bool (*)(SessionObject*);
 using ReadyCurrentFn = bool (*)(SessionObject*, bool);
 using RegisterCbackFn = uint16_t (*)(SessionObject*, const void*);
 using UnregisterCbackFn = void (*)(SessionObject*, uint16_t);

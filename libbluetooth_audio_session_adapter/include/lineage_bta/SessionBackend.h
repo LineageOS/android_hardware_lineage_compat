@@ -72,6 +72,7 @@ struct Backend {
 using OpenBackendFn = const Backend* (*)(void* library);
 
 constexpr char kOpenBackendSymbol[] = "lineage_bta_open_backend";
+constexpr char kBackendV3[] = "libbluetooth_audio_session_backend_v3.so";
 constexpr char kBackendCurrent[] = "libbluetooth_audio_session_backend_current.so";
 
 }  // namespace lineage::bluetooth::audio
