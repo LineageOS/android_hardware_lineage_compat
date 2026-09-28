@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a95086d0_07a694f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2026-09-28T10:07:23Z",
+      "side": 1,
+      "message": "It might be preferable to do this split on the bluetooth audio AIDL provider side; for example like this (you wouldn\u0027t need AidlToAidlMiddleware, MTKBluetoothAudioProvider or the 500 lines above this in that file if qcom uses the AOSP AIDL interface): https://review.lineageos.org/c/LineageOS/android_hardware_mediatek/+/505223/4/aidl/bluetooth_audio/aidl_adapter/MTKBluetoothAudioProviderFactory.cpp#525 - simply branch if a given provider type is hardware or software and dispatch it to the different providers. Then software sessions get written to libbluetooth_audio_session.so\u0027s static memory, and hardware sessions get written to libbluetooth_audio_session_qti.so\u0027s static memory, so there\u0027s no need to change audio_bluetooth_hw or anything.",
+      "revId": "d08c5c9b4b97b8cafd4cf70133d0b5865024e93d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
