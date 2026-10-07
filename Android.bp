@@ -83,6 +83,19 @@ cc_library_shared {
     vendor: true,
 }
 
+cc_library_shared {
+    name: "android.hardware.bluetooth.audio-impl-dispatcher",
+    defaults: ["latest_android_hardware_bluetooth_audio_ndk_shared"],
+    srcs: ["bluetooth_audio_dispatcher/BluetoothAudioProviderFactory.cpp"],
+    shared_libs: [
+        "android.hardware.bluetooth.audio-impl",
+        "libbinder_ndk",
+        "liblog",
+        "libutils",
+    ],
+    vendor: true,
+}
+
 cc_defaults {
     name: "libgui_shim_defaults",
     shared_libs: ["libutils"],
