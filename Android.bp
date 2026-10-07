@@ -5,6 +5,18 @@
 //
 
 cc_library_shared {
+    name: "android.hardware.bluetooth.audio-impl-dispatcher",
+    defaults: ["latest_android_hardware_bluetooth_audio_ndk_shared"],
+    srcs: ["bluetooth_audio_dispatcher/DispatchingProviderFactory.cpp"],
+    shared_libs: [
+        "android.hardware.bluetooth.audio-impl",
+        "libbinder_ndk",
+        "liblog",
+    ],
+    vendor: true,
+}
+
+cc_library_shared {
     name: "android.hardware.gnss@1.0_types",
     srcs: ["interfaces/gnss/1.0/types.cpp"],
     shared_libs: ["android.hardware.gnss@1.0"],
