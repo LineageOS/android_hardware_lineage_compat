@@ -1,0 +1,18 @@
+// Private, namespaced copies of the V3 data types for legacy native callers.
+aidl_interface {
+    name: "lineage.compat.bluetooth.audio.v3",
+    vendor_available: true,
+    unstable: true,
+    srcs: ["lineage/compat/bluetooth/audio/v3/*.aidl"],
+    backend: {
+        java: {
+            enabled: false
+        },
+        cpp: {
+            enabled: false
+        },
+        ndk: {
+            enabled: true
+        },
+    },
+}

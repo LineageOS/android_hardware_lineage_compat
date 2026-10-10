@@ -76,11 +76,18 @@ cc_library_shared {
     name: "libbluetooth_audio_session_aidl_shim",
     shared_libs: [
         "libbluetooth_audio_session_aidl",
+        "libbinder_ndk",
+        "liblog",
     ],
     srcs: [
+        "libbluetooth_audio_session_aidl/AudioConfigurationV3.cpp",
         "libbluetooth_audio_session_aidl/BluetoothAudioSession.cpp",
     ],
     vendor: true,
+    defaults: ["latest_android_hardware_bluetooth_audio_ndk_shared"],
+    static_libs: [
+        "lineage.compat.bluetooth.audio.v3-ndk",
+    ],
 }
 
 cc_defaults {
