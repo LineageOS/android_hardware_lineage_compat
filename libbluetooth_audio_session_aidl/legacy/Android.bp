@@ -21,3 +21,22 @@ aidl_interface {
         },
     },
 }
+
+// Private V4 data types for native callers built against Android 15.
+aidl_interface {
+    name: "lineage.compat.bluetooth.audio.v4",
+    vendor_available: true,
+    unstable: true,
+    srcs: ["lineage/compat/bluetooth/audio/v4/*.aidl"],
+    backend: {
+        java: {
+            enabled: false
+        },
+        cpp: {
+            enabled: false
+        },
+        ndk: {
+            enabled: true
+        },
+    },
+}
