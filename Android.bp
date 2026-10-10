@@ -76,11 +76,16 @@ cc_library_shared {
     name: "libbluetooth_audio_session_aidl_shim",
     shared_libs: [
         "libbluetooth_audio_session_aidl",
+        "libbinder_ndk",
+        "liblog",
     ],
     srcs: [
         "libbluetooth_audio_session_aidl/BluetoothAudioSession.cpp",
+        "libbluetooth_audio_session_aidl/AudioConfiguration.cpp",
     ],
     vendor: true,
+    defaults: ["latest_android_hardware_bluetooth_audio_ndk_shared"],
+    static_libs: ["lineage.compat.bluetooth.audio-ndk"],
 }
 
 cc_defaults {
@@ -968,4 +973,18 @@ java_library {
     srcs: [
         "frameworks/telephony-common-stub/src/**/*.java",
     ],
+}
+
+// Private, namespaced copies of the V3 data types for legacy native callers.
+aidl_interface {
+    name: "lineage.compat.bluetooth.audio",
+    vendor_available: true,
+    unstable: true,
+    srcs: ["libbluetooth_audio_session_aidl/legacy/lineage/compat/bluetooth/audio/*.aidl"],
+    local_include_dir: "libbluetooth_audio_session_aidl/legacy",
+    backend: {
+        java: { enabled: false },
+        cpp: { enabled: false },
+        ndk: { enabled: true },
+    },
 }
