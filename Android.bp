@@ -81,12 +81,14 @@ cc_library_shared {
     ],
     srcs: [
         "libbluetooth_audio_session_aidl/AudioConfigurationV3.cpp",
+        "libbluetooth_audio_session_aidl/AudioConfigurationV4.cpp",
         "libbluetooth_audio_session_aidl/BluetoothAudioSession.cpp",
     ],
     vendor: true,
     defaults: ["latest_android_hardware_bluetooth_audio_ndk_shared"],
     static_libs: [
         "lineage.compat.bluetooth.audio.v3-ndk",
+        "lineage.compat.bluetooth.audio.v4-ndk",
     ],
 }
 
