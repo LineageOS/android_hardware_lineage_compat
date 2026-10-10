@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ef33661_cb0b4875",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34203
+      },
+      "writtenOn": "2026-10-10T09:49:54Z",
+      "side": 1,
+      "message": "Reason: I5624e05a8c94b87e3f105d086b2daafc4da13f8f\n\nOther officially shipped MTK devices with S vendor and full prebuilt C2 stack should need this too",
+      "revId": "66a3647ea16390efc97d0d75dead888a37a0ffe9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
