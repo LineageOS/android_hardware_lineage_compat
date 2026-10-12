@@ -232,10 +232,12 @@ cc_library_shared {
 cc_library_shared {
     name: "libcodec2_shim",
     shared_libs: [
+        "libcodec2_hidl@1.0",
         "libcodec2_vndk",
     ],
     srcs: [
         "libcodec2/C2Fence.cpp",
+        "libcodec2/WorkBundle.cpp",
     ],
     vendor: true,
 }
