@@ -235,8 +235,14 @@ cc_library_shared {
         "libcodec2_hidl@1.0",
         "libcodec2_vndk",
     ],
+    include_dirs: [
+        "frameworks/av/media/codec2/core/include",
+        "hardware/libhardware/include",
+    ],
     srcs: [
+        "libcodec2/C2Buffer.cpp",
         "libcodec2/C2Fence.cpp",
+        "libcodec2/C2PlatformStorePluginLoader.cpp",
         "libcodec2/WorkBundle.cpp",
     ],
     vendor: true,
