@@ -530,6 +530,13 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
 }
 
+cc_library_shared {
+    name: "libui_legacy_fence_shim",
+    shared_libs: ["libsync"],
+    srcs: ["libui/LegacyFence.c"],
+    vendor: true,
+}
+
 cc_prebuilt_library_shared {
     name: "libui-v34",
     vendor: true,
