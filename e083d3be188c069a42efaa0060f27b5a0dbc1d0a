@@ -121,6 +121,24 @@
       "message": "this should ideally be renamed to something saner",
       "revId": "e083d3be188c069a42efaa0060f27b5a0dbc1d0a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27682a18_2e1781e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29914
+      },
+      "writtenOn": "2026-10-25T16:34:10Z",
+      "side": 1,
+      "message": "libion_close_shim would fit here",
+      "parentUuid": "f1c5c3ef_cc88b9d4",
+      "revId": "e083d3be188c069a42efaa0060f27b5a0dbc1d0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
