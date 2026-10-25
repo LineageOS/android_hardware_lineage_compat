@@ -139,6 +139,40 @@
       "parentUuid": "f1c5c3ef_cc88b9d4",
       "revId": "e083d3be188c069a42efaa0060f27b5a0dbc1d0a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "52c3bdeb_70cb685f",
+        "filename": "libion/ion.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2026-10-25T16:35:17Z",
+      "side": 1,
+      "message": "```suggestion\n * Copyright (C) The LineageOS Project\n```",
+      "revId": "e083d3be188c069a42efaa0060f27b5a0dbc1d0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bde8558e_ea31c897",
+        "filename": "libion/ion.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2026-10-25T16:35:17Z",
+      "side": 1,
+      "message": "What is this needed for? I don\u0027t see anything being used from it",
+      "revId": "e083d3be188c069a42efaa0060f27b5a0dbc1d0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
