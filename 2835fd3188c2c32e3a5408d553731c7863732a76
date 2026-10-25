@@ -33,6 +33,24 @@
       "message": "What\u0027s this for?",
       "revId": "2835fd3188c2c32e3a5408d553731c7863732a76",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac959150_afbd614a",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 406,
+      "author": {
+        "id": 29914
+      },
+      "writtenOn": "2026-10-25T17:29:54Z",
+      "side": 1,
+      "message": "we don\u0027t need libc++ linked",
+      "parentUuid": "e5191d69_3410a37d",
+      "revId": "2835fd3188c2c32e3a5408d553731c7863732a76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
