@@ -16,6 +16,23 @@
       "message": "verified on q5q",
       "revId": "2835fd3188c2c32e3a5408d553731c7863732a76",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5191d69_3410a37d",
+        "filename": "Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 406,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-25T17:24:02Z",
+      "side": 1,
+      "message": "What\u0027s this for?",
+      "revId": "2835fd3188c2c32e3a5408d553731c7863732a76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
