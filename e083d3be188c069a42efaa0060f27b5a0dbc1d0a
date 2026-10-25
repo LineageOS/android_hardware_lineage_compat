@@ -173,6 +173,23 @@
       "message": "What is this needed for? I don\u0027t see anything being used from it",
       "revId": "e083d3be188c069a42efaa0060f27b5a0dbc1d0a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9194b736_33d0abda",
+        "filename": "libion/ion.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 29914
+      },
+      "writtenOn": "2026-10-25T16:35:29Z",
+      "side": 1,
+      "message": "No need to import this header, nothing from it is used",
+      "revId": "e083d3be188c069a42efaa0060f27b5a0dbc1d0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
