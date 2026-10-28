@@ -69,3 +69,19 @@ enum LE_RESULT __lttf2(fp_t a, fp_t b) {
       return LE_GREATER;
   }
 }
+
+enum LE_RESULT __letf2(fp_t a, fp_t b) __attribute__((alias("__lttf2")));
+enum LE_RESULT __eqtf2(fp_t a, fp_t b) __attribute__((alias("__lttf2")));
+enum LE_RESULT __netf2(fp_t a, fp_t b) __attribute__((alias("__lttf2")));
+
+int __unordtf2(fp_t a, fp_t b) {
+  return (toRep(a) & absMask) > infRep || (toRep(b) & absMask) > infRep;
+}
+
+int __gttf2(fp_t a, fp_t b) {
+  if (__unordtf2(a, b))
+    return -1;
+  return __lttf2(a, b);
+}
+
+int __getf2(fp_t a, fp_t b) __attribute__((alias("__gttf2")));
