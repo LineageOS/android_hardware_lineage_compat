@@ -17,6 +17,7 @@
 #pragma once
 
 #include <android-base/result.h>
+#include <utils/String8.h>
 #include <utils/Tokenizer.h>
 
 #include <optional>
@@ -60,6 +61,10 @@ class PropertyMap {
      * Replaces the property with the same key if it is already present.
      */
     void addProperty(const std::string& key, const std::string& value);
+    void addProperty(const String8& key, const String8& value);
+
+    /* Returns true if the property map contains the specified key. */
+    bool hasProperty(const String8& key) const;
 
     /* Returns a set of all property keys starting with the given prefix. */
     std::unordered_set<std::string> getKeysWithPrefix(const std::string& prefix) const;
@@ -74,11 +79,22 @@ class PropertyMap {
     std::optional<float> getFloat(const std::string& key) const;
     std::optional<double> getDouble(const std::string& key) const;
 
+    /* Gets the value of a property and parses it.
+     * Returns true and sets outValue if the key was found and its value was parsed successfully.
+     * Otherwise returns false and does not modify outValue.  (Also logs a warning.)
+     */
+    bool tryGetProperty(const String8& key, String8& outValue) const;
+    bool tryGetProperty(const String8& key, bool& outValue) const;
+    bool tryGetProperty(const String8& key, int32_t& outValue) const;
+    bool tryGetProperty(const String8& key, float& outValue) const;
+
     /* Adds all values from the specified property map. */
     void addAll(const PropertyMap& map);
+    void addAll(const PropertyMap* map);
 
     /* Loads a property map from a file. */
     static android::base::Result<std::unique_ptr<PropertyMap>> load(const char* filename);
+    static status_t load(const String8& filename, PropertyMap** outMap);
 
   private:
     /* Returns true if the property map contains the specified key. */
