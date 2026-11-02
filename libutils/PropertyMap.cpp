@@ -154,6 +154,71 @@ android::base::Result<std::unique_ptr<PropertyMap>> PropertyMap::load(const char
     return std::move(outMap);
 }
 
+void PropertyMap::addAll(const PropertyMap* map) {
+    addAll(*map);
+}
+
+status_t PropertyMap::load(const String8& filename, PropertyMap** outMap) {
+    *outMap = nullptr;
+
+    auto result = load(filename.c_str());
+    if (!result.ok()) {
+        int code = result.error().code();
+        return code > 0 ? -code : code;
+    }
+
+    *outMap = result->release();
+    return OK;
+}
+
+void PropertyMap::addProperty(const String8& key, const String8& value) {
+    mProperties[key.c_str()] = value.c_str();
+}
+
+bool PropertyMap::hasProperty(const String8& key) const {
+    return hasProperty(std::string(key.c_str()));
+}
+
+bool PropertyMap::tryGetProperty(const String8& key, String8& outValue) const {
+    std::optional<std::string> value = getString(key.c_str());
+    if (!value.has_value()) {
+        return false;
+    }
+
+    outValue = String8(value->c_str());
+    return true;
+}
+
+bool PropertyMap::tryGetProperty(const String8& key, bool& outValue) const {
+    std::optional<bool> value = getBool(key.c_str());
+    if (!value.has_value()) {
+        return false;
+    }
+
+    outValue = *value;
+    return true;
+}
+
+bool PropertyMap::tryGetProperty(const String8& key, int32_t& outValue) const {
+    std::optional<int32_t> value = getInt(key.c_str());
+    if (!value.has_value()) {
+        return false;
+    }
+
+    outValue = *value;
+    return true;
+}
+
+bool PropertyMap::tryGetProperty(const String8& key, float& outValue) const {
+    std::optional<float> value = getFloat(key.c_str());
+    if (!value.has_value()) {
+        return false;
+    }
+
+    outValue = *value;
+    return true;
+}
+
 // --- PropertyMap::Parser ---
 
 PropertyMap::Parser::Parser(PropertyMap* map, Tokenizer* tokenizer)
