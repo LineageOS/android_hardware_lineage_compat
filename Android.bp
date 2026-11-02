@@ -639,8 +639,13 @@ cc_prebuilt_library_shared {
 
 cc_library_shared {
     name: "libutils_shim",
-    shared_libs: ["libutils"],
+    shared_libs: [
+        "libutils",
+        "libbase",
+        "liblog"
+    ],
     srcs: [
+        "libutils/PropertyMap.cpp",
         "libutils/String8.cpp",
         "libutils/String16.cpp"
     ],
