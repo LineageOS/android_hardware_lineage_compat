@@ -476,6 +476,16 @@ cc_library {
 }
 
 cc_library_shared {
+    name: "libnetmgrportutils_shim",
+    shared_libs: [
+        "libcom.android.tethering.connectivity_native",
+        "liblog",
+    ],
+    srcs: ["libnetmgrportutils/unbindable_ports.cpp"],
+    vendor: true,
+}
+
+cc_library_shared {
     name: "libpiex_shim",
     shared_libs: ["libpiex"],
     srcs: ["libpiex/piex_shim.cpp"],
