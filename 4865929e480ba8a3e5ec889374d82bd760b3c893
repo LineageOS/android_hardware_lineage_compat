@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "007285f9_7a213b4f",
+        "filename": "libnetmgrportutils/unbindable_ports.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-11-09T18:57:00Z",
+      "side": 1,
+      "message": "false means retry, but these errors are permanent, so it would retry forever",
+      "parentUuid": "33b1b347_eac7a7ed",
+      "range": {
+        "startLine": 74,
+        "startChar": 0,
+        "endLine": 74,
+        "endChar": 59
+      },
+      "revId": "4865929e480ba8a3e5ec889374d82bd760b3c893",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "32a82281_116feb55",
         "filename": "libnetmgrportutils/unbindable_ports.cpp",
         "patchSetId": 2
@@ -49,6 +73,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "67c40b13_5a4447fb",
+        "filename": "libnetmgrportutils/unbindable_ports.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-11-09T18:57:00Z",
+      "side": 1,
+      "message": "ditto",
+      "parentUuid": "32a82281_116feb55",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 87,
+        "endChar": 66
+      },
+      "revId": "4865929e480ba8a3e5ec889374d82bd760b3c893",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "69a6b07a_2c00cb7f",
         "filename": "libnetmgrportutils/unbindable_ports.cpp",
         "patchSetId": 2
@@ -60,6 +108,30 @@
       "writtenOn": "2026-11-09T16:46:12Z",
       "side": 1,
       "message": "This might be fine... but you\u0027re leaking a string each time.\nIf netmgrd only keeps a one FILE open that\u0027s fine",
+      "range": {
+        "startLine": 171,
+        "startChar": 23,
+        "endLine": 171,
+        "endChar": 41
+      },
+      "revId": "4865929e480ba8a3e5ec889374d82bd760b3c893",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fe66d3f8_002d8a04",
+        "filename": "libnetmgrportutils/unbindable_ports.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-11-09T18:57:00Z",
+      "side": 1,
+      "message": "closeFn deletes it when netmgrd calls fclose",
+      "parentUuid": "69a6b07a_2c00cb7f",
       "range": {
         "startLine": 171,
         "startChar": 23,
