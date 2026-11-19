@@ -6,13 +6,23 @@
 
 #include <limits.h>
 
+#if __LDBL_MANT_DIG__ == 113 && defined(__SIZEOF_INT128__)
 typedef __uint128_t rep_t;
 typedef __int128_t srep_t;
+#define IEEE_QUAD 1
+#elif __LDBL_MANT_DIG__ == 53 && __SIZEOF_LONG_DOUBLE__ == 8
+typedef unsigned long long rep_t;
+typedef long long srep_t;
+#define IEEE_QUAD 0
+#else
+#error Unsupported Android long double representation
+#endif
+
 typedef long double fp_t;
 
-#define REP_C (__uint128_t)
+#define REP_C (rep_t)
 #define typeWidth (sizeof(rep_t) * CHAR_BIT)
-#define significandBits 112
+#define significandBits (__LDBL_MANT_DIG__ - 1)
 #define exponentBits (typeWidth - significandBits - 1)
 
 #define implicitBit (REP_C(1) << significandBits)
@@ -69,3 +79,22 @@ enum LE_RESULT __lttf2(fp_t a, fp_t b) {
       return LE_GREATER;
   }
 }
+
+// Only IEEE quad long double has the compiler-rt TFmode calling convention.
+#if IEEE_QUAD
+enum LE_RESULT __letf2(fp_t a, fp_t b) __attribute__((alias("__lttf2")));
+enum LE_RESULT __eqtf2(fp_t a, fp_t b) __attribute__((alias("__lttf2")));
+enum LE_RESULT __netf2(fp_t a, fp_t b) __attribute__((alias("__lttf2")));
+
+int __unordtf2(fp_t a, fp_t b) {
+  return (toRep(a) & absMask) > infRep || (toRep(b) & absMask) > infRep;
+}
+
+int __gttf2(fp_t a, fp_t b) {
+  if (__unordtf2(a, b))
+    return -1;
+  return __lttf2(a, b);
+}
+
+int __getf2(fp_t a, fp_t b) __attribute__((alias("__gttf2")));
+#endif
