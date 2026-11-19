@@ -778,6 +778,13 @@ cc_library_shared {
     srcs: ["libcomparetf2/comparetf2.c"],
     compile_multilib: "64",
     vendor: true,
+    // Assumes 128-bit IEEE long double (arm64 only)
+    enabled: false,
+    arch: {
+        arm64: {
+            enabled: true,
+        },
+    },
 }
 
 cc_prebuilt_library_shared {
