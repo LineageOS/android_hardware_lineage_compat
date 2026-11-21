@@ -1,0 +1,30 @@
+//
+// Copyright (C) 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libsecmem_shim",
+    vendor: true,
+    compile_multilib: "32",
+    srcs: ["libsecmem_shim.c"],
+    shared_libs: [
+        "libdl",
+        "liblog",
+    ],
+}
+
+cc_library_shared {
+    name: "liboemcrypto_shim",
+    stem: "liboemcrypto",
+    vendor: true,
+    compile_multilib: "32",
+    srcs: ["liboemcrypto_shim.c"],
+    shared_libs: [
+        "libdl",
+        "liblog",
+    ],
+    required: [
+        "liboemcrypto_vendor",
+    ],
+}
