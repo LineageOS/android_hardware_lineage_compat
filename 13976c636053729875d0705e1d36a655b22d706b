@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64d2be12_6907f82c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-21T22:04:18Z",
+      "side": 1,
+      "message": "This is very specific and for the same reason we don\u0027t have samsung shit here, I would prefer this to go to somewhere in amlogic trees.",
+      "revId": "13976c636053729875d0705e1d36a655b22d706b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
