@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c732d548_4307b1ec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-22T20:14:08Z",
+      "side": 1,
+      "message": "ifdef, keep 32 bit compat.\n\nRe-add me once done.",
+      "revId": "52cb899f666d2171c2b5b58a740f8b0e5922f627",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
