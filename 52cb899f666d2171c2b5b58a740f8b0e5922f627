@@ -16,6 +16,24 @@
       "message": "ifdef, keep 32 bit compat.\n\nRe-add me once done.",
       "revId": "52cb899f666d2171c2b5b58a740f8b0e5922f627",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5bed762_785aed0e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38440
+      },
+      "writtenOn": "2026-11-23T10:41:16Z",
+      "side": 1,
+      "message": "Done in PS4. The new TFmode helpers are guarded for IEEE quad precision, and the existing __lttf2 still builds on 32-bit Android. Comparison tests passed on ARM and ARM64",
+      "parentUuid": "c732d548_4307b1ec",
+      "revId": "52cb899f666d2171c2b5b58a740f8b0e5922f627",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
